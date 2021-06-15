@@ -1,5 +1,103 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\menus\\menu8\\call.js"],{
 
+/***/ "./components/atoms/AudioToggleButton/AudioToggleButton.tsx":
+/*!******************************************************************!*\
+  !*** ./components/atoms/AudioToggleButton/AudioToggleButton.tsx ***!
+  \******************************************************************/
+/*! exports provided: AudioToggleButton */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AudioToggleButton", function() { return AudioToggleButton; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _OpacityEffect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OpacityEffect */ "./components/atoms/OpacityEffect.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\AudioToggleButton\\AudioToggleButton.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+/**
+ * Styled component.
+ */
+var size = 84;
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "AudioToggleButton__Wrapper",
+  componentId: "pq0z2a-0"
+})(["position:relative;width:", "px;cursor:pointer;margin:0 auto;&:before{content:\"\";display:block;width:100%;padding-top:", "px;}"], size, size);
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "AudioToggleButton__Main",
+  componentId: "pq0z2a-1"
+})(["background-image:url(", ");background-size:contain;background-repeat:no-repeat;position:absolute;width:100%;height:100%;top:0;left:0;"], function (props) {
+  return props.imgPath;
+});
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var AudioToggleButton = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var audioToggleButtonClick = _ref.audioToggleButtonClick;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      toggle = _useState[0],
+      setToggle = _useState[1];
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Wrapper, {
+    onClick: function onClick() {
+      setToggle(function (state) {
+        return state ? false : true;
+      });
+      audioToggleButtonClick(toggle);
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 7
+    }
+  }, __jsx(_OpacityEffect__WEBPACK_IMPORTED_MODULE_2__["OpacityEffect"], {
+    visible: toggle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 9
+    }
+  }, __jsx(Main, {
+    imgPath: "/rescue_button_on.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 11
+    }
+  })), __jsx(_OpacityEffect__WEBPACK_IMPORTED_MODULE_2__["OpacityEffect"], {
+    visible: !toggle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 9
+    }
+  }, __jsx(Main, {
+    imgPath: "/rescue_button_off.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 11
+    }
+  }))));
+});
+
+/***/ }),
+
 /***/ "./components/atoms/CSImage/CSImage.tsx":
 /*!**********************************************!*\
   !*** ./components/atoms/CSImage/CSImage.tsx ***!
@@ -94,6 +192,282 @@ var CSImage = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref)
       columnNumber: 7
     }
   }, children));
+});
+
+/***/ }),
+
+/***/ "./components/atoms/CallRescueOrder/CallRescueOrder.tsx":
+/*!**************************************************************!*\
+  !*** ./components/atoms/CallRescueOrder/CallRescueOrder.tsx ***!
+  \**************************************************************/
+/*! exports provided: CallRescueOrder */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallRescueOrder", function() { return CallRescueOrder; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\CallRescueOrder\\CallRescueOrder.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+/**
+ * Styled component.
+ */
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "CallRescueOrder__Main",
+  componentId: "h0x9mn-0"
+})(["background-color:#FFE3D4;color:#F53636;", " border-radius:60px;padding:10px 0;text-align:center;font-size:24px;"], _styles_fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"]);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var CallRescueOrder = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var children = _ref.children;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Main, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
+  }, children));
+});
+
+/***/ }),
+
+/***/ "./components/atoms/ContentTitle/ContentTitle.tsx":
+/*!********************************************************!*\
+  !*** ./components/atoms/ContentTitle/ContentTitle.tsx ***!
+  \********************************************************/
+/*! exports provided: ContentTitle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentTitle", function() { return ContentTitle; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_MainTextHeiseiMaruGothic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/MainTextHeiseiMaruGothic */ "./styles/MainTextHeiseiMaruGothic.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\ContentTitle\\ContentTitle.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var ContentTitle = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var children = _ref.children,
+      textAlign = _ref.textAlign,
+      color = _ref.color;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_MainTextHeiseiMaruGothic__WEBPACK_IMPORTED_MODULE_1__["MainTextHeiseiMaruGothic"], {
+    fontSize: {
+      pc: 36,
+      tb: 36,
+      sp: 28
+    },
+    color: color ? color : "#2B8875",
+    textAlign: textAlign ? textAlign : "center",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, children));
+});
+
+/***/ }),
+
+/***/ "./components/atoms/CountDownBlue/CountDownBlue.tsx":
+/*!**********************************************************!*\
+  !*** ./components/atoms/CountDownBlue/CountDownBlue.tsx ***!
+  \**********************************************************/
+/*! exports provided: CountDownBlue */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountDownBlue", function() { return CountDownBlue; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\CountDownBlue\\CountDownBlue.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+/**
+ * Styled component.
+ */
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "CountDownBlue__Main",
+  componentId: "sc-1ljrxnx-0"
+})(["width:100%;height:100%;position:relative;&:before{content:\"\";display:block;padding-top:45.455%;}"]);
+var animationDuration = 400;
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "CountDownBlue__Image",
+  componentId: "sc-1ljrxnx-1"
+})(["position:absolute;width:100%;max-width:", "px;height:100%;text-align:center;top:0;left:0;right:0;bottom:0;margin:auto;background-image:url(/", ");background-size:contain;background-position:center;background-repeat:no-repeat;transition:", "ms ease;transition-property:opacity;opacity:0;&.visible{opacity:1;}"], function (props) {
+  return props.imageSize;
+}, function (props) {
+  return props.imageUrl;
+}, animationDuration);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var CountDownBlue = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var count = _ref.count;
+  var images = {
+    1: {
+      path: "rescue_text_1.png",
+      size: 176
+    },
+    2: {
+      path: "rescue_text_2.png",
+      size: 176
+    },
+    3: {
+      path: "rescue_text_3.png",
+      size: 176
+    }
+  };
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Main, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 7
+    }
+  }, Object.keys(images).map(function (x, num) {
+    return __jsx(Image, {
+      key: num,
+      imageUrl: images[x].path,
+      imageSize: images[x].size,
+      className: x === String(count) ? "visible" : null,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 11
+      }
+    });
+  })));
+});
+
+/***/ }),
+
+/***/ "./components/atoms/CountTimer/CountTimer.tsx":
+/*!****************************************************!*\
+  !*** ./components/atoms/CountTimer/CountTimer.tsx ***!
+  \****************************************************/
+/*! exports provided: CountTimer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountTimer", function() { return CountTimer; });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../containers */ "./containers.ts");
+/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\CountTimer\\CountTimer.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "CountTimer__Main",
+  componentId: "sc-2wx6l0-0"
+})(["display:inline-block;margin-top:", "px;"], _constants_size__WEBPACK_IMPORTED_MODULE_5__["default"].controlUnitTopMargin);
+var w = 43;
+var Clock = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "CountTimer__Clock",
+  componentId: "sc-2wx6l0-1"
+})(["width:", "px;background-image:url(/icon_time.png);background-size:contain;background-position:center;background-repeat:no-repeat;margin:0 auto;&:before{content:\"\";display:block;padding-top:100%;}"], w);
+var Time = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "CountTimer__Time",
+  componentId: "sc-2wx6l0-2"
+})(["", " font-size:36px;color:#F53636;text-align:center;margin:0 auto;line-height:1;&:after{content:\"\u79D2\";font-size:16px;margin-left:2px;}"], _styles_fonts__WEBPACK_IMPORTED_MODULE_3__["sourceHanSansJpBold"]);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var CountTimer = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
+  var count = _ref.count;
+
+  var _SeContainer$useConta = _containers__WEBPACK_IMPORTED_MODULE_4__["SeContainer"].useContainer(),
+      time = _SeContainer$useConta.time;
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    var _time = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(time, 2),
+        play = _time[0],
+        stop = _time[1].stop;
+
+    if (count === 3) play();
+    if (count === 0) stop();
+  }, [count]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    var _time2 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(time, 2),
+        play = _time2[0],
+        stop = _time2[1].stop;
+
+    return function () {
+      return stop();
+    };
+  }, []);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 7
+    }
+  }, __jsx(Clock, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 9
+    }
+  }), __jsx(Time, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 9
+    }
+  }, count)));
 });
 
 /***/ }),
@@ -306,6 +680,163 @@ var PenguinAnimBase = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(functio
       columnNumber: 7
     }
   }));
+});
+
+/***/ }),
+
+/***/ "./components/atoms/PopUp/PopUp.tsx":
+/*!******************************************!*\
+  !*** ./components/atoms/PopUp/PopUp.tsx ***!
+  \******************************************/
+/*! exports provided: PopUp */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PopUp", function() { return PopUp; });
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _styles_hovers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/hovers */ "./styles/hovers.tsx");
+/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\PopUp\\PopUp.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 14px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 56px;\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "PopUp__Container",
+  componentId: "sc-1klj07d-0"
+})(["background-color:#fff;width:100%;max-width:864px;border-radius:10px;", ";", ";"], _styles_customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].greaterThan("sp")(_templateObject()), _styles_customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("sp")(_templateObject2()));
+var OkButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "PopUp__OkButton",
+  componentId: "sc-1klj07d-1"
+})(["background-color:", ";color:#fff;border-radius:8px;text-align:center;width:138px;padding:14px 0;margin:0 auto;font-size:18px;cursor:pointer;", " ", ""], _constants_colors__WEBPACK_IMPORTED_MODULE_4__["default"].linkBlue, _styles_fonts__WEBPACK_IMPORTED_MODULE_6__["sourceHanSansJpBold"], _styles_hovers__WEBPACK_IMPORTED_MODULE_5__["brightness"]);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var PopUp = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
+  var children = _ref.children,
+      okButtonClick = _ref.okButtonClick;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Container, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 7
+    }
+  }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_7__["Mb"], {
+    size: {
+      pc: 56,
+      tb: 56,
+      sp: 28
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 9
+    }
+  }, children), __jsx(OkButton, {
+    role: "button",
+    onClick: okButtonClick,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 9
+    }
+  }, "OK")));
+});
+
+/***/ }),
+
+/***/ "./components/atoms/QuestionBalloon/QuestionBalloon.tsx":
+/*!**************************************************************!*\
+  !*** ./components/atoms/QuestionBalloon/QuestionBalloon.tsx ***!
+  \**************************************************************/
+/*! exports provided: QuestionBalloon */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuestionBalloon", function() { return QuestionBalloon; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\QuestionBalloon\\QuestionBalloon.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var color = "#F6C20E";
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "QuestionBalloon__Main",
+  componentId: "sc-15g4hnz-0"
+})(["", " color:", ";background-color:", ";border-radius:10px;font-size:18px;padding:15px 9px;position:relative;text-align:center;&:before{content:\"\";position:absolute;bottom:-22px;left:0;right:0;width:0;height:0;margin:auto;border-style:solid;border-width:22px 12.5px 0 12.5px;border-color:", " transparent transparent transparent;}"], _styles_fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"], _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].navy, color, color);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var QuestionBalloon = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var children = _ref.children;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Main, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 7
+    }
+  }, children));
 });
 
 /***/ }),
@@ -874,32 +1405,16 @@ var ScoreBalloon = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SelectButtonBar", function() { return SelectButtonBar; });
-/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
-/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
-/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\SelectButtonBar\\SelectButtonBar.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 14px;\n  "]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -909,30 +1424,35 @@ function _templateObject() {
 /**
  * Styled component.
  */
-var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs(function (props) {
+var Main = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_4__["MainTextSourceHanSansJp"]).attrs(function (props) {
   return {
     style: {
-      backgroundColor: props.isActive ? _constants_colors__WEBPACK_IMPORTED_MODULE_5__["default"].selectButtonActiveColor.bar : _constants_colors__WEBPACK_IMPORTED_MODULE_5__["default"].selectButtonNormalColor.bar
+      backgroundColor: props.isActive ? _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].selectButtonActiveColor.bar : _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].selectButtonNormalColor.bar
     }
   };
 }).withConfig({
   displayName: "SelectButtonBar__Main",
   componentId: "sc-1j8vegf-0"
-})(["z-index:1;margin-left:10px;", " padding:12px 10px 12px ", "px;margin-left:", "px;color:", ";content:\"\";top:0px;right:0px;z-index:0;box-shadow:rgb(73 143 139 / 30%) 0px 6px 6px;border-radius:10px;transition:background-color .3s ease;font-size:18px;", ";"], _styles_fonts__WEBPACK_IMPORTED_MODULE_4__["sourceHanSansJpBold"], _constants_size__WEBPACK_IMPORTED_MODULE_3__["default"].selectButtonIconSize / 2 + 10, _constants_size__WEBPACK_IMPORTED_MODULE_3__["default"].selectButtonIconSize / 2, _constants_colors__WEBPACK_IMPORTED_MODULE_5__["default"].navy, _styles_customMedia__WEBPACK_IMPORTED_MODULE_6__["default"].lessThan("sp")(_templateObject()));
+})(["z-index:1;margin-left:10px;padding:12px 10px 12px ", "px;margin-left:", "px;content:\"\";top:0px;right:0px;z-index:0;box-shadow:rgb(73 143 139 / 30%) 0px 6px 6px;border-radius:10px;transition:background-color .3s ease;width:100%;"], _constants_size__WEBPACK_IMPORTED_MODULE_2__["default"].selectButtonIconSize / 2 + 10, _constants_size__WEBPACK_IMPORTED_MODULE_2__["default"].selectButtonIconSize / 2);
 /**
  * Functional component.
  * @param props 
  */
 
-var SelectButtonBar = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
+var SelectButtonBar = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var isActive = _ref.isActive,
       children = _ref.children;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Main, {
+    fontSize: {
+      pc: 18,
+      tb: 18,
+      sp: 14
+    },
     isActive: isActive,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, children));
@@ -1164,6 +1684,319 @@ var ImgWithCountDown = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(functi
 
 /***/ }),
 
+/***/ "./components/molecules/PopUpOvr/PopUpOvr.tsx":
+/*!****************************************************!*\
+  !*** ./components/molecules/PopUpOvr/PopUpOvr.tsx ***!
+  \****************************************************/
+/*! exports provided: PopUpOvr */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PopUpOvr", function() { return PopUpOvr; });
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _atoms_PopUp_PopUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../atoms/PopUp/PopUp */ "./components/atoms/PopUp/PopUp.tsx");
+/* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _styles_FontColor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/FontColor */ "./styles/FontColor.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\molecules\\PopUpOvr\\PopUpOvr.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 0 8px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 0 28px;\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "PopUpOvr__Main",
+  componentId: "sc-18wsc2b-0"
+})(["background-color:rgba(0,0,0,.5);position:fixed;width:100%;height:100%;top:0;left:0;display:flex;justify-content:center;align-items:center;z-index:2;", ";", ";"], _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("tb")(_templateObject()), _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("sp")(_templateObject2()));
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var PopUpOvr = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
+  var children = _ref.children,
+      okButtonClick = _ref.okButtonClick;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 4
+    }
+  }, __jsx(_atoms_PopUp_PopUp__WEBPACK_IMPORTED_MODULE_3__["PopUp"], {
+    okButtonClick: okButtonClick,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_5__["Mb"], {
+    size: {
+      pc: 35,
+      tb: 35,
+      sp: 39
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 11
+    }
+  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__["MainTextSourceHanSansJp"], {
+    fontSize: {
+      pc: 18,
+      tb: 18,
+      sp: 18
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 13
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u304A\u307C",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 15
+    }
+  }, "\u6EBA"), "\u308C\u3066\u3044\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3072\u3068",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 43
+    }
+  }, "\u4EBA"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u307F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 68
+    }
+  }, "\u898B"), "\u3064\u3051\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3068\u304D",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 94
+    }
+  }, "\u6642"), "\u306F\u3001", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 120
+    }
+  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_7__["FontColor"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_9__["default"].citrus,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 15
+    }
+  }, "119", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3070\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 53
+    }
+  }, "\u756A")), "\uFF08", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3057\u3087\u3046\u307C\u3046\u3057\u3087",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 90
+    }
+  }, "\u6D88\u9632\u7F72"), "\uFF09", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 122
+    }
+  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_7__["FontColor"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_9__["default"].citrus,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 15
+    }
+  }, "118", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3070\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 53
+    }
+  }, "\u756A")), "\uFF08", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u304B\u3044\u3058\u3087\u3046\u307B\u3042\u3093\u3061\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 90
+    }
+  }, "\u6D77\u4E0A\u4FDD\u5B89\u5E81"), "\uFF09", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 128
+    }
+  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_7__["FontColor"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_9__["default"].citrus,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 15
+    }
+  }, "110", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3070\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 53
+    }
+  }, "\u756A")), "\uFF08", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3051\u3044\u3055\u3064\u3057\u3087",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 90
+    }
+  }, "\u8B66\u5BDF\u7F72"), "\uFF09", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 121
+    }
+  }), "\u306E\u3044\u305A\u308C\u304B\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3067\u3093\u308F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 21
+    }
+  }, "\u96FB\u8A71"), "\u3092\u304B\u3051\u308C\u3070\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u305F\u3044\u304A\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 53
+    }
+  }, "\u5BFE\u5FDC"), "\u3057\u3066\u304F\u308C\u307E\u3059\u3002\u3057\u304B\u3057\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u306F\u3084",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 91
+    }
+  }, "\u65E9"), "\u3044", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 116
+    }
+  }, "\u6551\u52A9"), "\u306E\u305F\u3081\u306B\u306F\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 150
+    }
+  }, "\u72B6\u6CC1"), "\u306B\u3042\u3063\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087\u3055\u304D",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 183
+    }
+  }, "\u6551\u52A9\u5148"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u308C\u3093\u3089\u304F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 215
+    }
+  }, "\u9023\u7D61"), "\u3059\u308B\u3053\u3068\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ruby: "\u305F\u3044\u305B\u3064",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 247
+    }
+  }, "\u5927\u5207"), "\u3067\u3059\u3002")), children)));
+});
+
+/***/ }),
+
 /***/ "./components/molecules/ResultBalloon/ResultBalloon.tsx":
 /*!**************************************************************!*\
   !*** ./components/molecules/ResultBalloon/ResultBalloon.tsx ***!
@@ -1352,22 +2185,22 @@ var SelectButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (
       lineNumber: 82,
       columnNumber: 7
     }
-  }, __jsx(SelectButtonBarWrapper, {
+  }, __jsx(_atoms_SelectButtonBar_SelectButtonBar__WEBPACK_IMPORTED_MODULE_7__["SelectButtonBar"], {
+    isActive: hover,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 97,
       columnNumber: 9
     }
-  }, __jsx(_atoms_SelectButtonBar_SelectButtonBar__WEBPACK_IMPORTED_MODULE_7__["SelectButtonBar"], {
-    isActive: hover,
+  }, children), __jsx(SelectButtonBarWrapper, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 98,
-      columnNumber: 11
+      columnNumber: 9
     }
-  }, children)), __jsx(_atoms_SelectButtonIcon_SelectButtonIcon__WEBPACK_IMPORTED_MODULE_6__["SelectButtonIcon"], {
+  }, __jsx(_atoms_SelectButtonIcon_SelectButtonIcon__WEBPACK_IMPORTED_MODULE_6__["SelectButtonIcon"], {
     symbol: symbol,
     isActiveDisplaySymbol: isActiveDisplaySymbol,
     isActiveColor: isCorrect || hover,
@@ -1375,10 +2208,10 @@ var SelectButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 9
+      lineNumber: 99,
+      columnNumber: 11
     }
-  })));
+  }))));
 });
 
 /***/ }),
@@ -1441,6 +2274,62 @@ var StartButton = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
       columnNumber: 9
     }
   }, children)));
+});
+
+/***/ }),
+
+/***/ "./components/molecules/TopFixedTimer/TopFixedTimer.tsx":
+/*!**************************************************************!*\
+  !*** ./components/molecules/TopFixedTimer/TopFixedTimer.tsx ***!
+  \**************************************************************/
+/*! exports provided: TopFixedTimer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopFixedTimer", function() { return TopFixedTimer; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _atoms_CountTimer_CountTimer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../atoms/CountTimer/CountTimer */ "./components/atoms/CountTimer/CountTimer.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\molecules\\TopFixedTimer\\TopFixedTimer.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+/**
+ * Styled component.
+ */
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "TopFixedTimer__Main",
+  componentId: "sc-1abmcfx-0"
+})(["margin:0 auto;text-align:center;position:fixed;top:0;right:0;left:0;z-index:2;"]);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var TopFixedTimer = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var count = _ref.count;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Main, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
+  }, __jsx(_atoms_CountTimer_CountTimer__WEBPACK_IMPORTED_MODULE_2__["CountTimer"], {
+    count: count,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  })));
 });
 
 /***/ }),
@@ -1711,12 +2600,12 @@ var Main = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withCon
 
 var RescueSelectButtonUnit = Object(react__WEBPACK_IMPORTED_MODULE_2__["memo"])(function (_ref) {
   var onCorrect = _ref.onCorrect,
-      questions = _ref.questions;
+      choices = _ref.choices;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(underscore__WEBPACK_IMPORTED_MODULE_5__["default"].shuffle(questions)),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(underscore__WEBPACK_IMPORTED_MODULE_5__["default"].shuffle(choices)),
       elements = _useState[0];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(Array(questions.length)).map(function (_) {
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(Array(choices.length)).map(function (_) {
     return false;
   })),
       clicked = _useState2[0],
@@ -1763,8 +2652,104 @@ var RescueSelectButtonUnit = Object(react__WEBPACK_IMPORTED_MODULE_2__["memo"])(
         lineNumber: 56,
         columnNumber: 13
       }
-    }, x.question);
+    }, x.choice);
   })));
+});
+
+/***/ }),
+
+/***/ "./components/organisms/StartButtonUnit/StartButtonUnit.tsx":
+/*!******************************************************************!*\
+  !*** ./components/organisms/StartButtonUnit/StartButtonUnit.tsx ***!
+  \******************************************************************/
+/*! exports provided: StartButtonUnit */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StartButtonUnit", function() { return StartButtonUnit; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../molecules/StartButton/StartButton */ "./components/molecules/StartButton/StartButton.tsx");
+/* harmony import */ var _atoms_ContentTitle_ContentTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../atoms/ContentTitle/ContentTitle */ "./components/atoms/ContentTitle/ContentTitle.tsx");
+/* harmony import */ var _hooks_useOnceClick__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../hooks/useOnceClick */ "./hooks/useOnceClick.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\organisms\\StartButtonUnit\\StartButtonUnit.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var StartButtonUnit = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var title = _ref.title,
+      description = _ref.description,
+      children = _ref.children,
+      onceClick = _ref.onceClick,
+      initStartButtonClickable = _ref.initStartButtonClickable;
+
+  var _useOnceClick = Object(_hooks_useOnceClick__WEBPACK_IMPORTED_MODULE_3__["default"])(onceClick),
+      clickHandle = _useOnceClick.clickHandle,
+      initClickable = _useOnceClick.initClickable;
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    var isClickable = initStartButtonClickable === void 0 ? false : initStartButtonClickable;
+    if (isClickable) initClickable();
+  }, [initStartButtonClickable]);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_4__["Mb"], {
+    size: {
+      pc: 39,
+      tb: 37,
+      sp: 27
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 7
+    }
+  }, __jsx(_atoms_ContentTitle_ContentTitle__WEBPACK_IMPORTED_MODULE_2__["ContentTitle"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 9
+    }
+  }, title)), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_4__["Mb"], {
+    size: {
+      pc: 40,
+      tb: 40,
+      sp: 40
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 7
+    }
+  }, children), description, __jsx("div", {
+    onClick: clickHandle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 7
+    }
+  }, __jsx(_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_1__["StartButton"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }, "\u30B9\u30BF\u30FC\u30C8\uFF01")));
 });
 
 /***/ }),
@@ -1808,6 +2793,1020 @@ var Content = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref)
       columnNumber: 4
     }
   }, children));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureCall/RescureCall.tsx":
+/*!**********************************************************!*\
+  !*** ./components/templates/RescureCall/RescureCall.tsx ***!
+  \**********************************************************/
+/*! exports provided: RescureCall */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureCall", function() { return RescureCall; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _molecules_TopFixedTimer_TopFixedTimer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../molecules/TopFixedTimer/TopFixedTimer */ "./components/molecules/TopFixedTimer/TopFixedTimer.tsx");
+/* harmony import */ var _atoms_CallRescueOrder_CallRescueOrder__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../atoms/CallRescueOrder/CallRescueOrder */ "./components/atoms/CallRescueOrder/CallRescueOrder.tsx");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dist/next-server/lib/dynamic.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _molecules_PopUpOvr_PopUpOvr__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../molecules/PopUpOvr/PopUpOvr */ "./components/molecules/PopUpOvr/PopUpOvr.tsx");
+/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _hooks_usePhonePage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../hooks/usePhonePage */ "./hooks/usePhonePage.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureCall\\RescureCall.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+var Phone = next_dynamic__WEBPACK_IMPORTED_MODULE_7___default()(function () {
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../atoms/Phone/Phone */ "./components/atoms/Phone/Phone.tsx"));
+}, {
+  ssr: false,
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! ../../atoms/Phone/Phone */ "./components/atoms/Phone/Phone.tsx")];
+    },
+    modules: ["../../atoms/Phone/Phone"]
+  }
+});
+
+
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var Wrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_8__["default"])(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"]).withConfig({
+  displayName: "RescureCall__Wrapper",
+  componentId: "sc-4imo6l-0"
+})(["max-width:380px;margin:0 auto;"]);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      children = _ref.children,
+      popupMsg = _ref.popupMsg,
+      route = _ref.route;
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_12__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_13__["default"].switchPageSystemTransitionDelay);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+  var _usePhonePage = Object(_hooks_usePhonePage__WEBPACK_IMPORTED_MODULE_11__["default"])(setPageNum),
+      uniqueTimer = _usePhonePage.uniqueTimer,
+      setAcceptCounting = _usePhonePage.setAcceptCounting,
+      popUp = _usePhonePage.popUp,
+      setPopUp = _usePhonePage.setPopUp;
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    // Move to faild page.
+    if (uniqueTimer <= 0) setPageNum(10);
+  }, [uniqueTimer]);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_molecules_TopFixedTimer_TopFixedTimer__WEBPACK_IMPORTED_MODULE_5__["TopFixedTimer"], {
+    count: uniqueTimer,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 7
+    }
+  }), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 39,
+      tb: 37,
+      sp: 27
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 7
+    }
+  }, __jsx(_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 9
+    }
+  }, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 11
+    }
+  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3067\u3093\u308F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 43
+    }
+  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(Wrapper, {
+    size: {
+      pc: 20,
+      tb: 20,
+      sp: 20
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 7
+    }
+  }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 36,
+      tb: 36,
+      sp: 36
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 9
+    }
+  }, __jsx(_atoms_CallRescueOrder_CallRescueOrder__WEBPACK_IMPORTED_MODULE_6__["CallRescueOrder"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 11
+    }
+  }, children)), __jsx(Phone, {
+    onCall: function onCall(inputNum) {
+      setAcceptCounting(false);
+      setTimeout(function () {
+        if (inputNum === route) {
+          setPageNum(function (state) {
+            return state + 1;
+          });
+        } else {
+          setPopUp(true);
+        }
+      }, 2000);
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 9
+    }
+  })), popUp && __jsx(_molecules_PopUpOvr_PopUpOvr__WEBPACK_IMPORTED_MODULE_9__["PopUpOvr"], {
+    okButtonClick: function okButtonClick() {
+      return setPageNum(function (state) {
+        return state + 1;
+      });
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 9
+    }
+  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_10__["MainTextSourceHanSansJp"], {
+    fontSize: {
+      pc: 24,
+      tb: 24,
+      sp: 24
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98,
+      columnNumber: 11
+    }
+  }, popupMsg)));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureDescription/RescureDescription.tsx":
+/*!************************************************************************!*\
+  !*** ./components/templates/RescureDescription/RescureDescription.tsx ***!
+  \************************************************************************/
+/*! exports provided: RescureDescription */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureDescription", function() { return RescureDescription; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useCallRescue */ "./hooks/useCallRescue.tsx");
+/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureDescription\\RescureDescription.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var RescureDescription = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      isMute = _ref.isMute,
+      audioPath = _ref.audioPath,
+      countMax = _ref.countMax,
+      children = _ref.children,
+      description = _ref.description;
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_5__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_6__["default"].switchPageSystemTransitionDelay);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
+
+  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__["default"])(audioPath, isMute);
+  Object(_hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__["default"])(setPageNum, countMax);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 39,
+      tb: 37,
+      sp: 27
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 9
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 11
+    }
+  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    ruby: "\u3067\u3093\u308F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 43
+    }
+  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 65,
+      tb: 65,
+      sp: 56
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, children), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 30,
+      tb: 30,
+      sp: 30
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 7
+    }
+  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_7__["MainTextSourceHanSansJp"], {
+    fontSize: {
+      pc: 24,
+      tb: 24,
+      sp: 24
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 9
+    }
+  }, description)));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureIllust/RescureIllust.tsx":
+/*!**************************************************************!*\
+  !*** ./components/templates/RescureIllust/RescureIllust.tsx ***!
+  \**************************************************************/
+/*! exports provided: RescureIllust */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureIllust", function() { return RescureIllust; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _components_atoms_QuestionBalloon_QuestionBalloon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/atoms/QuestionBalloon/QuestionBalloon */ "./components/atoms/QuestionBalloon/QuestionBalloon.tsx");
+/* harmony import */ var _components_atoms_CountDownBlue_CountDownBlue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/atoms/CountDownBlue/CountDownBlue */ "./components/atoms/CountDownBlue/CountDownBlue.tsx");
+/* harmony import */ var _components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/molecules/ImgWithCountDown/ImgWithCountDown */ "./components/molecules/ImgWithCountDown/ImgWithCountDown.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useCallRescue */ "./hooks/useCallRescue.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureIllust\\RescureIllust.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var RescureIllust = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      children = _ref.children,
+      image = _ref.image,
+      countMax = _ref.countMax;
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_9__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_10__["default"].switchPageSystemTransitionDelay);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  var count = Object(_hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__["default"])(setPageNum, countMax);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_7__["Mb"], {
+    size: {
+      pc: 39,
+      tb: 37,
+      sp: 27
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    ruby: "\u3067\u3093\u308F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 43
+    }
+  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_7__["Mb"], {
+    size: {
+      pc: 40,
+      tb: 40,
+      sp: 40
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionBalloon_QuestionBalloon__WEBPACK_IMPORTED_MODULE_3__["QuestionBalloon"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 9
+    }
+  }, children)), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_7__["Mb"], {
+    size: {
+      pc: 55,
+      tb: 55,
+      sp: 55
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 7
+    }
+  }, __jsx(_components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_5__["ImgWithCountDown"], {
+    image: image,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 9
+    }
+  }, __jsx(_components_atoms_CountDownBlue_CountDownBlue__WEBPACK_IMPORTED_MODULE_4__["CountDownBlue"], {
+    count: count,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 11
+    }
+  }))));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureQuiz/RescureQuiz.tsx":
+/*!**********************************************************!*\
+  !*** ./components/templates/RescureQuiz/RescureQuiz.tsx ***!
+  \**********************************************************/
+/*! exports provided: RescureQuiz */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureQuiz", function() { return RescureQuiz; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
+/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureQuiz\\RescureQuiz.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var RescureQuiz = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      isMute = _ref.isMute,
+      audioPath = _ref.audioPath,
+      question = _ref.question,
+      children = _ref.children,
+      choices = _ref.choices;
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_9__["default"].switchPageSystemTransitionDelay);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
+
+  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__["default"])(audioPath, isMute);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 39,
+      tb: 37,
+      sp: 27
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 9
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 11
+    }
+  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3067\u3093\u308F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 43
+    }
+  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 65,
+      tb: 65,
+      sp: 56
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, children), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 30,
+      tb: 30,
+      sp: 30
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 7
+    }
+  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
+    fontSize: {
+      pc: 24,
+      tb: 24,
+      sp: 24
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 9
+    }
+  }, question)), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
+    onCorrect: function onCorrect() {
+      return setPageNum(function (state) {
+        return state + 1;
+      });
+    },
+    choices: choices,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 7
+    }
+  }));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureResultClear/RescureResultClear.tsx":
+/*!************************************************************************!*\
+  !*** ./components/templates/RescureResultClear/RescureResultClear.tsx ***!
+  \************************************************************************/
+/*! exports provided: RescureResultClear */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureResultClear", function() { return RescureResultClear; });
+/* harmony import */ var _babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
+/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureResultClear\\RescureResultClear.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var RescureResultClear = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
+  Object(_babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
+
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_9__["default"].switchPageSystemTransitionDelay);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_7__["default"])({
+    nextHref: "/menus/menu8/main",
+    nextTransitionKey: "slideAsVerticalPrev",
+    notation: "おわり"
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 157,
+      tb: 157,
+      sp: 162
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 55
+    }
+  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__["ResultBalloon"], {
+    condition: true,
+    text: __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087\u305B\u3044\u3053\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 50
+      }
+    }, "\u6551\u52A9\u6210\u529F"), "\uFF01"),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_5__["DoyaPenguin"], {
+    imgPath: "chara_accuracyrate2.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 9
+    }
+  })));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureResultFailed/RescureResultFailed.tsx":
+/*!**************************************************************************!*\
+  !*** ./components/templates/RescureResultFailed/RescureResultFailed.tsx ***!
+  \**************************************************************************/
+/*! exports provided: RescureResultFailed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureResultFailed", function() { return RescureResultFailed; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/molecules/StartButton/StartButton */ "./components/molecules/StartButton/StartButton.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
+/* harmony import */ var _components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/atoms/QuestionResultText/QuestionResultText */ "./components/atoms/QuestionResultText/QuestionResultText.tsx");
+/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureResultFailed\\RescureResultFailed.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var RescureResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum;
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_9__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_10__["default"].switchPageSystemTransitionDelay);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__["default"])({
+    nextHref: "/menus/menu8/main",
+    nextTransitionKey: "slideAsVerticalPrev",
+    notation: "おわり"
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 63,
+      tb: 63,
+      sp: 68
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 55
+    }
+  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 58,
+      tb: 58,
+      sp: 58
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__["QuestionResultText"], {
+    bottom: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      ruby: "\u3058\u304B\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 22
+      }
+    }, "\u6642\u9593"), __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      ruby: "\u304E",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 48
+      }
+    }, "\u5207"), "\u308C"),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 9
+    }
+  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 13,
+      tb: 13,
+      sp: 28
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 7
+    }
+  }, __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__["ResultBalloon"], {
+    condition: false,
+    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087\u3057\u3063\u3071\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 53
+      }
+    }, "\u6551\u52A9\u5931\u6557"), "\u2026"),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 9
+    }
+  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__["DoyaPenguin"], {
+    imgPath: "chara_accuracyrate1.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 11
+    }
+  }))), __jsx("div", {
+    onClick: function onClick() {
+      return setPageNum(0);
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 7
+    }
+  }, __jsx(_components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__["StartButton"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 9
+    }
+  }, "\u3082\u3046", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    ruby: "\u3044\u3061\u3069",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 24
+    }
+  }, "\u4E00\u5EA6"), "\uFF01")));
+});
+
+/***/ }),
+
+/***/ "./components/templates/RescureStart/RescureStart.tsx":
+/*!************************************************************!*\
+  !*** ./components/templates/RescureStart/RescureStart.tsx ***!
+  \************************************************************/
+/*! exports provided: RescureStart */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureStart", function() { return RescureStart; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_organisms_StartButtonUnit_StartButtonUnit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/organisms/StartButtonUnit/StartButtonUnit */ "./components/organisms/StartButtonUnit/StartButtonUnit.tsx");
+/* harmony import */ var _components_atoms_RoundImage_RoundImage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/RoundImage/RoundImage */ "./components/atoms/RoundImage/RoundImage.tsx");
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _components_atoms_AudioToggleButton_AudioToggleButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/atoms/AudioToggleButton/AudioToggleButton */ "./components/atoms/AudioToggleButton/AudioToggleButton.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureStart\\RescureStart.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      audioToggleButtonClick = _ref.audioToggleButtonClick;
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_3__["default"])({
+    color: "orange",
+    prevHref: "/menus/menu8/main",
+    prevTransitionKey: "slideAsVerticalPrev"
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_organisms_StartButtonUnit_StartButtonUnit__WEBPACK_IMPORTED_MODULE_1__["StartButtonUnit"], {
+    onceClick: function onceClick() {
+      setPageNum(function (state) {
+        return state + 1;
+      });
+    },
+    title: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 19
+      }
+    }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      ruby: "\u3067\u3093\u308F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 51
+      }
+    }, "\u96FB\u8A71"), "\u305B\u3088\uFF01"),
+    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_6__["Mb"], {
+      size: {
+        pc: 40,
+        tb: 40,
+        sp: 40
+      },
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 13
+      }
+    }, __jsx(_components_atoms_AudioToggleButton_AudioToggleButton__WEBPACK_IMPORTED_MODULE_7__["AudioToggleButton"], {
+      audioToggleButtonClick: audioToggleButtonClick,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 15
+      }
+    }))),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_RoundImage_RoundImage__WEBPACK_IMPORTED_MODULE_2__["RoundImage"], {
+    image: "koudou_rescue_start.png",
+    ratio: _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].illustRatio,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 9
+    }
+  })));
 });
 
 /***/ }),
@@ -2255,6 +4254,133 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./contents/call1/Call.tsx":
+/*!*********************************!*\
+  !*** ./contents/call1/Call.tsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_FontColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/FontColor */ "./styles/FontColor.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/templates/RescureCall/RescureCall */ "./components/templates/RescureCall/RescureCall.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Call.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__["RescureCall"], {
+    setPageNum: setPageNum,
+    popupMsg: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3053\u3093\u304B\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 22
+      }
+    }, "\u4ECA\u56DE"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3046\u307F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 50
+      }
+    }, "\u6D77"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u304D\u3042\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 75
+      }
+    }, "\u6C96\u5408"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 103
+      }
+    }, "\u6D41"), "\u3055\u308C\u3066\u3044\u308B\u306E\u3067\u3001", __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_2__["FontColor"], {
+      color: _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].citrus,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 135
+      }
+    }, "118", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 173
+      }
+    }, "\u756A")), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3067\u3093\u308F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 210
+      }
+    }, "\u96FB\u8A71"), "\u3057\u307E\u3059\u3002"),
+    route: "118",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3068\u3082\u3060\u3061",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }
+  }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3046\u307F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 37
+    }
+  }, "\u6D77"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u306A\u304C",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 62
+    }
+  }, "\u6D41"), "\u3055\u308C\u305F\uFF01"));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Call);
+
+/***/ }),
+
 /***/ "./contents/call1/Description1.tsx":
 /*!*****************************************!*\
   !*** ./contents/call1/Description1.tsx ***!
@@ -2266,24 +4392,14 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/atoms/CSImage/CSImage */ "./components/atoms/CSImage/CSImage.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/molecules/ImgWithCountDown/ImgWithCountDown */ "./components/molecules/ImgWithCountDown/ImgWithCountDown.tsx");
-/* harmony import */ var _hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/useCallRescue */ "./hooks/useCallRescue.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/CSImage/CSImage */ "./components/atoms/CSImage/CSImage.tsx");
+/* harmony import */ var _components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/molecules/ImgWithCountDown/ImgWithCountDown */ "./components/molecules/ImgWithCountDown/ImgWithCountDown.tsx");
+/* harmony import */ var _components_templates_RescureDescription_RescureDescription__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/templates/RescureDescription/RescureDescription */ "./components/templates/RescureDescription/RescureDescription.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Description1.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -2297,59 +4413,82 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Description1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__["default"])("/05.mp3", isMute);
-  Object(_hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__["default"])(setPageNum, 7);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureDescription_RescureDescription__WEBPACK_IMPORTED_MODULE_4__["RescureDescription"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/05.mp3",
+    countMax: 7,
+    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3042\u306A\u305F\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u307E\u3048",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 15
+      }
+    }, "\u540D\u524D"), "\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u308C\u3093\u3089\u304F\u3055\u304D",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 42
+      }
+    }, "\u9023\u7D61\u5148"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 73
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002", __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 104
+      }
+    }), __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u305F\u3060",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 11
+      }
+    }, "\u76F4"), "\u3061\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3085\u3093\u3057\u305B\u3093\u3066\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 37
+      }
+    }, "\u5DE1\u8996\u8239\u8247"), "\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3053\u3046\u304F\u3046\u304D",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 71
+      }
+    }, "\u822A\u7A7A\u6A5F"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3080",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 101
+      }
+    }, "\u5411"), "\u304B\u308F\u305B\u307E\u3059\u3002"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 22,
       columnNumber: 7
     }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_5__["CSImage"], {
+  }, __jsx(_components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_2__["CSImage"], {
     desc: "\u6D77\u4E0A\u4FDD\u5B89\u5E81",
     maxWidth: {
       pc: 576,
@@ -2359,106 +4498,19 @@ var Description1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 32,
       columnNumber: 9
     }
-  }, __jsx(_components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_7__["ImgWithCountDown"], {
+  }, __jsx(_components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_3__["ImgWithCountDown"], {
     image: "iwami.jpg",
     ratio: 75.478,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 40,
       columnNumber: 11
     }
-  }))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81,
-      columnNumber: 9
-    }
-  }, "\u3042\u306A\u305F\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u306A\u307E\u3048",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88,
-      columnNumber: 15
-    }
-  }, "\u540D\u524D"), "\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u308C\u3093\u3089\u304F\u3055\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88,
-      columnNumber: 42
-    }
-  }, "\u9023\u7D61\u5148"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304A\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88,
-      columnNumber: 73
-    }
-  }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88,
-      columnNumber: 104
-    }
-  }), __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u305F\u3060",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 11
-    }
-  }, "\u76F4"), "\u3061\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3058\u3085\u3093\u3057\u305B\u3093\u3066\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 37
-    }
-  }, "\u5DE1\u8996\u8239\u8247"), "\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3053\u3046\u304F\u3046\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 71
-    }
-  }, "\u822A\u7A7A\u6A5F"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3080",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 101
-    }
-  }, "\u5411"), "\u304B\u308F\u305B\u307E\u3059\u3002")));
+  }))));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Description1);
 
@@ -2475,23 +4527,13 @@ var Description1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../hooks/useCallRescue */ "./hooks/useCallRescue.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
-/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureDescription_RescureDescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureDescription/RescureDescription */ "./components/templates/RescureDescription/RescureDescription.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Description2.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -2504,188 +4546,207 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Description2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureDescription_RescureDescription__WEBPACK_IMPORTED_MODULE_2__["RescureDescription"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/06.mp3",
+    countMax: 14,
+    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "118", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093\u3064\u3046\u307B\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 28
+      }
+    }, "\u756A\u901A\u5831"), "\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3057\u305F\u3002\u307E\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 72
+      }
+    }, "\u72B6\u6CC1"), "\u3092\u304A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3046\u304B\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 103
+      }
+    }, "\u4F3A"), "\u3044\u3059\u308B\u305F\u3081", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u308C\u3093\u3089\u304F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 133
+      }
+    }, "\u9023\u7D61"), "\u3059\u308B\u3053\u3068\u304C\u3042\u308A\u307E\u3059\u306E\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3067\u3093\u308F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 172
+      }
+    }, "\u96FB\u8A71"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 199
+      }
+    }, "\u53D6"), "\u308C\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3087\u3046\u305F\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 224
+      }
+    }, "\u72B6\u614B"), "\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 254
+      }
+    }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 281
+      }
+    }, "\u53CB\u9054"), "\u304B\u3089", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3081",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 310
+      }
+    }, "\u76EE"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306F\u306A",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 334
+      }
+    }, "\u96E2"), "\u3055\u306A\u3044\u3088\u3046\u304A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306D\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 364
+      }
+    }, "\u9858"), "\u3044\u3057\u307E\u3059\u3002"),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  })));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Description2);
 
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__["default"])("/06.mp3", isMute);
-  Object(_hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_6__["default"])(setPageNum, 14);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
+/***/ }),
+
+/***/ "./contents/call1/Illust.tsx":
+/*!***********************************!*\
+  !*** ./contents/call1/Illust.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureIllust_RescureIllust__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureIllust/RescureIllust */ "./components/templates/RescureIllust/RescureIllust.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Illust.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Illust = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureIllust_RescureIllust__WEBPACK_IMPORTED_MODULE_2__["RescureIllust"], {
+    setPageNum: setPageNum,
+    image: "koudou_rescue_118.png",
+    countMax: 10,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 18,
       columnNumber: 7
     }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__["QuestionTitle"], {
-    icon: "simulation_icon.png",
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304B\u3093\u3057\u3044\u3093",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 23,
       columnNumber: 9
     }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+  }, "\u76E3\u8996\u54E1"), "\u306E\u3044\u306A\u3044", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304B\u3044\u3059\u3044\u3088\u304F\u3058\u3087\u3046",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 11
+      lineNumber: 23,
+      columnNumber: 42
     }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_8__["RescueImage118Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 9
-    }
-  }, "118", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3070\u3093\u3064\u3046\u307B\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 14
-    }
-  }, "\u756A\u901A\u5831"), "\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3057\u305F\u3002\u307E\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 58
-    }
-  }, "\u72B6\u6CC1"), "\u3092\u304A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3046\u304B\u304C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 89
-    }
-  }, "\u4F3A"), "\u3044\u3059\u308B\u305F\u3081", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u308C\u3093\u3089\u304F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 119
-    }
-  }, "\u9023\u7D61"), "\u3059\u308B\u3053\u3068\u304C\u3042\u308A\u307E\u3059\u306E\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 158
-    }
-  }, "\u96FB\u8A71"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3068",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 185
-    }
-  }, "\u53D6"), "\u308C\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3058\u3087\u3046\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 210
-    }
-  }, "\u72B6\u614B"), "\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u306A\u304C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 240
-    }
-  }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "\u6D77\u6C34\u6D74\u5834"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
     ruby: "\u3068\u3082\u3060\u3061",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 267
+      lineNumber: 23,
+      columnNumber: 77
     }
-  }, "\u53CB\u9054"), "\u304B\u3089", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3081",
+  }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304A\u304D",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 296
+      lineNumber: 23,
+      columnNumber: 105
     }
-  }, "\u76EE"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u306F\u306A",
+  }, "\u6C96"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u306A\u304C",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 320
+      lineNumber: 23,
+      columnNumber: 130
     }
-  }, "\u96E2"), "\u3055\u306A\u3044\u3088\u3046\u304A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u306D\u304C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 350
-    }
-  }, "\u9858"), "\u3044\u3057\u307E\u3059\u3002")));
+  }, "\u6D41"), "\u3055\u308C\u305F\uFF01"));
 });
-/* harmony default export */ __webpack_exports__["default"] = (Description2);
+/* harmony default export */ __webpack_exports__["default"] = (Illust);
 
 /***/ }),
 
@@ -2700,23 +4761,13 @@ var Description2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz1.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -2729,156 +4780,80 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__["default"])("/01.mp3", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__["RescueImage118Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 9
-    }
-  }, "\u306F\u3044\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304B\u3044\u3058\u3087\u3046\u307B\u3042\u3093\u3061\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 14
-    }
-  }, "\u6D77\u4E0A\u4FDD\u5B89\u5E81"), "\uFF11\uFF11\uFF18", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3070\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 54
-    }
-  }, "\u756A"), "\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3058\u3051\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 81
-    }
-  }, "\u4E8B\u4EF6"), "\u3067\u3059\u304B\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3058\u3053",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 111
-    }
-  }, "\u4E8B\u6545"), "\u3067\u3059\u304B\uFF1F")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/01.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u306F\u3044\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304B\u3044\u3058\u3087\u3046\u307B\u3042\u3093\u3061\u3087\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 25
+      }
+    }, "\u6D77\u4E0A\u4FDD\u5B89\u5E81"), "\uFF11\uFF11\uFF18", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 65
+      }
+    }, "\u756A"), "\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3051\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 92
+      }
+    }, "\u4E8B\u4EF6"), "\u3067\u3059\u304B\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3053",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 122
+      }
+    }, "\u4E8B\u6545"), "\u3067\u3059\u304B\uFF1F"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3058\u3053",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74,
-          columnNumber: 25
+          lineNumber: 29,
+          columnNumber: 23
         }
       }, "\u4E8B\u6545"), "\u3067\u3059")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3058\u3051\u3093",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78,
-          columnNumber: 25
+          lineNumber: 33,
+          columnNumber: 23
         }
       }, "\u4E8B\u4EF6"), "\u3067\u3059")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz1);
 
@@ -2895,23 +4870,13 @@ var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz2.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -2924,236 +4889,160 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__["default"])("/02.mp3", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__["RescueImage118Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306A\u306B",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 11
-    }
-  }, "\u4F55"), "\u304C\u3042\u308A\u307E\u3057\u305F\u304B\uFF1F")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/02.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u306B",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u4F55"), "\u304C\u3042\u308A\u307E\u3057\u305F\u304B\uFF1F"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3046\u307F",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 25
+          lineNumber: 29,
+          columnNumber: 23
         }
-      }, "\u6D77"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6D77"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3082\u3060\u3061",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 50
+          lineNumber: 29,
+          columnNumber: 48
         }
-      }, "\u53CB\u9054"), "\u3068", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u53CB\u9054"), "\u3068", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3042\u305D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 78
+          lineNumber: 29,
+          columnNumber: 76
         }
-      }, "\u904A"), "\u3073\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u904A"), "\u3073\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 104
+          lineNumber: 29,
+          columnNumber: 102
         }
-      }, "\u6765"), "\u3066\u3044\u307E\u3057\u305F\u304C\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6765"), "\u3066\u3044\u307E\u3057\u305F\u304C\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3046\u307F",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 134
+          lineNumber: 29,
+          columnNumber: 132
         }
-      }, "\u6D77"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6D77"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304A\u3088",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 159
+          lineNumber: 29,
+          columnNumber: 157
         }
-      }, "\u6CF3"), "\u3044\u3067\u3044\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6CF3"), "\u3044\u3067\u3044\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3082\u3060\u3061",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 187
+          lineNumber: 29,
+          columnNumber: 185
         }
-      }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3072\u3068\u308A",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 215
+          lineNumber: 29,
+          columnNumber: 213
         }
-      }, "\u4E00\u4EBA"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u4E00\u4EBA"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304A\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 242
+          lineNumber: 29,
+          columnNumber: 240
         }
-      }, "\u6C96"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6C96"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u307B\u3046",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 267
+          lineNumber: 29,
+          columnNumber: 265
         }
-      }, "\u65B9"), "\u3078", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u65B9"), "\u3078", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306A\u304C",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 292
+          lineNumber: 29,
+          columnNumber: 290
         }
       }, "\u6D41"), "\u3055\u308C\u3066\u3044\u307E\u3059\u3002")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3082\u3060\u3061",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 25
+          lineNumber: 33,
+          columnNumber: 23
         }
-      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u307F",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 53
+          lineNumber: 33,
+          columnNumber: 51
         }
-      }, "\u898B"), "\u3048\u306A\u304F\u306A\u3063\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u898B"), "\u3048\u306A\u304F\u306A\u3063\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3055\u304C",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 82
+          lineNumber: 33,
+          columnNumber: 80
         }
-      }, "\u63A2"), "\u3057\u305F\u3068\u3053\u308D\u3001\u3069\u3093\u3069\u3093", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u63A2"), "\u3057\u305F\u3068\u3053\u308D\u3001\u3069\u3093\u3069\u3093", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306A\u304C",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 116
+          lineNumber: 33,
+          columnNumber: 114
         }
       }, "\u6D41"), "\u3055\u308C\u3066\u3044\u307E\u3059\u3002")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz2);
 
@@ -3170,23 +5059,13 @@ var Quiz2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz3.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -3199,204 +5078,128 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__["default"])("/03.mp3", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__["RescueImage118Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306F\u3063\u305B\u3044\u3070\u3057\u3087",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 11
-    }
-  }, "\u767A\u751F\u5834\u6240"), "\u3068", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3058\u3053\u304F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 44
-    }
-  }, "\u6642\u523B"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304A\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 71
-    }
-  }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/03.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306F\u3063\u305B\u3044\u3070\u3057\u3087",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u767A\u751F\u5834\u6240"), "\u3068", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3053\u304F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 55
+      }
+    }, "\u6642\u523B"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 82
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25EF\u25EF", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25EF\u25EF", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306F\u307E",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 27
+          lineNumber: 29,
+          columnNumber: 25
         }
-      }, "\u6D5C"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6D5C"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304B\u3044\u3059\u3044\u3088\u304F\u3058\u3087\u3046",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 52
+          lineNumber: 29,
+          columnNumber: 50
         }
-      }, "\u6D77\u6C34\u6D74\u5834"), "\u3067\u3001\uFF11\uFF10", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6D77\u6C34\u6D74\u5834"), "\u3067\u3001\uFF11\uFF10", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3077\u3093\u307E\u3048",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 90
+          lineNumber: 29,
+          columnNumber: 88
         }
       }, "\u5206\u524D"), "\u3067\u3059\u3002")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3048\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 27
+          lineNumber: 33,
+          columnNumber: 25
         }
-      }, "\u99C5"), "\u304B\u3089\u30D0\u30B9\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u99C5"), "\u304B\u3089\u30D0\u30B9\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306E",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 56
+          lineNumber: 33,
+          columnNumber: 54
         }
-      }, "\u4E57"), "\u3063\u3066\uFF11\uFF10", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u4E57"), "\u3063\u3066\uFF11\uFF10", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3058",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 83
+          lineNumber: 33,
+          columnNumber: 81
         }
-      }, "\u6642"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6642"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304B\u3044\u3059\u3044\u3088\u304F\u3058\u3087\u3046",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 107
+          lineNumber: 33,
+          columnNumber: 105
         }
-      }, "\u6D77\u6C34\u6D74\u5834"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6D77\u6C34\u6D74\u5834"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 142
+          lineNumber: 33,
+          columnNumber: 140
         }
-      }, "\u6765"), "\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6765"), "\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304A\u3088",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 166
+          lineNumber: 33,
+          columnNumber: 164
         }
       }, "\u6CF3"), "\u3044\u3067\u3044\u307E\u3057\u305F\u3002")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz3);
 
@@ -3413,23 +5216,13 @@ var Quiz3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz4.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -3442,333 +5235,257 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__["default"])("/04.mp3", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_7__["RescueImage118Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306A\u304C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 11
-    }
-  }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3068\u3082\u3060\u3061",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 38
-    }
-  }, "\u53CB\u9054"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3081\u3044\u3069\u3046\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 66
-    }
-  }, "\u6551\u547D\u80F4\u8863"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3061\u3083\u304F\u3088\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 100
-    }
-  }, "\u7740\u7528"), "\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F\u3069\u306E\u3088\u3046\u306A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304B\u3063\u3053\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 140
-    }
-  }, "\u683C\u597D"), "\u3092\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306A\u304C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 175
-    }
-  }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3068\u3082\u3060\u3061",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 202
-    }
-  }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306A\u307E\u3048",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 230
-    }
-  }, "\u540D\u524D"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304A\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 257
-    }
-  }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306A\u304C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 288
-    }
-  }, "\u6D41"), "\u3055\u308C\u3066\u3044\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3068\u3082\u3060\u3061",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 317
-    }
-  }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3052\u3093\u3056\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 345
-    }
-  }, "\u73FE\u5728"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 373
-    }
-  }, "\u72B6\u6CC1"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304A\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 403
-    }
-  }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/04.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 49
+      }
+    }, "\u53CB\u9054"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D\u3085\u3046\u3081\u3044\u3069\u3046\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 77
+      }
+    }, "\u6551\u547D\u80F4\u8863"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3061\u3083\u304F\u3088\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 111
+      }
+    }, "\u7740\u7528"), "\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F\u3069\u306E\u3088\u3046\u306A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304B\u3063\u3053\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 151
+      }
+    }, "\u683C\u597D"), "\u3092\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 186
+      }
+    }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 213
+      }
+    }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u307E\u3048",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 241
+      }
+    }, "\u540D\u524D"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 268
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 299
+      }
+    }, "\u6D41"), "\u3055\u308C\u3066\u3044\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 328
+      }
+    }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3052\u3093\u3056\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 356
+      }
+    }, "\u73FE\u5728"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 384
+      }
+    }, "\u72B6\u6CC1"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 414
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3082\u3060\u3061",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 25
+          lineNumber: 29,
+          columnNumber: 23
         }
-      }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306A\u307E\u3048",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 53
+          lineNumber: 29,
+          columnNumber: 51
         }
-      }, "\u540D\u524D"), "\u306F\u3000\u3007\u3007\u3007\u3007\uFF08\u30D5\u30EB\u30CD\u30FC\u30E0\uFF09\u3055\u3093\u3000\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u540D\u524D"), "\u306F\u3000\u3007\u3007\u3007\u3007\uFF08\u30D5\u30EB\u30CD\u30FC\u30E0\uFF09\u3055\u3093\u3000\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u307F\u305A\u304E",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 98
+          lineNumber: 29,
+          columnNumber: 96
         }
-      }, "\u6C34\u7740"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6C34\u7740"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D\u3044\u308D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 125
+          lineNumber: 29,
+          columnNumber: 123
         }
-      }, "\u9EC4\u8272"), "\u306E\u30E9\u30A4\u30D5\u30B8\u30E3\u30B1\u30C3\u30C8\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u9EC4\u8272"), "\u306E\u30E9\u30A4\u30D5\u30B8\u30E3\u30B1\u30C3\u30C8\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 161
+          lineNumber: 29,
+          columnNumber: 159
         }
-      }, "\u7740"), "\u3066\u3044\u307E\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u7740"), "\u3066\u3044\u307E\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u304A",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 189
+          lineNumber: 29,
+          columnNumber: 187
         }
-      }, "\u9060"), "\u304F\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u9060"), "\u304F\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306A\u304C",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 215
+          lineNumber: 29,
+          columnNumber: 213
         }
-      }, "\u6D41"), "\u3055\u308C\u3066\u3044\u3066\u3001\u304B\u306A\u308A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6D41"), "\u3055\u308C\u3066\u3044\u3066\u3001\u304B\u306A\u308A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3061\u3044",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 248
+          lineNumber: 29,
+          columnNumber: 246
         }
-      }, "\u5C0F"), "\u3055\u304F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u5C0F"), "\u3055\u304F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u307F",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 274
+          lineNumber: 29,
+          columnNumber: 272
         }
       }, "\u898B"), "\u3048\u307E\u3059\u3002")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3007\u3007\u3061\u3083\u3093\uFF08\u3042\u3060", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3007\u3007\u3061\u3083\u3093\uFF08\u3042\u3060", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306A",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 33
+          lineNumber: 33,
+          columnNumber: 31
         }
-      }, "\u540D"), "\uFF09\u3067\u3059\u3002\u30E9\u30A4\u30D5\u30B8\u30E3\u30B1\u30C3\u30C8\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u540D"), "\uFF09\u3067\u3059\u3002\u30E9\u30A4\u30D5\u30B8\u30E3\u30B1\u30C3\u30C8\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 69
+          lineNumber: 33,
+          columnNumber: 67
         }
-      }, "\u7740"), "\u3066\u3044\u307E\u3059\u304C\u3001\u3088\u304F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u7740"), "\u3066\u3044\u307E\u3059\u304C\u3001\u3088\u304F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u307F",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 100
+          lineNumber: 33,
+          columnNumber: 98
         }
-      }, "\u898B"), "\u3048\u306A\u3044\u306E\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u898B"), "\u3048\u306A\u3044\u306E\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u308F",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 128
+          lineNumber: 33,
+          columnNumber: 126
         }
       }, "\u5206"), "\u304B\u308A\u307E\u305B\u3093\u3002")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz4);
 
 /***/ }),
 
-/***/ "./contents/call1/ResultClear.tsx":
-/*!****************************************!*\
-  !*** ./contents/call1/ResultClear.tsx ***!
-  \****************************************/
+/***/ "./contents/call2/Call.tsx":
+/*!*********************************!*\
+  !*** ./contents/call2/Call.tsx ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3776,18 +5493,14 @@ var Quiz4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
-/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_FontColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/FontColor */ "./styles/FontColor.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/templates/RescureCall/RescureCall */ "./components/templates/RescureCall/RescureCall.tsx");
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\ResultClear.tsx";
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Call.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 
 
@@ -3798,246 +5511,109 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  * Functional component.
  * @param props 
  */
-var ResultClear = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
-  var pageNum = _ref.pageNum;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_6__["default"])({
-    nextHref: "/menus/menu8/main",
-    nextTransitionKey: "slideAsVerticalPrev",
-    notation: "おわり"
-  });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_2__["Mb"], {
-    size: {
-      pc: 157,
-      tb: 157,
-      sp: 162
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 9
-    }
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 55
-    }
-  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__["ResultBalloon"], {
-    condition: true,
-    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      ruby: "\u304D\u3085\u3046\u3058\u3087\u305B\u3044\u3053\u3046",
+var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__["RescureCall"], {
+    setPageNum: setPageNum,
+    popupMsg: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3053\u3093\u304B\u3044",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 50
-      }
-    }, "\u6551\u52A9\u6210\u529F"), "\uFF01"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 7
-    }
-  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__["DoyaPenguin"], {
-    imgPath: "chara_accuracyrate2.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 9
-    }
-  })));
-});
-/* harmony default export */ __webpack_exports__["default"] = (ResultClear);
-
-/***/ }),
-
-/***/ "./contents/call1/ResultFailed.tsx":
-/*!*****************************************!*\
-  !*** ./contents/call1/ResultFailed.tsx ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/molecules/StartButton/StartButton */ "./components/molecules/StartButton/StartButton.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
-/* harmony import */ var _components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/atoms/QuestionResultText/QuestionResultText */ "./components/atoms/QuestionResultText/QuestionResultText.tsx");
-/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\ResultFailed.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
-
-
-
-
-/**
- * Functional component.
- * @param props 
- */
-var ResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
-  var pageNum = _ref.pageNum,
-      setPageNum = _ref.setPageNum;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__["default"])({
-    nextHref: "/menus/menu8/main",
-    nextTransitionKey: "slideAsVerticalPrev",
-    notation: "おわり"
-  });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 63,
-      tb: 63,
-      sp: 68
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 55
-    }
-  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 58,
-      tb: 58,
-      sp: 58
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__["QuestionResultText"], {
-    bottom: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ruby: "\u3058\u304B\u3093",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 22,
         columnNumber: 22
       }
-    }, "\u6642\u9593"), __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ruby: "\u304E",
+    }, "\u4ECA\u56DE"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3044\u3051",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 48
+        lineNumber: 22,
+        columnNumber: 50
       }
-    }, "\u5207"), "\u308C"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 13,
-      tb: 13,
-      sp: 28
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__["ResultBalloon"], {
-    condition: false,
-    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ruby: "\u304D\u3085\u3046\u3058\u3087\u3057\u3063\u3071\u3044",
+    }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 53
+        lineNumber: 22,
+        columnNumber: 75
       }
-    }, "\u6551\u52A9\u5931\u6557"), "\u2026"),
+    }, "\u843D"), "\u3061\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 100
+      }
+    }, "\u6551\u52A9"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u307E",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 129
+      }
+    }, "\u5F85"), "\u3063\u3066\u3044\u308B\u306E\u3067\u3001", __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_2__["FontColor"], {
+      color: _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].citrus,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 159
+      }
+    }, "119", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 197
+      }
+    }, "\u756A")), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3067\u3093\u308F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 234
+      }
+    }, "\u96FB\u8A71"), "\u3057\u307E\u3059\u3002"),
+    route: "119",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__["DoyaPenguin"], {
-    imgPath: "chara_accuracyrate1.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 11
-    }
-  }))), __jsx("div", {
-    onClick: function onClick() {
-      return setPageNum(0);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 20,
       columnNumber: 7
     }
-  }, __jsx(_components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__["StartButton"], {
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3068\u3082\u3060\u3061",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 25,
       columnNumber: 9
     }
-  }, "\u3082\u3046", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    ruby: "\u3044\u3061\u3069",
+  }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3044\u3051",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 24
+      lineNumber: 25,
+      columnNumber: 37
     }
-  }, "\u4E00\u5EA6"), "\uFF01")));
+  }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304A",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 62
+    }
+  }, "\u843D"), "\u3061\u305F\uFF01"));
 });
-/* harmony default export */ __webpack_exports__["default"] = (ResultFailed);
+/* harmony default export */ __webpack_exports__["default"] = (Call);
 
 /***/ }),
 
@@ -4052,24 +5628,14 @@ var ResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/atoms/CSImage/CSImage */ "./components/atoms/CSImage/CSImage.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/molecules/ImgWithCountDown/ImgWithCountDown */ "./components/molecules/ImgWithCountDown/ImgWithCountDown.tsx");
-/* harmony import */ var _hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/useCallRescue */ "./hooks/useCallRescue.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/CSImage/CSImage */ "./components/atoms/CSImage/CSImage.tsx");
+/* harmony import */ var _components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/molecules/ImgWithCountDown/ImgWithCountDown */ "./components/molecules/ImgWithCountDown/ImgWithCountDown.tsx");
+/* harmony import */ var _components_templates_RescureDescription_RescureDescription__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/templates/RescureDescription/RescureDescription */ "./components/templates/RescureDescription/RescureDescription.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Description1.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -4083,59 +5649,139 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Description1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__["default"])("/05.m4a", isMute);
-  Object(_hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__["default"])(setPageNum, 16);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureDescription_RescureDescription__WEBPACK_IMPORTED_MODULE_4__["RescureDescription"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/05.m4a",
+    countMax: 16,
+    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3067\u306F\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3044\u3051",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 14
+      }
+    }, "\u6C60"), "\u306B\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u305C\u3063\u305F\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 40
+      }
+    }, "\u7D76\u5BFE"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306F\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 68
+      }
+    }, "\u5165"), "\u3089\u306A\u3044\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 97
+      }
+    }, "\u53CB\u9054"), "\u3092\u306F\u3052\u307E\u3057\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 135
+      }
+    }, "\u6551\u52A9\u968A"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304F\u308B\u307E",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 167
+      }
+    }, "\u8ECA"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 193
+      }
+    }, "\u6765"), "\u305F\u3089", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3066",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 218
+      }
+    }, "\u624B"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3075",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 242
+      }
+    }, "\u632F"), "\u3063\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3088",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 267
+      }
+    }, "\u547C"), "\u3093\u3067\u304F\u3060\u3055\u3044\u3002\u305D\u308C\u3068\u3001\u3053\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3067\u3093\u308F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 303
+      }
+    }, "\u96FB\u8A71"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 330
+      }
+    }, "\u5207"), "\u3089\u306A\u3044\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3046\u3061\u3083\u304F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 358
+      }
+    }, "\u5230\u7740"), "\u3057\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3057\u3087\u3046\u307C\u3046\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 388
+      }
+    }, "\u6D88\u9632\u58EB"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u308F\u305F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 419
+      }
+    }, "\u6E21"), "\u3057\u3066\u304F\u3060\u3055\u3044\u3002"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 22,
       columnNumber: 7
     }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_5__["CSImage"], {
+  }, __jsx(_components_atoms_CSImage_CSImage__WEBPACK_IMPORTED_MODULE_2__["CSImage"], {
     desc: "\u8D64\u7A42\u5E02\u6D88\u9632\u672C\u90E8\uFF08\u5175\u5EAB\u770C\uFF09",
     maxWidth: {
       pc: 576,
@@ -4145,165 +5791,88 @@ var Description1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 31,
       columnNumber: 9
     }
-  }, __jsx(_components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_7__["ImgWithCountDown"], {
+  }, __jsx(_components_molecules_ImgWithCountDown_ImgWithCountDown__WEBPACK_IMPORTED_MODULE_3__["ImgWithCountDown"], {
     image: "koudou_rescue_go119.png",
     ratio: 66.667,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 39,
       columnNumber: 11
     }
-  }))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
+  }))));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Description1);
+
+/***/ }),
+
+/***/ "./contents/call2/Illust.tsx":
+/*!***********************************!*\
+  !*** ./contents/call2/Illust.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureIllust_RescureIllust__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureIllust/RescureIllust */ "./components/templates/RescureIllust/RescureIllust.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Illust.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Illust = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureIllust_RescureIllust__WEBPACK_IMPORTED_MODULE_2__["RescureIllust"], {
+    setPageNum: setPageNum,
+    image: "koudou_rescue_119.png",
+    countMax: 10,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 18,
       columnNumber: 7
     }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 9
-    }
-  }, "\u3067\u306F\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3044\u3051",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 14
-    }
-  }, "\u6C60"), "\u306B\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u305C\u3063\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 40
-    }
-  }, "\u7D76\u5BFE"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u306F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 68
-    }
-  }, "\u5165"), "\u3089\u306A\u3044\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
     ruby: "\u3068\u3082\u3060\u3061",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 97
+      lineNumber: 23,
+      columnNumber: 9
     }
-  }, "\u53CB\u9054"), "\u3092\u306F\u3052\u307E\u3057\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+  }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3044\u3051",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 135
+      lineNumber: 23,
+      columnNumber: 37
     }
-  }, "\u6551\u52A9\u968A"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304F\u308B\u307E",
+  }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304A",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 167
+      lineNumber: 23,
+      columnNumber: 62
     }
-  }, "\u8ECA"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 193
-    }
-  }, "\u6765"), "\u305F\u3089", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3066",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 218
-    }
-  }, "\u624B"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3075",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 242
-    }
-  }, "\u632F"), "\u3063\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3088",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 267
-    }
-  }, "\u547C"), "\u3093\u3067\u304F\u3060\u3055\u3044\u3002\u305D\u308C\u3068\u3001\u3053\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 303
-    }
-  }, "\u96FB\u8A71"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 330
-    }
-  }, "\u5207"), "\u3089\u306A\u3044\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 358
-    }
-  }, "\u6765"), "\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u3057\u3087\u3046\u307C\u3046\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 382
-    }
-  }, "\u6D88\u9632\u58EB"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    ruby: "\u308F\u305F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 413
-    }
-  }, "\u6E21"), "\u3057\u3066\u304F\u3060\u3055\u3044\u3002")));
+  }, "\u843D"), "\u3061\u305F\uFF01"));
 });
-/* harmony default export */ __webpack_exports__["default"] = (Description1);
+/* harmony default export */ __webpack_exports__["default"] = (Illust);
 
 /***/ }),
 
@@ -4318,23 +5887,13 @@ var Description1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Quiz1.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -4347,167 +5906,91 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__["default"])("/01.m4a", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_7__["RescueImage119Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 9
-    }
-  }, "\u306F\u3044\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3057\u3087\u3046\u307C\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 14
-    }
-  }, "\u6D88\u9632"), "\uFF11\uFF11\uFF19", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3070\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 45
-    }
-  }, "\u756A"), "\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304B\u3058",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 72
-    }
-  }, "\u706B\u4E8B"), "\u3067\u3059\u304B\uFF1F\u3000", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u304D\u3085\u3046\u3057\u3083",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 102
-    }
-  }, "\u6551\u6025\u8ECA"), "\u3067\u3059\u304B\uFF1F")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/01.m4a",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u306F\u3044\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3057\u3087\u3046\u307C\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 25
+      }
+    }, "\u6D88\u9632"), "\uFF11\uFF11\uFF19", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 56
+      }
+    }, "\u756A"), "\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304B\u3058",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 83
+      }
+    }, "\u706B\u4E8B"), "\u3067\u3059\u304B\uFF1F\u3000", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D\u3085\u3046\u304D\u3085\u3046\u3057\u3083",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 113
+      }
+    }, "\u6551\u6025\u8ECA"), "\u3067\u3059\u304B\uFF1F"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3058\u3053",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74,
-          columnNumber: 25
+          lineNumber: 29,
+          columnNumber: 23
         }
       }, "\u4E8B\u6545"), "\u3067\u3059")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304B\u3058",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78,
-          columnNumber: 25
+          lineNumber: 33,
+          columnNumber: 23
         }
       }, "\u706B\u4E8B"), "\u3067\u3059")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D\u3085\u3046\u304D\u3085\u3046\u3057\u3083",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82,
-          columnNumber: 25
+          lineNumber: 37,
+          columnNumber: 23
         }
       }, "\u6551\u6025\u8ECA"), "\u3067\u3059")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage119Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz1);
 
@@ -4524,23 +6007,13 @@ var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
-/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Quiz2.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -4553,156 +6026,80 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__["default"])("/02.m4a", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_8__["RescueImage119Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u306A\u306B",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 11
-    }
-  }, "\u4F55"), "\u304C\u3042\u308A\u307E\u3057\u305F\u304B\uFF1F")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/02.m4a",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u306B",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u4F55"), "\u304C\u3042\u308A\u307E\u3057\u305F\u304B\uFF1F"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3082\u3060\u3061",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 25
+          lineNumber: 29,
+          columnNumber: 23
         }
-      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3044\u3051",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 53
+          lineNumber: 29,
+          columnNumber: 51
         }
-      }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304A",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 78
+          lineNumber: 29,
+          columnNumber: 76
         }
       }, "\u843D"), "\u3061\u307E\u3057\u305F")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3082\u3060\u3061",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 25
+          lineNumber: 33,
+          columnNumber: 23
         }
-      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3058\u3053",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 53
+          lineNumber: 33,
+          columnNumber: 51
         }
       }, "\u4E8B\u6545"), "\u306B\u3042\u3044\u307E\u3057\u305F")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage119Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz2);
 
@@ -4719,23 +6116,13 @@ var Quiz2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
-/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Quiz3.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -4748,220 +6135,144 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__["default"])("/03.m4a", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_8__["RescueImage119Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3044\u3051",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 11
-    }
-  }, "\u6C60"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3070\u3057\u3087",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 36
-    }
-  }, "\u5834\u6240"), "\u3084", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3061\u304B",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 63
-    }
-  }, "\u8FD1"), "\u304F\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304A\u304A",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 89
-    }
-  }, "\u5927"), "\u304D\u306A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u305F\u3066\u3082\u306E",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 115
-    }
-  }, "\u5EFA\u7269"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304A\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 143
-    }
-  }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_3__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/03.m4a",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3044\u3051",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u6C60"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3057\u3087",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 47
+      }
+    }, "\u5834\u6240"), "\u3084", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3061\u304B",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 74
+      }
+    }, "\u8FD1"), "\u304F\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u304A",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 100
+      }
+    }, "\u5927"), "\u304D\u306A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u305F\u3066\u3082\u306E",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 126
+      }
+    }, "\u5EFA\u7269"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 154
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3057\u3087\u3046\u304C\u3063\u3053\u3046",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 27
+          lineNumber: 29,
+          columnNumber: 25
         }
-      }, "\u5C0F\u5B66\u6821"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u5C0F\u5B66\u6821"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3046\u3089",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 59
+          lineNumber: 29,
+          columnNumber: 57
         }
-      }, "\u88CF"), "\u306B\u3042\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u88CF"), "\u306B\u3042\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3044\u3051",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 86
+          lineNumber: 29,
+          columnNumber: 84
         }
       }, "\u6C60"), "\u3067\u3059")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25B3\u25B3", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25B3\u25B3", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3057\u3087\u3046\u304C\u3063\u3053\u3046",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 27
+          lineNumber: 33,
+          columnNumber: 25
         }
-      }, "\u5C0F\u5B66\u6821"), "\u304B\u308910", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u5C0F\u5B66\u6821"), "\u304B\u308910", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3077\u3093",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 62
+          lineNumber: 33,
+          columnNumber: 60
         }
-      }, "\u5206"), "\u304F\u3089\u3044", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u5206"), "\u304F\u3089\u3044", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3058\u3066\u3093\u3057\u3083",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 89
+          lineNumber: 33,
+          columnNumber: 87
         }
-      }, "\u81EA\u8EE2\u8ECA"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u81EA\u8EE2\u8ECA"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306E",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 119
+          lineNumber: 33,
+          columnNumber: 117
         }
-      }, "\u4E57"), "\u3063\u3066\u304D\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u4E57"), "\u3063\u3066\u304D\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3068\u3053\u308D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 146
+          lineNumber: 33,
+          columnNumber: 144
         }
       }, "\u6240"), "\u3067\u3059\u3002")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_2__["RescueImage119Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz3);
 
@@ -4978,23 +6289,13 @@ var Quiz3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
-/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
-/* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/organisms/RescueImage119Ope/RescueImage119Ope */ "./components/organisms/RescueImage119Ope/RescueImage119Ope.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\Quiz4.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -5007,251 +6308,168 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Quiz4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum,
       isMute = _ref.isMute;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])(); // Play operator's voice.
-
-  Object(_hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_8__["default"])("/04.m4a", isMute);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 39,
-      tb: 37,
-      sp: 27
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 43
-    }
-  }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 65,
-      tb: 65,
-      sp: 56
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_7__["RescueImage119Ope"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 30,
-      tb: 30,
-      sp: 30
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 24,
-      tb: 24,
-      sp: 24
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, "\u3082\u3046", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 13
-    }
-  }, "\u6551\u52A9\u968A"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3057\u3085\u3064\u3069\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 45
-    }
-  }, "\u51FA\u52D5"), "\u3055\u305B\u305F\u306E\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3042\u3093\u3057\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 79
-    }
-  }, "\u5B89\u5FC3"), "\u3057\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3068\u3082\u3060\u3061",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 113
-    }
-  }, "\u53CB\u9054"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3072\u3068\u308A",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 141
-    }
-  }, "\u4E00\u4EBA"), "\u3067\u3059\u304B\uFF1F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3052\u3093\u3056\u3044",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 171
-    }
-  }, "\u73FE\u5728"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 199
-    }
-  }, "\u72B6\u6CC1"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ruby: "\u304A\u3057",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 229
-    }
-  }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002")), __jsx(_components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__["RescueSelectButtonUnit"], {
-    onCorrect: function onCorrect() {
-      return setPageNum(function (state) {
-        return state + 1;
-      });
-    },
-    questions: [{
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_3__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/04.m4a",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3082\u3046", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087\u305F\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 24
+      }
+    }, "\u6551\u52A9\u968A"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3057\u3085\u3064\u3069\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 56
+      }
+    }, "\u51FA\u52D5"), "\u3055\u305B\u305F\u306E\u3067\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3042\u3093\u3057\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 90
+      }
+    }, "\u5B89\u5FC3"), "\u3057\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 124
+      }
+    }, "\u53CB\u9054"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3072\u3068\u308A",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 152
+      }
+    }, "\u4E00\u4EBA"), "\u3067\u3059\u304B\uFF1F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3052\u3093\u3056\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 182
+      }
+    }, "\u73FE\u5728"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 210
+      }
+    }, "\u72B6\u6CC1"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 240
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002"),
+    choices: [{
       isCorrect: true,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3057\u3087\u3046\u304C\u3063\u3053\u3046",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 27
+          lineNumber: 29,
+          columnNumber: 25
         }
-      }, "\u5C0F\u5B66\u6821"), "\u306E5", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u5C0F\u5B66\u6821"), "\u306E5", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u306D\u3093\u305B\u3044",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 60
+          lineNumber: 29,
+          columnNumber: 58
         }
-      }, "\u5E74\u751F"), "\u306E\u25B3\u25B3\u304F\u3093\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u5E74\u751F"), "\u306E\u25B3\u25B3\u304F\u3093\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304B\u304A",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 95
+          lineNumber: 29,
+          columnNumber: 93
         }
-      }, "\u9854"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u9854"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3046\u3048",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 120
+          lineNumber: 29,
+          columnNumber: 118
         }
-      }, "\u4E0A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "\u4E0A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u3080",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 145
+          lineNumber: 29,
+          columnNumber: 143
         }
       }, "\u5411"), "\u3051\u3066\u3046\u3044\u3066\u3044\u307E\u3059\u3002")
     }, {
       isCorrect: false,
-      question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3068\u306B\u304B\u304F\u3059\u3050", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3068\u306B\u304B\u304F\u3059\u3050", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
-          columnNumber: 31
+          lineNumber: 33,
+          columnNumber: 29
         }
       }, "\u6765"), "\u3066\u304F\u3060\u3055\u3044\uFF01")
     }],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }));
+  }, __jsx(_components_organisms_RescueImage119Ope_RescueImage119Ope__WEBPACK_IMPORTED_MODULE_2__["RescueImage119Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Quiz4);
 
 /***/ }),
 
-/***/ "./contents/call2/ResultClear.tsx":
-/*!****************************************!*\
-  !*** ./contents/call2/ResultClear.tsx ***!
-  \****************************************/
+/***/ "./contents/callCommon/ResultClear.tsx":
+/*!*********************************************!*\
+  !*** ./contents/callCommon/ResultClear.tsx ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
-/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_templates_RescureResultClear_RescureResultClear__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureResultClear/RescureResultClear */ "./components/templates/RescureResultClear/RescureResultClear.tsx");
+
+
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\ResultClear.tsx";
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\callCommon\\ResultClear.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
@@ -5259,76 +6477,26 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  * Functional component.
  * @param props 
  */
-var ResultClear = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
-  var pageNum = _ref.pageNum;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_6__["default"])({
-    nextHref: "/menus/menu8/main",
-    nextTransitionKey: "slideAsVerticalPrev",
-    notation: "おわり"
-  });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_2__["Mb"], {
-    size: {
-      pc: 157,
-      tb: 157,
-      sp: 162
-    },
+var ResultClear = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
+  Object(_babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_templates_RescureResultClear_RescureResultClear__WEBPACK_IMPORTED_MODULE_2__["RescureResultClear"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 15,
       columnNumber: 7
     }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 9
-    }
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 55
-    }
-  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__["ResultBalloon"], {
-    condition: true,
-    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      ruby: "\u304D\u3085\u3046\u3058\u3087\u305B\u3044\u3053\u3046",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 50
-      }
-    }, "\u6551\u52A9\u6210\u529F"), "\uFF01"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 7
-    }
-  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__["DoyaPenguin"], {
-    imgPath: "chara_accuracyrate2.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 9
-    }
-  })));
+  }));
 });
 /* harmony default export */ __webpack_exports__["default"] = (ResultClear);
 
 /***/ }),
 
-/***/ "./contents/call2/ResultFailed.tsx":
-/*!*****************************************!*\
-  !*** ./contents/call2/ResultFailed.tsx ***!
-  \*****************************************/
+/***/ "./contents/callCommon/ResultFailed.tsx":
+/*!**********************************************!*\
+  !*** ./contents/callCommon/ResultFailed.tsx ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5336,25 +6504,11 @@ var ResultClear = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/molecules/StartButton/StartButton */ "./components/molecules/StartButton/StartButton.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
-/* harmony import */ var _components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/atoms/QuestionResultText/QuestionResultText */ "./components/atoms/QuestionResultText/QuestionResultText.tsx");
-/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _components_templates_RescureResultFailed_RescureResultFailed__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/templates/RescureResultFailed/RescureResultFailed */ "./components/templates/RescureResultFailed/RescureResultFailed.tsx");
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call2\\ResultFailed.tsx";
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\callCommon\\ResultFailed.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
-
 
 
 
@@ -5363,142 +6517,59 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  * @param props 
  */
 var ResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
-  var pageNum = _ref.pageNum,
-      setPageNum = _ref.setPageNum;
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__["default"])({
-    nextHref: "/menus/menu8/main",
-    nextTransitionKey: "slideAsVerticalPrev",
-    notation: "おわり"
-  });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 63,
-      tb: 63,
-      sp: 68
-    },
+  var setPageNum = _ref.setPageNum;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureResultFailed_RescureResultFailed__WEBPACK_IMPORTED_MODULE_1__["RescureResultFailed"], {
+    setPageNum: setPageNum,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 25,
       columnNumber: 7
     }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 55
-    }
-  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 58,
-      tb: 58,
-      sp: 58
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__["QuestionResultText"], {
-    bottom: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ruby: "\u3058\u304B\u3093",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 22
-      }
-    }, "\u6642\u9593"), __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ruby: "\u304E",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 48
-      }
-    }, "\u5207"), "\u308C"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 9
-    }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 13,
-      tb: 13,
-      sp: 28
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  }, __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__["ResultBalloon"], {
-    condition: false,
-    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ruby: "\u304D\u3085\u3046\u3058\u3087\u3057\u3063\u3071\u3044",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 53
-      }
-    }, "\u6551\u52A9\u5931\u6557"), "\u2026"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
-    }
-  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__["DoyaPenguin"], {
-    imgPath: "chara_accuracyrate1.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 11
-    }
-  }))), __jsx("div", {
-    onClick: function onClick() {
-      return setPageNum(0);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 7
-    }
-  }, __jsx(_components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__["StartButton"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 9
-    }
-  }, "\u3082\u3046", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    ruby: "\u3044\u3061\u3069",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 24
-    }
-  }, "\u4E00\u5EA6"), "\uFF01")));
+  }));
 });
 /* harmony default export */ __webpack_exports__["default"] = (ResultFailed);
+
+/***/ }),
+
+/***/ "./contents/callCommon/Start.tsx":
+/*!***************************************!*\
+  !*** ./contents/callCommon/Start.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_templates_RescureStart_RescureStart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/templates/RescureStart/RescureStart */ "./components/templates/RescureStart/RescureStart.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\callCommon\\Start.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Start = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      audioToggleButtonClick = _ref.audioToggleButtonClick;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureStart_RescureStart__WEBPACK_IMPORTED_MODULE_1__["RescureStart"], {
+    setPageNum: setPageNum,
+    audioToggleButtonClick: audioToggleButtonClick,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 7
+    }
+  }));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Start);
 
 /***/ }),
 
@@ -5619,6 +6690,90 @@ var useInitBodyColor = function useInitBodyColor(color) {
 
 /***/ }),
 
+/***/ "./hooks/useOnceClick.tsx":
+/*!********************************!*\
+  !*** ./hooks/useOnceClick.tsx ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var useOnceClick = function useOnceClick(fn) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      clicked = _useState[0],
+      setIsClicked = _useState[1];
+
+  var clickHandle = function clickHandle(prop) {
+    setIsClicked(true);
+    if (!clicked) fn(prop);
+  };
+
+  return {
+    clickHandle: clickHandle,
+    initClickable: function initClickable() {
+      return setIsClicked(false);
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useOnceClick);
+
+/***/ }),
+
+/***/ "./hooks/usePhonePage.tsx":
+/*!********************************!*\
+  !*** ./hooks/usePhonePage.tsx ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var use_interval__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! use-interval */ "./node_modules/use-interval/dist/index.es.js");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants/time */ "./constants/time.ts");
+
+
+
+
+var usePhonePage = function usePhonePage(setPageNum) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_constants_time__WEBPACK_IMPORTED_MODULE_2__["default"].callLimit),
+      uniqueTimer = _useState[0],
+      setUniqueTimer = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      acceptCounting = _useState2[0],
+      setAcceptCounting = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      popUp = _useState3[0],
+      setPopUp = _useState3[1];
+
+  Object(use_interval__WEBPACK_IMPORTED_MODULE_1__["default"])(function () {
+    if (acceptCounting) {
+      setUniqueTimer(function (state) {
+        return state - 1;
+      });
+    }
+  }, 1000);
+  return {
+    uniqueTimer: uniqueTimer,
+    setAcceptCounting: setAcceptCounting,
+    popUp: popUp,
+    setPopUp: setPopUp
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (usePhonePage);
+
+/***/ }),
+
 /***/ "./hooks/usePlaySound.tsx":
 /*!********************************!*\
   !*** ./hooks/usePlaySound.tsx ***!
@@ -5636,8 +6791,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var usePlaySound = function usePlaySound(path, isMute) {
-  var _useSound = Object(use_sound__WEBPACK_IMPORTED_MODULE_2__["default"])(path),
+var usePlaySound = function usePlaySound(audioPath, isMute) {
+  var _useSound = Object(use_sound__WEBPACK_IMPORTED_MODULE_2__["default"])(audioPath),
       _useSound2 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useSound, 2),
       play = _useSound2[0],
       stop = _useSound2[1].stop;
@@ -5813,6 +6968,53 @@ var useSwitchPage = function useSwitchPage(contents) {
 
 /***/ }),
 
+/***/ "./hooks/useWindowTop.ts":
+/*!*******************************!*\
+  !*** ./hooks/useWindowTop.ts ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _util_CustomEvent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/CustomEvent */ "./util/CustomEvent.ts");
+
+
+
+
+var useWindowTop = function useWindowTop(delayTime) {
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    (function _callee() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(_util_CustomEvent__WEBPACK_IMPORTED_MODULE_2__["default"].timeAsync(delayTime));
+
+            case 2:
+              window.scrollTo({
+                top: 0
+              });
+
+            case 3:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, null, null, null, Promise);
+    })();
+  }, []);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useWindowTop);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
@@ -5931,6 +7133,52 @@ function _arrayWithoutHoles(arr) {
 
     return arr2;
   }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
 }
 
 /***/ }),
@@ -6300,6 +7548,18 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
 
 /***/ }),
 
@@ -7481,6 +8741,158 @@ exports.useAmp = useAmp;
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/dynamic.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/dynamic.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var loadable_1 = __importDefault(__webpack_require__(/*! ./loadable */ "./node_modules/next/dist/next-server/lib/loadable.js"));
+
+var isServerSide = false;
+
+function noSSR(LoadableInitializer, loadableOptions) {
+  // Removing webpack and modules means react-loadable won't try preloading
+  delete loadableOptions.webpack;
+  delete loadableOptions.modules; // This check is neccesary to prevent react-loadable from initializing on the server
+
+  if (!isServerSide) {
+    return LoadableInitializer(loadableOptions);
+  }
+
+  var Loading = loadableOptions.loading; // This will only be rendered on the server side
+
+  return function () {
+    return react_1["default"].createElement(Loading, {
+      error: null,
+      isLoading: true,
+      pastDelay: false,
+      timedOut: false
+    });
+  };
+}
+
+exports.noSSR = noSSR; // function dynamic<P = {}, O extends DynamicOptions>(options: O):
+
+function dynamic(dynamicOptions, options) {
+  var loadableFn = loadable_1["default"];
+  var loadableOptions = {
+    // A loading component is not required, so we default it
+    loading: function loading(_ref) {
+      var error = _ref.error,
+          isLoading = _ref.isLoading,
+          pastDelay = _ref.pastDelay;
+      if (!pastDelay) return null;
+
+      if (true) {
+        if (isLoading) {
+          return null;
+        }
+
+        if (error) {
+          return react_1["default"].createElement("p", null, error.message, react_1["default"].createElement("br", null), error.stack);
+        }
+      }
+
+      return null;
+    }
+  }; // Support for direct import(), eg: dynamic(import('../hello-world'))
+  // Note that this is only kept for the edge case where someone is passing in a promise as first argument
+  // The react-loadable babel plugin will turn dynamic(import('../hello-world')) into dynamic(() => import('../hello-world'))
+  // To make sure we don't execute the import without rendering first
+
+  if (dynamicOptions instanceof Promise) {
+    loadableOptions.loader = function () {
+      return dynamicOptions;
+    }; // Support for having import as a function, eg: dynamic(() => import('../hello-world'))
+
+  } else if (typeof dynamicOptions === 'function') {
+    loadableOptions.loader = dynamicOptions; // Support for having first argument being options, eg: dynamic({loader: import('../hello-world')})
+  } else if (typeof dynamicOptions === 'object') {
+    loadableOptions = Object.assign(Object.assign({}, loadableOptions), dynamicOptions);
+  } // Support for passing options, eg: dynamic(import('../hello-world'), {loading: () => <p>Loading something</p>})
+
+
+  loadableOptions = Object.assign(Object.assign({}, loadableOptions), options);
+
+  if (typeof dynamicOptions === 'object' && !(dynamicOptions instanceof Promise)) {
+    // show deprecation warning for `modules` key in development
+    if (true) {
+      if (dynamicOptions.modules) {
+        console.warn('The modules option for next/dynamic has been deprecated. See here for more info https://err.sh/zeit/next.js/next-dynamic-modules');
+      }
+    } // Support for `render` when using a mapping, eg: `dynamic({ modules: () => {return {HelloWorld: import('../hello-world')}, render(props, loaded) {} } })
+
+
+    if (dynamicOptions.render) {
+      loadableOptions.render = function (loaded, props) {
+        return dynamicOptions.render(props, loaded);
+      };
+    } // Support for `modules` when using a mapping, eg: `dynamic({ modules: () => {return {HelloWorld: import('../hello-world')}, render(props, loaded) {} } })
+
+
+    if (dynamicOptions.modules) {
+      loadableFn = loadable_1["default"].Map;
+      var loadModules = {};
+      var modules = dynamicOptions.modules();
+      Object.keys(modules).forEach(function (key) {
+        var value = modules[key];
+
+        if (typeof value.then === 'function') {
+          loadModules[key] = function () {
+            return value.then(function (mod) {
+              return mod["default"] || mod;
+            });
+          };
+
+          return;
+        }
+
+        loadModules[key] = value;
+      });
+      loadableOptions.loader = loadModules;
+    }
+  } // coming from build/babel/plugins/react-loadable-plugin.js
+
+
+  if (loadableOptions.loadableGenerated) {
+    loadableOptions = Object.assign(Object.assign({}, loadableOptions), loadableOptions.loadableGenerated);
+    delete loadableOptions.loadableGenerated;
+  } // support for disabling server side rendering, eg: dynamic(import('../hello-world'), {ssr: false})
+
+
+  if (typeof loadableOptions.ssr === 'boolean') {
+    if (!loadableOptions.ssr) {
+      delete loadableOptions.ssr;
+      return noSSR(loadableFn, loadableOptions);
+    }
+
+    delete loadableOptions.ssr;
+  }
+
+  return loadableFn(loadableOptions);
+}
+
+exports["default"] = dynamic;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/head-manager-context.js":
 /*!************************************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/head-manager-context.js ***!
@@ -7689,6 +9101,425 @@ function Head(_ref) {
 
 Head.rewind = Effect.rewind;
 exports["default"] = Head;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/loadable-context.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/loadable-context.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.LoadableContext = React.createContext(null);
+
+if (true) {
+  exports.LoadableContext.displayName = 'LoadableContext';
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/loadable.js":
+/*!************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/loadable.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+@copyright (c) 2017-present James Kyle <me@thejameskyle.com>
+ MIT License
+ Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+ The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+*/
+// https://github.com/jamiebuilds/react-loadable/blob/v5.5.0/src/index.js
+// Modified to be compatible with webpack 4 / Next.js
+
+var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+
+var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var use_subscription_1 = __webpack_require__(/*! use-subscription */ "./node_modules/use-subscription/index.js");
+
+var loadable_context_1 = __webpack_require__(/*! ./loadable-context */ "./node_modules/next/dist/next-server/lib/loadable-context.js");
+
+var ALL_INITIALIZERS = [];
+var READY_INITIALIZERS = [];
+var initialized = false;
+
+function load(loader) {
+  var promise = loader();
+  var state = {
+    loading: true,
+    loaded: null,
+    error: null
+  };
+  state.promise = promise.then(function (loaded) {
+    state.loading = false;
+    state.loaded = loaded;
+    return loaded;
+  })["catch"](function (err) {
+    state.loading = false;
+    state.error = err;
+    throw err;
+  });
+  return state;
+}
+
+function loadMap(obj) {
+  var state = {
+    loading: false,
+    loaded: {},
+    error: null
+  };
+  var promises = [];
+
+  try {
+    Object.keys(obj).forEach(function (key) {
+      var result = load(obj[key]);
+
+      if (!result.loading) {
+        state.loaded[key] = result.loaded;
+        state.error = result.error;
+      } else {
+        state.loading = true;
+      }
+
+      promises.push(result.promise);
+      result.promise.then(function (res) {
+        state.loaded[key] = res;
+      })["catch"](function (err) {
+        state.error = err;
+      });
+    });
+  } catch (err) {
+    state.error = err;
+  }
+
+  state.promise = Promise.all(promises).then(function (res) {
+    state.loading = false;
+    return res;
+  })["catch"](function (err) {
+    state.loading = false;
+    throw err;
+  });
+  return state;
+}
+
+function resolve(obj) {
+  return obj && obj.__esModule ? obj["default"] : obj;
+}
+
+function render(loaded, props) {
+  return react_1["default"].createElement(resolve(loaded), props);
+}
+
+function createLoadableComponent(loadFn, options) {
+  var opts = Object.assign({
+    loader: null,
+    loading: null,
+    delay: 200,
+    timeout: null,
+    render: render,
+    webpack: null,
+    modules: null
+  }, options);
+  var subscription = null;
+
+  function init() {
+    if (!subscription) {
+      var sub = new LoadableSubscription(loadFn, opts);
+      subscription = {
+        getCurrentValue: sub.getCurrentValue.bind(sub),
+        subscribe: sub.subscribe.bind(sub),
+        retry: sub.retry.bind(sub),
+        promise: sub.promise.bind(sub)
+      };
+    }
+
+    return subscription.promise();
+  } // Server only
+
+
+  if (false) {} // Client only
+
+
+  if (!initialized && true && typeof opts.webpack === 'function') {
+    var moduleIds = opts.webpack();
+    READY_INITIALIZERS.push(function (ids) {
+      var _iterator = _createForOfIteratorHelper(moduleIds),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var moduleId = _step.value;
+
+          if (ids.indexOf(moduleId) !== -1) {
+            return init();
+          }
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+    });
+  }
+
+  var LoadableComponent = function LoadableComponent(props, ref) {
+    init();
+    var context = react_1["default"].useContext(loadable_context_1.LoadableContext);
+    var state = use_subscription_1.useSubscription(subscription);
+    react_1["default"].useImperativeHandle(ref, function () {
+      return {
+        retry: subscription.retry
+      };
+    }, []);
+
+    if (context && Array.isArray(opts.modules)) {
+      opts.modules.forEach(function (moduleName) {
+        context(moduleName);
+      });
+    }
+
+    return react_1["default"].useMemo(function () {
+      if (state.loading || state.error) {
+        return react_1["default"].createElement(opts.loading, {
+          isLoading: state.loading,
+          pastDelay: state.pastDelay,
+          timedOut: state.timedOut,
+          error: state.error,
+          retry: subscription.retry
+        });
+      } else if (state.loaded) {
+        return opts.render(state.loaded, props);
+      } else {
+        return null;
+      }
+    }, [props, state]);
+  };
+
+  LoadableComponent.preload = function () {
+    return init();
+  };
+
+  LoadableComponent.displayName = 'LoadableComponent';
+  return react_1["default"].forwardRef(LoadableComponent);
+}
+
+var LoadableSubscription = /*#__PURE__*/function () {
+  function LoadableSubscription(loadFn, opts) {
+    _classCallCheck(this, LoadableSubscription);
+
+    this._loadFn = loadFn;
+    this._opts = opts;
+    this._callbacks = new Set();
+    this._delay = null;
+    this._timeout = null;
+    this.retry();
+  }
+
+  _createClass(LoadableSubscription, [{
+    key: "promise",
+    value: function promise() {
+      return this._res.promise;
+    }
+  }, {
+    key: "retry",
+    value: function retry() {
+      var _this = this;
+
+      this._clearTimeouts();
+
+      this._res = this._loadFn(this._opts.loader);
+      this._state = {
+        pastDelay: false,
+        timedOut: false
+      };
+      var res = this._res,
+          opts = this._opts;
+
+      if (res.loading) {
+        if (typeof opts.delay === 'number') {
+          if (opts.delay === 0) {
+            this._state.pastDelay = true;
+          } else {
+            this._delay = setTimeout(function () {
+              _this._update({
+                pastDelay: true
+              });
+            }, opts.delay);
+          }
+        }
+
+        if (typeof opts.timeout === 'number') {
+          this._timeout = setTimeout(function () {
+            _this._update({
+              timedOut: true
+            });
+          }, opts.timeout);
+        }
+      }
+
+      this._res.promise.then(function () {
+        _this._update({});
+
+        _this._clearTimeouts();
+      }) // eslint-disable-next-line handle-callback-err
+      ["catch"](function (err) {
+        _this._update({});
+
+        _this._clearTimeouts();
+      });
+
+      this._update({});
+    }
+  }, {
+    key: "_update",
+    value: function _update(partial) {
+      this._state = Object.assign(Object.assign(Object.assign({}, this._state), {
+        error: this._res.error,
+        loaded: this._res.loaded,
+        loading: this._res.loading
+      }), partial);
+
+      this._callbacks.forEach(function (callback) {
+        return callback();
+      });
+    }
+  }, {
+    key: "_clearTimeouts",
+    value: function _clearTimeouts() {
+      clearTimeout(this._delay);
+      clearTimeout(this._timeout);
+    }
+  }, {
+    key: "getCurrentValue",
+    value: function getCurrentValue() {
+      return this._state;
+    }
+  }, {
+    key: "subscribe",
+    value: function subscribe(callback) {
+      var _this2 = this;
+
+      this._callbacks.add(callback);
+
+      return function () {
+        _this2._callbacks["delete"](callback);
+      };
+    }
+  }]);
+
+  return LoadableSubscription;
+}();
+
+function Loadable(opts) {
+  return createLoadableComponent(load, opts);
+}
+
+function LoadableMap(opts) {
+  if (typeof opts.render !== 'function') {
+    throw new Error('LoadableMap requires a `render(loaded, props)` function');
+  }
+
+  return createLoadableComponent(loadMap, opts);
+}
+
+Loadable.Map = LoadableMap;
+
+function flushInitializers(initializers, ids) {
+  var promises = [];
+
+  while (initializers.length) {
+    var init = initializers.pop();
+    promises.push(init(ids));
+  }
+
+  return Promise.all(promises).then(function () {
+    if (initializers.length) {
+      return flushInitializers(initializers, ids);
+    }
+  });
+}
+
+Loadable.preloadAll = function () {
+  return new Promise(function (resolve, reject) {
+    flushInitializers(ALL_INITIALIZERS).then(resolve, reject);
+  });
+};
+
+Loadable.preloadReady = function () {
+  var ids = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  return new Promise(function (resolve) {
+    var res = function res() {
+      initialized = true;
+      return resolve();
+    }; // We always will resolve, errors should be handled within loading UIs.
+
+
+    flushInitializers(READY_INITIALIZERS, ids).then(res, res);
+  });
+};
+
+if (true) {
+  window.__NEXT_PRELOADREADY = Loadable.preloadReady;
+}
+
+exports["default"] = Loadable;
 
 /***/ }),
 
@@ -8214,6 +10045,746 @@ if (false) {} else {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/react/index.js");
+
+/***/ }),
+
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  Function("r", "regeneratorRuntime = r")(runtime);
+}
+
 
 /***/ }),
 
@@ -17294,6 +19865,252 @@ function useSound(url, _ref) {
 
 /***/ }),
 
+/***/ "./node_modules/use-subscription/cjs/use-subscription.development.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/use-subscription/cjs/use-subscription.development.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v1.1.1
+ * use-subscription.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !==
+				'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+var objectAssign = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+//
+// In order to avoid removing and re-adding subscriptions each time this hook is called,
+// the parameters passed to this hook should be memoized in some way–
+// either by wrapping the entire params object with useMemo()
+// or by wrapping the individual callbacks with useCallback().
+
+function useSubscription(_ref) {
+  var getCurrentValue = _ref.getCurrentValue,
+      subscribe = _ref.subscribe;
+
+  // Read the current value from our subscription.
+  // When this value changes, we'll schedule an update with React.
+  // It's important to also store the hook params so that we can check for staleness.
+  // (See the comment in checkForUpdates() below for more info.)
+  var _useState = react.useState(function () {
+    return {
+      getCurrentValue: getCurrentValue,
+      subscribe: subscribe,
+      value: getCurrentValue()
+    };
+  }),
+      state = _useState[0],
+      setState = _useState[1];
+
+  var valueToReturn = state.value; // If parameters have changed since our last render, schedule an update with its current value.
+
+  if (state.getCurrentValue !== getCurrentValue || state.subscribe !== subscribe) {
+    // If the subscription has been updated, we'll schedule another update with React.
+    // React will process this update immediately, so the old subscription value won't be committed.
+    // It is still nice to avoid returning a mismatched value though, so let's override the return value.
+    valueToReturn = getCurrentValue();
+    setState({
+      getCurrentValue: getCurrentValue,
+      subscribe: subscribe,
+      value: valueToReturn
+    });
+  } // Display the current value for this hook in React DevTools.
+
+
+  react.useDebugValue(valueToReturn); // It is important not to subscribe while rendering because this can lead to memory leaks.
+  // (Learn more at reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects)
+  // Instead, we wait until the commit phase to attach our handler.
+  //
+  // We intentionally use a passive effect (useEffect) rather than a synchronous one (useLayoutEffect)
+  // so that we don't stretch the commit phase.
+  // This also has an added benefit when multiple components are subscribed to the same source:
+  // It allows each of the event handlers to safely schedule work without potentially removing an another handler.
+  // (Learn more at https://codesandbox.io/s/k0yvr5970o)
+
+  react.useEffect(function () {
+    var didUnsubscribe = false;
+
+    var checkForUpdates = function () {
+      // It's possible that this callback will be invoked even after being unsubscribed,
+      // if it's removed as a result of a subscription event/update.
+      // In this case, React will log a DEV warning about an update from an unmounted component.
+      // We can avoid triggering that warning with this check.
+      if (didUnsubscribe) {
+        return;
+      } // We use a state updater function to avoid scheduling work for a stale source.
+      // However it's important to eagerly read the currently value,
+      // so that all scheduled work shares the same value (in the event of multiple subscriptions).
+      // This avoids visual "tearing" when a mutation happens during a (concurrent) render.
+
+
+      var value = getCurrentValue();
+      setState(function (prevState) {
+        // Ignore values from stale sources!
+        // Since we subscribe an unsubscribe in a passive effect,
+        // it's possible that this callback will be invoked for a stale (previous) subscription.
+        // This check avoids scheduling an update for that stale subscription.
+        if (prevState.getCurrentValue !== getCurrentValue || prevState.subscribe !== subscribe) {
+          return prevState;
+        } // Some subscriptions will auto-invoke the handler, even if the value hasn't changed.
+        // If the value hasn't changed, no update is needed.
+        // Return state as-is so React can bail out and avoid an unnecessary render.
+
+
+        if (prevState.value === value) {
+          return prevState;
+        }
+
+        return objectAssign({}, prevState, {
+          value: value
+        });
+      });
+    };
+
+    var unsubscribe = subscribe(checkForUpdates); // Because we're subscribing in a passive effect,
+    // it's possible that an update has occurred between render and our effect handler.
+    // Check for this and schedule an update if work has occurred.
+
+    checkForUpdates();
+    return function () {
+      didUnsubscribe = true;
+      unsubscribe();
+    };
+  }, [getCurrentValue, subscribe]); // Return the current value for our caller to use while rendering.
+
+  return valueToReturn;
+}
+
+exports.useSubscription = useSubscription;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/use-subscription/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/use-subscription/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/use-subscription.development.js */ "./node_modules/use-subscription/cjs/use-subscription.development.js");
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -17340,29 +20157,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contents_call1_Quiz1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../contents/call1/Quiz1 */ "./contents/call1/Quiz1.tsx");
-/* harmony import */ var _contents_call1_Quiz2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../contents/call1/Quiz2 */ "./contents/call1/Quiz2.tsx");
-/* harmony import */ var _contents_call1_Quiz3__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../contents/call1/Quiz3 */ "./contents/call1/Quiz3.tsx");
-/* harmony import */ var _contents_call1_Quiz4__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../contents/call1/Quiz4 */ "./contents/call1/Quiz4.tsx");
-/* harmony import */ var _contents_call1_Description1__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../contents/call1/Description1 */ "./contents/call1/Description1.tsx");
-/* harmony import */ var _contents_call1_Description2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../contents/call1/Description2 */ "./contents/call1/Description2.tsx");
-/* harmony import */ var _contents_call1_ResultClear__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../contents/call1/ResultClear */ "./contents/call1/ResultClear.tsx");
-/* harmony import */ var _contents_call1_ResultFailed__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../contents/call1/ResultFailed */ "./contents/call1/ResultFailed.tsx");
-/* harmony import */ var _contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../contents/call2/Quiz1 */ "./contents/call2/Quiz1.tsx");
-/* harmony import */ var _contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../contents/call2/Quiz2 */ "./contents/call2/Quiz2.tsx");
-/* harmony import */ var _contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../contents/call2/Quiz3 */ "./contents/call2/Quiz3.tsx");
-/* harmony import */ var _contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../contents/call2/Quiz4 */ "./contents/call2/Quiz4.tsx");
-/* harmony import */ var _contents_call2_Description1__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../contents/call2/Description1 */ "./contents/call2/Description1.tsx");
-/* harmony import */ var _contents_call2_ResultClear__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../contents/call2/ResultClear */ "./contents/call2/ResultClear.tsx");
-/* harmony import */ var _contents_call2_ResultFailed__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../contents/call2/ResultFailed */ "./contents/call2/ResultFailed.tsx");
+/* harmony import */ var _contents_call1_Illust__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../contents/call1/Illust */ "./contents/call1/Illust.tsx");
+/* harmony import */ var _contents_call1_Call__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../contents/call1/Call */ "./contents/call1/Call.tsx");
+/* harmony import */ var _contents_call1_Quiz1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../contents/call1/Quiz1 */ "./contents/call1/Quiz1.tsx");
+/* harmony import */ var _contents_call1_Quiz2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../contents/call1/Quiz2 */ "./contents/call1/Quiz2.tsx");
+/* harmony import */ var _contents_call1_Quiz3__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../contents/call1/Quiz3 */ "./contents/call1/Quiz3.tsx");
+/* harmony import */ var _contents_call1_Quiz4__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../contents/call1/Quiz4 */ "./contents/call1/Quiz4.tsx");
+/* harmony import */ var _contents_call1_Description1__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../contents/call1/Description1 */ "./contents/call1/Description1.tsx");
+/* harmony import */ var _contents_call1_Description2__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../contents/call1/Description2 */ "./contents/call1/Description2.tsx");
+/* harmony import */ var _contents_call2_Illust__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../contents/call2/Illust */ "./contents/call2/Illust.tsx");
+/* harmony import */ var _contents_call2_Call__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../contents/call2/Call */ "./contents/call2/Call.tsx");
+/* harmony import */ var _contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../contents/call2/Quiz1 */ "./contents/call2/Quiz1.tsx");
+/* harmony import */ var _contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../contents/call2/Quiz2 */ "./contents/call2/Quiz2.tsx");
+/* harmony import */ var _contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../contents/call2/Quiz3 */ "./contents/call2/Quiz3.tsx");
+/* harmony import */ var _contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../contents/call2/Quiz4 */ "./contents/call2/Quiz4.tsx");
+/* harmony import */ var _contents_call2_Description1__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../contents/call2/Description1 */ "./contents/call2/Description1.tsx");
 /* harmony import */ var _hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../hooks/useSwitchPage */ "./hooks/useSwitchPage.tsx");
 /* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
 /* harmony import */ var _components_templates_Content_Content__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../../components/templates/Content/Content */ "./components/templates/Content/Content.tsx");
 /* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../../constants/colors */ "./constants/colors.ts");
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! underscore */ "./node_modules/underscore/modules/index-all.js");
+/* harmony import */ var _contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../../../contents/callCommon/Start */ "./contents/callCommon/Start.tsx");
+/* harmony import */ var _contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../../../contents/callCommon/ResultClear */ "./contents/callCommon/ResultClear.tsx");
+/* harmony import */ var _contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../../../contents/callCommon/ResultFailed */ "./contents/callCommon/ResultFailed.tsx");
 
 var _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\pages\\menus\\menu8\\call\\index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
 
 
 
@@ -17401,9 +20224,54 @@ function Page(_ref) {
       shuffle = _useState2[0]; // 118 route...1/4, 119 route...3/4
 
 
-  var page = Object(_hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_18__["default"])(function (setPageNum, pageNum) {
+  var page = Object(_hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_18__["default"])(function (setPageNum) {
     // 0
-    var route118 = [__jsx(_contents_call1_Quiz1__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    var route118 = [__jsx(_contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      setPageNum: setPageNum,
+      audioToggleButtonClick: function audioToggleButtonClick(isMute) {
+        return setIsVoiceMute(isMute);
+      },
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Illust__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Call__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz1__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz2__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz3__WEBPACK_IMPORTED_MODULE_7__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17412,7 +20280,7 @@ function Page(_ref) {
         lineNumber: 45,
         columnNumber: 7
       }
-    }), __jsx(_contents_call1_Quiz2__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), __jsx(_contents_call1_Quiz4__WEBPACK_IMPORTED_MODULE_8__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17421,7 +20289,7 @@ function Page(_ref) {
         lineNumber: 46,
         columnNumber: 7
       }
-    }), __jsx(_contents_call1_Quiz3__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), __jsx(_contents_call1_Description1__WEBPACK_IMPORTED_MODULE_9__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17430,7 +20298,7 @@ function Page(_ref) {
         lineNumber: 47,
         columnNumber: 7
       }
-    }), __jsx(_contents_call1_Quiz4__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), __jsx(_contents_call1_Description2__WEBPACK_IMPORTED_MODULE_10__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17439,44 +20307,51 @@ function Page(_ref) {
         lineNumber: 48,
         columnNumber: 7
       }
-    }), __jsx(_contents_call1_Description1__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
+    }), __jsx(_contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_24__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 49,
         columnNumber: 7
       }
-    }), __jsx(_contents_call1_Description2__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }), __jsx(_contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_25__["default"], {
       setPageNum: setPageNum,
-      isMute: isVoiceMute,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 50,
         columnNumber: 7
       }
-    }), __jsx(_contents_call1_ResultClear__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      pageNum: pageNum,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_call1_ResultFailed__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      setPageNum: setPageNum,
-      pageNum: pageNum,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 7
-      }
     })]; // 1
 
-    var route119 = [__jsx(_contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    var route119 = [__jsx(_contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      setPageNum: setPageNum,
+      audioToggleButtonClick: function audioToggleButtonClick(isMute) {
+        return setIsVoiceMute(isMute);
+      },
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call2_Illust__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call2_Call__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_13__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17485,7 +20360,7 @@ function Page(_ref) {
         lineNumber: 58,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    }), __jsx(_contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_14__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17494,7 +20369,7 @@ function Page(_ref) {
         lineNumber: 59,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    }), __jsx(_contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_15__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17503,7 +20378,7 @@ function Page(_ref) {
         lineNumber: 60,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    }), __jsx(_contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_16__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17512,7 +20387,7 @@ function Page(_ref) {
         lineNumber: 61,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Description1__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    }), __jsx(_contents_call2_Description1__WEBPACK_IMPORTED_MODULE_17__["default"], {
       setPageNum: setPageNum,
       isMute: isVoiceMute,
       __self: _this,
@@ -17521,17 +20396,15 @@ function Page(_ref) {
         lineNumber: 62,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_ResultClear__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      pageNum: pageNum,
+    }), __jsx(_contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_24__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 63,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_ResultFailed__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    }), __jsx(_contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_25__["default"], {
       setPageNum: setPageNum,
-      pageNum: pageNum,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -17539,7 +20412,7 @@ function Page(_ref) {
         columnNumber: 7
       }
     })];
-    return shuffle ? route119 : route119;
+    return shuffle ? route119 : route118;
   });
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: this,
@@ -17565,6 +20438,101 @@ function Page(_ref) {
     }
   }, page));
 }
+
+/***/ }),
+
+/***/ "./styles/FontColor.tsx":
+/*!******************************!*\
+  !*** ./styles/FontColor.tsx ***!
+  \******************************/
+/*! exports provided: FontColor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FontColor", function() { return FontColor; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var FontColor = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].span.withConfig({
+  displayName: "FontColor",
+  componentId: "sc-1nyds96-0"
+})(["color:", ";"], function (props) {
+  return props.color;
+});
+
+/***/ }),
+
+/***/ "./styles/MainTextHeiseiMaruGothic.tsx":
+/*!*********************************************!*\
+  !*** ./styles/MainTextHeiseiMaruGothic.tsx ***!
+  \*********************************************/
+/*! exports provided: MainTextHeiseiMaruGothic */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainTextHeiseiMaruGothic", function() { return MainTextHeiseiMaruGothic; });
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _customMedia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./customMedia */ "./styles/customMedia.ts");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants/size */ "./constants/size.ts");
+
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var MainTextHeiseiMaruGothic = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "MainTextHeiseiMaruGothic",
+  componentId: "sc-1lvxy0m-0"
+})(["color:", ";", " line-height:", ";text-align:", ";word-break:break-all;", ";", ";", ";"], function (props) {
+  return props.color ? props.color : _constants_colors__WEBPACK_IMPORTED_MODULE_4__["default"].navy;
+}, _fonts__WEBPACK_IMPORTED_MODULE_2__["heiseiMaruGothicStdW8"], _constants_size__WEBPACK_IMPORTED_MODULE_5__["default"].lineHeightMainText, function (props) {
+  return props.textAlign;
+}, _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].greaterThan("tb")(_templateObject(), function (props) {
+  return props.fontSize.pc;
+}), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("tb")(_templateObject2(), function (props) {
+  return props.fontSize.tb;
+}), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("sp")(_templateObject3(), function (props) {
+  return props.fontSize.sp;
+}));
 
 /***/ }),
 
@@ -17849,7 +20817,43 @@ var mainWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(
 
 /***/ }),
 
-/***/ 3:
+/***/ "./util/CustomEvent.ts":
+/*!*****************************!*\
+  !*** ./util/CustomEvent.ts ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CustomEvent; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+
+
+
+var CustomEvent = /*#__PURE__*/function () {
+  function CustomEvent() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CustomEvent);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CustomEvent, null, [{
+    key: "timeAsync",
+    value: function timeAsync(delayTime) {
+      return new Promise(function (resolve) {
+        return setTimeout(resolve, delayTime);
+      });
+    }
+  }]);
+
+  return CustomEvent;
+}();
+
+
+
+/***/ }),
+
+/***/ 5:
 /*!*******************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmenus%2Fmenu8%2Fcall&absolutePagePath=C%3A%5CUsers%5Cworker%5CDesktop%5Cbng-wap-front%5Cpages%5Cmenus%5Cmenu8%5Ccall%5Cindex.tsx ***!
   \*******************************************************************************************************************************************************************************/
@@ -17872,5 +20876,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=call.js.map
