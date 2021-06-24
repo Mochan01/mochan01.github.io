@@ -1,5 +1,57 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\menus\\main.js"],{
 
+/***/ "./components/atoms/BlueLink/BlueLink.tsx":
+/*!************************************************!*\
+  !*** ./components/atoms/BlueLink/BlueLink.tsx ***!
+  \************************************************/
+/*! exports provided: BlueLink */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlueLink", function() { return BlueLink; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\BlueLink\\BlueLink.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "BlueLink__Main",
+  componentId: "sc-1ct688-0"
+})(["", " color:", ";font-size:18px;cursor:pointer;text-decoration:underline;white-space:nowrap;&:visited{color:", ";}&:hover{color:", ";}"], _styles_fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"], _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].linkBlue, _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].linkBlue, _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].linkWhiteHover);
+/**
+ * Functional component.
+ * @param props 
+ */
+
+var BlueLink = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var children = _ref.children,
+      onClick = _ref.onClick;
+  return __jsx(Main, {
+    onClick: onClick,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 10
+    }
+  }, children);
+});
+
+/***/ }),
+
 /***/ "./components/atoms/Fishies/Fishies.tsx":
 /*!**********************************************!*\
   !*** ./components/atoms/Fishies/Fishies.tsx ***!
@@ -48,77 +100,6 @@ var Fishies = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref)
       columnNumber: 7
     }
   }));
-});
-
-/***/ }),
-
-/***/ "./components/atoms/LinkCredit/LinkCredit.tsx":
-/*!****************************************************!*\
-  !*** ./components/atoms/LinkCredit/LinkCredit.tsx ***!
-  \****************************************************/
-/*! exports provided: LinkCredit */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkCredit", function() { return LinkCredit; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
-/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var _Trans__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Trans */ "./components/atoms/Trans.tsx");
-/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../containers */ "./containers.ts");
-var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\LinkCredit\\LinkCredit.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
-
-/**
- * Styled component.
- */
-var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
-  displayName: "LinkCredit__Main",
-  componentId: "sc-1bxbjxz-0"
-})(["", " color:", ";font-size:18px;cursor:pointer;text-decoration:underline;white-space:nowrap;&:visited{color:", ";}&:hover{color:", ";}"], _styles_fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"], _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].linkBlue, _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].linkBlue, _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].linkWhiteHover);
-/**
- * Functional component.
- * @param props 
- */
-
-var LinkCredit = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
-  var href = _ref.href,
-      transitionKey = _ref.transitionKey;
-
-  var _CreateBgColor$useCon = _containers__WEBPACK_IMPORTED_MODULE_5__["CreateBgColor"].useContainer(),
-      setBgColor = _CreateBgColor$useCon.setBgColor;
-
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Trans__WEBPACK_IMPORTED_MODULE_4__["Trans"], {
-    href: href,
-    transitionKey: transitionKey,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 7
-    }
-  }, __jsx(Main, {
-    onClick: function onClick() {
-      return setBgColor(_constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].orange);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 9
-    }
-  }, "\u5236\u4F5C\u56E3\u4F53\u306B\u3064\u3044\u3066")));
 });
 
 /***/ }),
@@ -343,14 +324,15 @@ var MenuButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
       description = _ref.description,
       icon = _ref.icon,
       transitionKey = _ref.transitionKey,
-      isColored = _ref.isColored;
+      isColored = _ref.isColored,
+      onClick = _ref.onClick;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_Trans__WEBPACK_IMPORTED_MODULE_3__["Trans"], {
     href: href,
     transitionKey: transitionKey,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 122,
       columnNumber: 7
     }
   }, __jsx(Main, {
@@ -359,10 +341,11 @@ var MenuButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
     description: description,
     align: align,
     isColored: isColored,
+    onClick: onClick,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 123,
       columnNumber: 9
     }
   }, __jsx(Icon, {
@@ -370,7 +353,7 @@ var MenuButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 124,
       columnNumber: 11
     }
   }), __jsx("div", {
@@ -378,7 +361,7 @@ var MenuButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 125,
       columnNumber: 11
     }
   }, __jsx("div", {
@@ -386,7 +369,7 @@ var MenuButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 126,
       columnNumber: 13
     }
   }, title), description && __jsx("div", {
@@ -394,7 +377,7 @@ var MenuButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126,
+      lineNumber: 128,
       columnNumber: 30
     }
   }, description)))));
@@ -958,8 +941,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
-/* harmony import */ var _atoms_LinkCredit_LinkCredit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../atoms/LinkCredit/LinkCredit */ "./components/atoms/LinkCredit/LinkCredit.tsx");
+/* harmony import */ var _atoms_BlueLink_BlueLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../atoms/BlueLink/BlueLink */ "./components/atoms/BlueLink/BlueLink.tsx");
 /* harmony import */ var _atoms_LogoSupportedBy_LogoSupportedBy__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../atoms/LogoSupportedBy/LogoSupportedBy */ "./components/atoms/LogoSupportedBy/LogoSupportedBy.tsx");
+/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../containers */ "./containers.ts");
+/* harmony import */ var _atoms_Trans__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../atoms/Trans */ "./components/atoms/Trans.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
 
 
 var _this = undefined,
@@ -976,6 +962,9 @@ function _templateObject() {
 
   return data;
 }
+
+
+
 
 
 
@@ -1001,28 +990,49 @@ var AboutCredit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_
   var transitionKey = _ref.transitionKey,
       href = _ref.href,
       textAlign = _ref.textAlign;
+
+  var _CreateBgColor$useCon = _containers__WEBPACK_IMPORTED_MODULE_6__["CreateBgColor"].useContainer(),
+      setBgColor = _CreateBgColor$useCon.setBgColor;
+
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
     textAlign: textAlign,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 40,
       columnNumber: 4
     }
-  }, __jsx(_atoms_LinkCredit_LinkCredit__WEBPACK_IMPORTED_MODULE_4__["LinkCredit"], {
-    transitionKey: transitionKey,
+  }, __jsx(_atoms_Trans__WEBPACK_IMPORTED_MODULE_7__["Trans"], {
     href: href,
+    transitionKey: transitionKey,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 41,
       columnNumber: 9
     }
-  }), __jsx(_atoms_LogoSupportedBy_LogoSupportedBy__WEBPACK_IMPORTED_MODULE_5__["LogoSupportedBy"], {
+  }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  }, __jsx(_atoms_BlueLink_BlueLink__WEBPACK_IMPORTED_MODULE_4__["BlueLink"], {
+    onClick: function onClick() {
+      setBgColor(_constants_colors__WEBPACK_IMPORTED_MODULE_8__["default"].orange);
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 14
+    }
+  }, "\u5236\u4F5C\u56E3\u4F53\u306B\u3064\u3044\u3066"))), __jsx(_atoms_LogoSupportedBy_LogoSupportedBy__WEBPACK_IMPORTED_MODULE_5__["LogoSupportedBy"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
       columnNumber: 9
     }
   })));
@@ -2187,12 +2197,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   waveHeight: 42,
   waveGapFromTop: 130,
-  controlUnitTopMargin: 10,
   dangerImageRatio: 42.857,
   contentMaxWidth: 1025,
   menuMaxWidth: 864,
   headerHeight: 250,
-  headerOvrGap: 100,
+  controlUnitTopMargin: 10,
+  headerHeightS: 110,
+  headerHeightL: 148,
   readableContentTextSize: {
     pc: 18,
     tb: 18,
@@ -2213,8 +2224,7 @@ __webpack_require__.r(__webpack_exports__);
   dangerScreenSize: {
     width: 4032,
     height: 1728
-  },
-  lineHeightMainText: 2
+  }
 });
 
 /***/ }),
@@ -2264,7 +2274,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_useFreezeBodyTop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./containers/useFreezeBodyTop */ "./containers/useFreezeBodyTop.ts");
 /* harmony import */ var _containers_useTransitionKey__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./containers/useTransitionKey */ "./containers/useTransitionKey.ts");
 /* harmony import */ var _containers_useCountTimer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/useCountTimer */ "./containers/useCountTimer.ts");
-/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/useControlButtons */ "./containers/useControlButtons.ts");
+/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/useControlButtons */ "./containers/useControlButtons.tsx");
 /* harmony import */ var _containers_useCreateBgColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/useCreateBgColor */ "./containers/useCreateBgColor.ts");
 /* harmony import */ var _containers_useCatchTransition__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/useCatchTransition */ "./containers/useCatchTransition.ts");
 /* harmony import */ var _containers_useWaveState__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./containers/useWaveState */ "./containers/useWaveState.ts");
@@ -2318,33 +2328,41 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./containers/useControlButtons.ts":
-/*!*****************************************!*\
-  !*** ./containers/useControlButtons.ts ***!
-  \*****************************************/
-/*! exports provided: default */
+/***/ "./containers/useControlButtons.tsx":
+/*!******************************************!*\
+  !*** ./containers/useControlButtons.tsx ***!
+  \******************************************/
+/*! exports provided: controlButtonsInitValue, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "controlButtonsInitValue", function() { return controlButtonsInitValue; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
+var controlButtonsInitValue = {
+  prevHref: void 0,
+  prevTransitionKey: "init",
+  prevClick: void 0,
+  prevCallBack: void 0,
+  prevNotation: "",
+  nextHref: void 0,
+  nextTransitionKey: "init",
+  nextClick: void 0,
+  nextCallBack: void 0,
+  nextNotation: "",
+  nextHref2: void 0,
+  nextTransitionKey2: "init",
+  nextClick2: void 0,
+  nextCallBack2: void 0,
+  nextNotation2: "",
+  color: void 0,
+  isExistTower: true,
+  pageProgress: void 0
+};
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    color: void 0,
-    notation: "",
-    prevHref: void 0,
-    nextHref: void 0,
-    prevClick: void 0,
-    nextClick: void 0,
-    prevCallBack: void 0,
-    nextCallBack: void 0,
-    isExistTower: true,
-    prevTransitionKey: "init",
-    nextTransitionKey: "init",
-    pageProgress: void 0
-  }),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(controlButtonsInitValue),
       visibleControlButtons = _useState[0],
       setVisibleControlButtons = _useState[1];
 
@@ -2663,11 +2681,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../containers */ "./containers.ts");
+/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/useControlButtons */ "./containers/useControlButtons.tsx");
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -2678,25 +2698,13 @@ var useSetHeader = function useSetHeader(props, trigger) {
       setVisibleControlButtons = _ControlButtons$useCo.setVisibleControlButtons;
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    var init = {
-      color: void 0,
-      notation: "",
-      prevHref: void 0,
-      nextHref: void 0,
-      prevClick: void 0,
-      nextClick: void 0,
-      prevCallBack: void 0,
-      nextCallBack: void 0,
-      isExistTower: true,
-      prevTransitionKey: "init",
-      nextTransitionKey: "init",
-      pageProgress: void 0
-    }; // Set props.
-
-    if (props) {
-      setVisibleControlButtons(_objectSpread({}, init, {}, props));
-    } else {
-      setVisibleControlButtons(_objectSpread({}, visibleControlButtons, {}, init));
+    // Set props.
+    if (trigger !== null) {
+      if (props) {
+        setVisibleControlButtons(_objectSpread({}, _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__["controlButtonsInitValue"], {}, props));
+      } else {
+        setVisibleControlButtons(_objectSpread({}, visibleControlButtons, {}, _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__["controlButtonsInitValue"]));
+      }
     }
   }, [trigger]);
 };
@@ -12527,7 +12535,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_molecules_FormLink_FormLink__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/molecules/FormLink/FormLink */ "./components/molecules/FormLink/FormLink.tsx");
 /* harmony import */ var _components_molecules_AboutCredit_AboutCredit__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/molecules/AboutCredit/AboutCredit */ "./components/molecules/AboutCredit/AboutCredit.tsx");
-/* harmony import */ var _styles_Display__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../styles/Display */ "./styles/Display.tsx");
+/* harmony import */ var _styles_Device__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../styles/Device */ "./styles/Device.tsx");
 /* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../styles/Mb */ "./styles/Mb.tsx");
 
 var _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\pages\\menus\\main.tsx";
@@ -12651,7 +12659,7 @@ function Page(_ref) {
       lineNumber: 57,
       columnNumber: 11
     }
-  })), __jsx(_styles_Display__WEBPACK_IMPORTED_MODULE_11__["Display"], {
+  })), __jsx(_styles_Device__WEBPACK_IMPORTED_MODULE_11__["Device"], {
     device: "pc",
     __self: this,
     __source: {
@@ -12659,7 +12667,7 @@ function Page(_ref) {
       lineNumber: 59,
       columnNumber: 9
     }
-  }, Additonal), __jsx(_styles_Display__WEBPACK_IMPORTED_MODULE_11__["Display"], {
+  }, Additonal), __jsx(_styles_Device__WEBPACK_IMPORTED_MODULE_11__["Device"], {
     device: "tb",
     __self: this,
     __source: {
@@ -12667,7 +12675,7 @@ function Page(_ref) {
       lineNumber: 60,
       columnNumber: 9
     }
-  }, Additonal), __jsx(_styles_Display__WEBPACK_IMPORTED_MODULE_11__["Display"], {
+  }, Additonal), __jsx(_styles_Device__WEBPACK_IMPORTED_MODULE_11__["Device"], {
     device: "sp",
     __self: this,
     __source: {
@@ -12708,16 +12716,16 @@ function Page(_ref) {
 
 /***/ }),
 
-/***/ "./styles/Display.tsx":
-/*!****************************!*\
-  !*** ./styles/Display.tsx ***!
-  \****************************/
-/*! exports provided: Display */
+/***/ "./styles/Device.tsx":
+/*!***************************!*\
+  !*** ./styles/Device.tsx ***!
+  \***************************/
+/*! exports provided: Device */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Display", function() { return Display; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Device", function() { return Device; });
 /* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _customMedia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customMedia */ "./styles/customMedia.ts");
@@ -12755,15 +12763,16 @@ function _templateObject() {
 
 
 
-var Display = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Display",
-  componentId: "egvd6j-0"
+var initDisplaySetting = "block";
+var Device = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Device",
+  componentId: "sc-1ow17zb-0"
 })(["display:none;", ";", ";", ";"], _customMedia__WEBPACK_IMPORTED_MODULE_2__["default"].greaterThan("tb")(_templateObject(), function (props) {
-  return props.device === "pc" ? "block" : "none";
+  return props.device === "pc" ? props.display || initDisplaySetting : "none";
 }), _customMedia__WEBPACK_IMPORTED_MODULE_2__["default"].lessThan("tb")(_templateObject2(), function (props) {
-  return props.device === "tb" ? "block" : "none";
+  return props.device === "tb" ? props.display || initDisplaySetting : "none";
 }), _customMedia__WEBPACK_IMPORTED_MODULE_2__["default"].lessThan("sp")(_templateObject3(), function (props) {
-  return props.device === "sp" ? "block" : "none";
+  return props.device === "sp" ? props.display || initDisplaySetting : "none";
 }));
 
 /***/ }),

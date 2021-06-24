@@ -256,7 +256,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentTitle", function() { return ContentTitle; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_MainTextHeiseiMaruGothic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/MainTextHeiseiMaruGothic */ "./styles/MainTextHeiseiMaruGothic.tsx");
+/* harmony import */ var _styles_MainText__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/MainText */ "./styles/MainText.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\ContentTitle\\ContentTitle.tsx";
 
@@ -272,7 +272,7 @@ var ContentTitle = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
   var children = _ref.children,
       textAlign = _ref.textAlign,
       color = _ref.color;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_MainTextHeiseiMaruGothic__WEBPACK_IMPORTED_MODULE_1__["MainTextHeiseiMaruGothic"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_MainText__WEBPACK_IMPORTED_MODULE_1__["MainTextHeiseiMaruGothic"], {
     fontSize: {
       pc: 36,
       tb: 36,
@@ -488,6 +488,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_wrapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/wrapper */ "./styles/wrapper.tsx");
 /* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
+/* harmony import */ var _hooks_useHeaderHeight__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../hooks/useHeaderHeight */ "./hooks/useHeaderHeight.tsx");
 
 
 var _this = undefined,
@@ -499,9 +500,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-/**
- * Styled component.
- */
 var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.attrs(function (props) {
   return {
     style: {}
@@ -509,7 +507,9 @@ var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.attrs(fun
 }).withConfig({
   displayName: "HeaderOvr__Main",
   componentId: "sc-1vq5ufl-0"
-})(["position:fixed;top:0;left:0;width:100%;", " z-index:1;&:before{content:\"\";background-color:#fff;padding-top:", "px;display:block;margin:0 auto;max-width:", "px;}"], _styles_wrapper__WEBPACK_IMPORTED_MODULE_3__["sidePadding"], _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].headerOvrGap + _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].controlUnitTopMargin, _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].contentMaxWidth);
+})(["position:fixed;top:0;left:0;width:100%;", " z-index:1;&:before{content:\"\";background-color:#fff;padding-top:", "px;display:block;margin:0 auto;max-width:", "px;}"], _styles_wrapper__WEBPACK_IMPORTED_MODULE_3__["sidePadding"], function (props) {
+  return props.height;
+}, _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].contentMaxWidth);
 /**
  * Functional component.
  * @param props 
@@ -518,11 +518,13 @@ var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.attrs(fun
 var HeaderOvr = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
   Object(_babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
 
+  var height = Object(_hooks_useHeaderHeight__WEBPACK_IMPORTED_MODULE_5__["default"])();
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
+    height: height,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 48,
       columnNumber: 7
     }
   }));
@@ -1410,7 +1412,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
 /* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _styles_MainText__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/MainText */ "./styles/MainText.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\SelectButtonBar\\SelectButtonBar.tsx";
 
@@ -1424,7 +1426,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /**
  * Styled component.
  */
-var Main = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_4__["MainTextSourceHanSansJp"]).attrs(function (props) {
+var Main = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styles_MainText__WEBPACK_IMPORTED_MODULE_4__["MainTextSourceHanSansJp"]).attrs(function (props) {
   return {
     style: {
       backgroundColor: props.isActive ? _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].selectButtonActiveColor.bar : _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].selectButtonNormalColor.bar
@@ -1700,11 +1702,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _atoms_PopUp_PopUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../atoms/PopUp/PopUp */ "./components/atoms/PopUp/PopUp.tsx");
 /* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
-/* harmony import */ var _styles_FontColor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/FontColor */ "./styles/FontColor.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../containers */ "./containers.ts");
+/* harmony import */ var _hooks_useSkip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../hooks/useSkip */ "./hooks/useSkip.ts");
 
 
 var _this = undefined,
@@ -1739,9 +1738,6 @@ function _templateObject() {
 
 
 
-
-
-
 /**
  * Styled component.
  */
@@ -1757,242 +1753,47 @@ var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCon
 var PopUpOvr = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
   var children = _ref.children,
       okButtonClick = _ref.okButtonClick;
+
+  var _FreezeBodyTopContain = _containers__WEBPACK_IMPORTED_MODULE_5__["FreezeBodyTopContainer"].useContainer(),
+      freezeBodyTop = _FreezeBodyTopContain.freezeBodyTop,
+      setFreezeBodyTop = _FreezeBodyTopContain.setFreezeBodyTop;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(0),
+      scrollTop = _useState[0],
+      setScrollTop = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    setScrollTop(scrollTop);
+    setFreezeBodyTop(scrollTop);
+  }, []);
+  Object(_hooks_useSkip__WEBPACK_IMPORTED_MODULE_6__["default"])(function () {
+    if (freezeBodyTop === null) {
+      // This order is important.
+      window.scrollTo({
+        top: scrollTop
+      });
+      okButtonClick();
+    }
+  }, [freezeBodyTop]);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 61,
       columnNumber: 4
     }
   }, __jsx(_atoms_PopUp_PopUp__WEBPACK_IMPORTED_MODULE_3__["PopUp"], {
-    okButtonClick: okButtonClick,
+    okButtonClick: function okButtonClick() {
+      return setFreezeBodyTop(null);
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 62,
       columnNumber: 9
     }
-  }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_5__["Mb"], {
-    size: {
-      pc: 35,
-      tb: 35,
-      sp: 39
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 11
-    }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_6__["MainTextSourceHanSansJp"], {
-    fontSize: {
-      pc: 18,
-      tb: 18,
-      sp: 18
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 13
-    }
-  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u304A\u307C",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 15
-    }
-  }, "\u6EBA"), "\u308C\u3066\u3044\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3072\u3068",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 43
-    }
-  }, "\u4EBA"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u307F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 68
-    }
-  }, "\u898B"), "\u3064\u3051\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3068\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 94
-    }
-  }, "\u6642"), "\u306F\u3001", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 120
-    }
-  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_7__["FontColor"], {
-    color: _constants_colors__WEBPACK_IMPORTED_MODULE_9__["default"].citrus,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 15
-    }
-  }, "119", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3070\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 53
-    }
-  }, "\u756A")), "\uFF08", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3057\u3087\u3046\u307C\u3046\u3057\u3087",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 90
-    }
-  }, "\u6D88\u9632\u7F72"), "\uFF09", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 122
-    }
-  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_7__["FontColor"], {
-    color: _constants_colors__WEBPACK_IMPORTED_MODULE_9__["default"].citrus,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 15
-    }
-  }, "118", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3070\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 53
-    }
-  }, "\u756A")), "\uFF08", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u304B\u3044\u3058\u3087\u3046\u307B\u3042\u3093\u3061\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 90
-    }
-  }, "\u6D77\u4E0A\u4FDD\u5B89\u5E81"), "\uFF09", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 128
-    }
-  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_7__["FontColor"], {
-    color: _constants_colors__WEBPACK_IMPORTED_MODULE_9__["default"].citrus,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 15
-    }
-  }, "110", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3070\u3093",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 53
-    }
-  }, "\u756A")), "\uFF08", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3051\u3044\u3055\u3064\u3057\u3087",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 90
-    }
-  }, "\u8B66\u5BDF\u7F72"), "\uFF09", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 121
-    }
-  }), "\u306E\u3044\u305A\u308C\u304B\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3067\u3093\u308F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 21
-    }
-  }, "\u96FB\u8A71"), "\u3092\u304B\u3051\u308C\u3070\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u305F\u3044\u304A\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 53
-    }
-  }, "\u5BFE\u5FDC"), "\u3057\u3066\u304F\u308C\u307E\u3059\u3002\u3057\u304B\u3057\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u306F\u3084",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 91
-    }
-  }, "\u65E9"), "\u3044", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 116
-    }
-  }, "\u6551\u52A9"), "\u306E\u305F\u3081\u306B\u306F\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 150
-    }
-  }, "\u72B6\u6CC1"), "\u306B\u3042\u3063\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u304D\u3085\u3046\u3058\u3087\u3055\u304D",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 183
-    }
-  }, "\u6551\u52A9\u5148"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u308C\u3093\u3089\u304F",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 215
-    }
-  }, "\u9023\u7D61"), "\u3059\u308B\u3053\u3068\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    ruby: "\u305F\u3044\u305B\u3064",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 247
-    }
-  }, "\u5927\u5207"), "\u3067\u3059\u3002")), children)));
+  }, children)));
 });
 
 /***/ }),
@@ -2351,10 +2152,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
 /* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/size */ "./constants/size.ts");
 /* harmony import */ var _atoms_HeaderOvr_HeaderOvr__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../atoms/HeaderOvr/HeaderOvr */ "./components/atoms/HeaderOvr/HeaderOvr.tsx");
+/* harmony import */ var _hooks_useHeaderHeight__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../hooks/useHeaderHeight */ "./hooks/useHeaderHeight.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\organisms\\ContentWrapper\\ContentWrapper.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2376,7 +2179,9 @@ var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.with
 var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ContentWrapper__Main",
   componentId: "sc-1s6mpgv-1"
-})(["", " padding-top:", "px;width:100%;max-width:", "px;background-color:#fff;margin:0 auto;min-height:100vh;position:relative;padding-bottom:100px;z-index:1;"], _styles_wrapper__WEBPACK_IMPORTED_MODULE_2__["sidePadding"], _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].headerOvrGap + _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].controlUnitTopMargin + 20, _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].contentMaxWidth);
+})(["", " padding-top:", "px;width:100%;max-width:", "px;background-color:#fff;margin:0 auto;min-height:100vh;position:relative;padding-bottom:100px;z-index:1;"], _styles_wrapper__WEBPACK_IMPORTED_MODULE_2__["sidePadding"], function (props) {
+  return props.height + 20;
+}, _constants_size__WEBPACK_IMPORTED_MODULE_4__["default"].contentMaxWidth);
 var ChildWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ContentWrapper__ChildWrapper",
   componentId: "sc-1s6mpgv-2"
@@ -2389,26 +2194,28 @@ var ChildWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
 var ContentWrapper = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var children = _ref.children,
       color = _ref.color;
+  var height = Object(_hooks_useHeaderHeight__WEBPACK_IMPORTED_MODULE_6__["default"])();
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Wrapper, {
     color: color,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 65,
       columnNumber: 7
     }
   }, __jsx(Main, {
+    height: height,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 66,
       columnNumber: 9
     }
   }, __jsx(_atoms_HeaderOvr_HeaderOvr__WEBPACK_IMPORTED_MODULE_5__["HeaderOvr"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 67,
       columnNumber: 11
     }
   }), __jsx(ChildWrapper, {
@@ -2416,7 +2223,7 @@ var ContentWrapper = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 68,
       columnNumber: 11
     }
   }, children))));
@@ -2819,10 +2626,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _molecules_PopUpOvr_PopUpOvr__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../molecules/PopUpOvr/PopUpOvr */ "./components/molecules/PopUpOvr/PopUpOvr.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _styles_MainText__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../styles/MainText */ "./styles/MainText.tsx");
 /* harmony import */ var _hooks_usePhonePage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../hooks/usePhonePage */ "./hooks/usePhonePage.tsx");
 /* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
 /* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+/* harmony import */ var _styles_FontColor__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../styles/FontColor */ "./styles/FontColor.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureCall\\RescureCall.tsx";
 
@@ -2836,7 +2645,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Phone = next_dynamic__WEBPACK_IMPORTED_MODULE_7___default()(function () {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../atoms/Phone/Phone */ "./components/atoms/Phone/Phone.tsx"));
+  return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../../atoms/Phone/Phone */ "./components/atoms/Phone/Phone.tsx"));
 }, {
   ssr: false,
   loadableGenerated: {
@@ -2846,6 +2655,8 @@ var Phone = next_dynamic__WEBPACK_IMPORTED_MODULE_7___default()(function () {
     modules: ["../../atoms/Phone/Phone"]
   }
 });
+
+
 
 
 
@@ -2869,7 +2680,8 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
   var setPageNum = _ref.setPageNum,
       children = _ref.children,
       popupMsg = _ref.popupMsg,
-      route = _ref.route;
+      route = _ref.route,
+      faildIndex = _ref.faildIndex;
   Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_12__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_13__["default"].switchPageSystemTransitionDelay);
   Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
@@ -2881,14 +2693,14 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     // Move to faild page.
-    if (uniqueTimer <= 0) setPageNum(10);
+    if (uniqueTimer <= 0) setPageNum(faildIndex);
   }, [uniqueTimer]);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_molecules_TopFixedTimer_TopFixedTimer__WEBPACK_IMPORTED_MODULE_5__["TopFixedTimer"], {
     count: uniqueTimer,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 58,
       columnNumber: 7
     }
   }), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
@@ -2900,7 +2712,7 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 59,
       columnNumber: 7
     }
   }, __jsx(_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
@@ -2908,7 +2720,7 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 66,
       columnNumber: 9
     }
   }, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -2916,7 +2728,7 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 67,
       columnNumber: 11
     }
   }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -2924,7 +2736,7 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 67,
       columnNumber: 43
     }
   }, "\u96FB\u8A71"), "\u305B\u3088\uFF01")), __jsx(Wrapper, {
@@ -2936,7 +2748,7 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 70,
       columnNumber: 7
     }
   }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
@@ -2948,14 +2760,14 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 77,
       columnNumber: 9
     }
   }, __jsx(_atoms_CallRescueOrder_CallRescueOrder__WEBPACK_IMPORTED_MODULE_6__["CallRescueOrder"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 84,
       columnNumber: 11
     }
   }, children)), __jsx(Phone, {
@@ -2974,7 +2786,7 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 86,
       columnNumber: 9
     }
   })), popUp && __jsx(_molecules_PopUpOvr_PopUpOvr__WEBPACK_IMPORTED_MODULE_9__["PopUpOvr"], {
@@ -2986,10 +2798,10 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 101,
       columnNumber: 9
     }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_10__["MainTextSourceHanSansJp"], {
+  }, __jsx(_styles_MainText__WEBPACK_IMPORTED_MODULE_10__["MainTextSourceHanSansJp"], {
     fontSize: {
       pc: 24,
       tb: 24,
@@ -2998,10 +2810,230 @@ var RescureCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 102,
       columnNumber: 11
     }
-  }, popupMsg)));
+  }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+    size: {
+      pc: 35,
+      tb: 35,
+      sp: 39
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 13
+    }
+  }, __jsx(_styles_MainText__WEBPACK_IMPORTED_MODULE_10__["MainTextSourceHanSansJp"], {
+    fontSize: {
+      pc: 18,
+      tb: 18,
+      sp: 18
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 15
+    }
+  }, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u304A\u307C",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 17
+    }
+  }, "\u6EBA"), "\u308C\u3066\u3044\u308B", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3072\u3068",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 45
+    }
+  }, "\u4EBA"), "\u3092", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u307F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 70
+    }
+  }, "\u898B"), "\u3064\u3051\u305F", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3068\u304D",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 96
+    }
+  }, "\u6642"), "\u306F\u3001", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 122
+    }
+  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_14__["FontColor"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_15__["default"].citrus,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 17
+    }
+  }, "119", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3070\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 55
+    }
+  }, "\u756A")), "\uFF08", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3057\u3087\u3046\u307C\u3046\u3057\u3087",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 92
+    }
+  }, "\u6D88\u9632\u7F72"), "\uFF09", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 124
+    }
+  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_14__["FontColor"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_15__["default"].citrus,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 17
+    }
+  }, "118", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3070\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 55
+    }
+  }, "\u756A")), "\uFF08", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u304B\u3044\u3058\u3087\u3046\u307B\u3042\u3093\u3061\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 92
+    }
+  }, "\u6D77\u4E0A\u4FDD\u5B89\u5E81"), "\uFF09", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 130
+    }
+  }), __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_14__["FontColor"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_15__["default"].citrus,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 17
+    }
+  }, "110", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3070\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 55
+    }
+  }, "\u756A")), "\uFF08", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3051\u3044\u3055\u3064\u3057\u3087",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 92
+    }
+  }, "\u8B66\u5BDF\u7F72"), "\uFF09", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 123
+    }
+  }), "\u306E\u3044\u305A\u308C\u304B\u306B", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3067\u3093\u308F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 23
+    }
+  }, "\u96FB\u8A71"), "\u3092\u304B\u3051\u308C\u3070\u3001", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u305F\u3044\u304A\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 55
+    }
+  }, "\u5BFE\u5FDC"), "\u3057\u3066\u304F\u308C\u307E\u3059\u3002\u3057\u304B\u3057\u3001", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u306F\u3084",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 93
+    }
+  }, "\u65E9"), "\u3044", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 118
+    }
+  }, "\u6551\u52A9"), "\u306E\u305F\u3081\u306B\u306F\u3001", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 152
+    }
+  }, "\u72B6\u6CC1"), "\u306B\u3042\u3063\u305F", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u304D\u3085\u3046\u3058\u3087\u3055\u304D",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 185
+    }
+  }, "\u6551\u52A9\u5148"), "\u306B", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u308C\u3093\u3089\u304F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 217
+    }
+  }, "\u9023\u7D61"), "\u3059\u308B\u3053\u3068\u304C", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    ruby: "\u305F\u3044\u305B\u3064",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 249
+    }
+  }, "\u5927\u5207"), "\u3067\u3059\u3002")), popupMsg)));
 });
 
 /***/ }),
@@ -3024,7 +3056,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
 /* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
 /* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _styles_MainText__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../styles/MainText */ "./styles/MainText.tsx");
 /* harmony import */ var _hooks_useCallRescue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useCallRescue */ "./hooks/useCallRescue.tsx");
 /* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
 var _this = undefined,
@@ -3118,7 +3150,7 @@ var RescureDescription = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(func
       lineNumber: 59,
       columnNumber: 7
     }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_7__["MainTextSourceHanSansJp"], {
+  }, __jsx(_styles_MainText__WEBPACK_IMPORTED_MODULE_7__["MainTextSourceHanSansJp"], {
     fontSize: {
       pc: 24,
       tb: 24,
@@ -3289,7 +3321,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
 /* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
 /* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/MainTextSourceHanSansJp */ "./styles/MainTextSourceHanSansJp.tsx");
+/* harmony import */ var _styles_MainText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/MainText */ "./styles/MainText.tsx");
 /* harmony import */ var _components_organisms_RescueSelectButtonUnit_RescueSelectButtonUnit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit */ "./components/organisms/RescueSelectButtonUnit/RescueSelectButtonUnit.tsx");
 /* harmony import */ var _hooks_usePlaySound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../hooks/usePlaySound */ "./hooks/usePlaySound.tsx");
 /* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
@@ -3384,7 +3416,7 @@ var RescureQuiz = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
       lineNumber: 59,
       columnNumber: 7
     }
-  }, __jsx(_styles_MainTextSourceHanSansJp__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
+  }, __jsx(_styles_MainText__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"], {
     fontSize: {
       pc: 24,
       tb: 24,
@@ -3414,138 +3446,33 @@ var RescureQuiz = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_
 
 /***/ }),
 
-/***/ "./components/templates/RescureResultClear/RescureResultClear.tsx":
-/*!************************************************************************!*\
-  !*** ./components/templates/RescureResultClear/RescureResultClear.tsx ***!
-  \************************************************************************/
-/*! exports provided: RescureResultClear */
+/***/ "./components/templates/RescureResult/RescureResult.tsx":
+/*!**************************************************************!*\
+  !*** ./components/templates/RescureResult/RescureResult.tsx ***!
+  \**************************************************************/
+/*! exports provided: RescureResult */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureResultClear", function() { return RescureResultClear; });
-/* harmony import */ var _babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
-/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
-/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
-
-
-var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureResultClear\\RescureResultClear.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-
-
-
-
-
-
-
-/**
- * Functional component.
- * @param props 
- */
-var RescureResultClear = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
-  Object(_babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
-
-  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_8__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_9__["default"].switchPageSystemTransitionDelay);
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_7__["default"])({
-    nextHref: "/menus/menu8/main",
-    nextTransitionKey: "slideAsVerticalPrev",
-    notation: "おわり"
-  });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
-    size: {
-      pc: 157,
-      tb: 157,
-      sp: 162
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 7
-    }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_2__["QuestionTitle"], {
-    icon: "simulation_icon.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 55
-    }
-  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__["ResultBalloon"], {
-    condition: true,
-    text: __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      ruby: "\u304D\u3085\u3046\u3058\u3087\u305B\u3044\u3053\u3046",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 50
-      }
-    }, "\u6551\u52A9\u6210\u529F"), "\uFF01"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 7
-    }
-  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_5__["DoyaPenguin"], {
-    imgPath: "chara_accuracyrate2.png",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  })));
-});
-
-/***/ }),
-
-/***/ "./components/templates/RescureResultFailed/RescureResultFailed.tsx":
-/*!**************************************************************************!*\
-  !*** ./components/templates/RescureResultFailed/RescureResultFailed.tsx ***!
-  \**************************************************************************/
-/*! exports provided: RescureResultFailed */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureResultFailed", function() { return RescureResultFailed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RescureResult", function() { return RescureResult; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
-/* harmony import */ var _components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/molecules/StartButton/StartButton */ "./components/molecules/StartButton/StartButton.tsx");
-/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
-/* harmony import */ var _components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
-/* harmony import */ var _components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/atoms/QuestionResultText/QuestionResultText */ "./components/atoms/QuestionResultText/QuestionResultText.tsx");
-/* harmony import */ var _components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
-/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
-/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+/* harmony import */ var _atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../atoms/QuestionTitle/QuestionTitle */ "./components/atoms/QuestionTitle/QuestionTitle.tsx");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../molecules/ResultBalloon/ResultBalloon */ "./components/molecules/ResultBalloon/ResultBalloon.tsx");
+/* harmony import */ var _molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../molecules/DoyaPenguin/DoyaPenguin */ "./components/molecules/DoyaPenguin/DoyaPenguin.tsx");
+/* harmony import */ var _atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../hooks/useWindowTop */ "./hooks/useWindowTop.ts");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
+/* harmony import */ var _constants_notations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/notations */ "./constants/notations.tsx");
+/* harmony import */ var _constants_storageKeys__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../constants/storageKeys */ "./constants/storageKeys.ts");
+/* harmony import */ var _hooks_useCatchStorage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../hooks/useCatchStorage */ "./hooks/useCatchStorage.tsx");
+/* harmony import */ var _components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../components/atoms/QuestionResultText/QuestionResultText */ "./components/atoms/QuestionResultText/QuestionResultText.tsx");
+/* harmony import */ var _components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../components/molecules/StartButton/StartButton */ "./components/molecules/StartButton/StartButton.tsx");
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureResultFailed\\RescureResultFailed.tsx";
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureResult\\RescureResult.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -3560,19 +3487,84 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
+
 /**
  * Functional component.
  * @param props 
  */
-var RescureResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+var RescureResult = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum;
-  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_9__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_10__["default"].switchPageSystemTransitionDelay);
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_8__["default"])({
-    nextHref: "/menus/menu8/main",
-    nextTransitionKey: "slideAsVerticalPrev",
-    notation: "おわり"
-  });
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+  Object(_hooks_useWindowTop__WEBPACK_IMPORTED_MODULE_7__["default"])(_constants_time__WEBPACK_IMPORTED_MODULE_8__["default"].switchPageSystemTransitionDelay);
+  var isFromContent = Object(_hooks_useCatchStorage__WEBPACK_IMPORTED_MODULE_11__["default"])(_constants_storageKeys__WEBPACK_IMPORTED_MODULE_10__["default"].isFromContentRescue);
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_6__["default"])({
+    nextHref: isFromContent ? "/menus/menu7/5" : "/menus/menu8/main",
+    nextTransitionKey: isFromContent ? "fade" : "slideAsVerticalPrev",
+    nextNotation: isFromContent ? __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u30E1\u30CB\u30E5\u30FC\uFF17\u3078", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      ruby: "\u3082\u3069",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 43
+      }
+    }, "\u623B"), "\u308B") : _constants_notations__WEBPACK_IMPORTED_MODULE_9__["default"].end
+  }, isFromContent);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, !setPageNum && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_2__["Mb"], {
+    size: {
+      pc: 157,
+      tb: 157,
+      sp: 162
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }, __jsx(_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
+    icon: "simulation_icon.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 13
+    }
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 59
+    }
+  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__["ResultBalloon"], {
+    condition: true,
+    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      ruby: "\u304D\u3085\u3046\u3058\u3087\u305B\u3044\u3053\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52,
+        columnNumber: 54
+      }
+    }, "\u6551\u52A9\u6210\u529F"), "\uFF01"),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, __jsx(_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__["DoyaPenguin"], {
+    imgPath: "chara_accuracyrate2.png",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }))), setPageNum && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_2__["Mb"], {
     size: {
       pc: 63,
       tb: 63,
@@ -3581,26 +3573,26 @@ var RescureResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(fun
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 7
+      lineNumber: 60,
+      columnNumber: 11
     }
-  }, __jsx(_components_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
+  }, __jsx(_atoms_QuestionTitle_QuestionTitle__WEBPACK_IMPORTED_MODULE_1__["QuestionTitle"], {
     icon: "simulation_icon.png",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 9
+      lineNumber: 67,
+      columnNumber: 13
     }
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
     ruby: "\u3051\u3063\u304B\u306F\u3063\u3074\u3087\u3046",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 55
+      lineNumber: 67,
+      columnNumber: 59
     }
-  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+  }, "\u7D50\u679C\u767A\u8868"), "\uFF01"))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_2__["Mb"], {
     size: {
       pc: 58,
       tb: 58,
@@ -3609,34 +3601,34 @@ var RescureResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(fun
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 7
+      lineNumber: 69,
+      columnNumber: 11
     }
-  }, __jsx(_components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_5__["QuestionResultText"], {
-    bottom: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(_components_atoms_QuestionResultText_QuestionResultText__WEBPACK_IMPORTED_MODULE_12__["QuestionResultText"], {
+    bottom: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
       ruby: "\u3058\u304B\u3093",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 22
+        lineNumber: 77,
+        columnNumber: 26
       }
-    }, "\u6642\u9593"), __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }, "\u6642\u9593"), __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
       ruby: "\u304E",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 48
+        lineNumber: 77,
+        columnNumber: 52
       }
     }, "\u5207"), "\u308C"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 9
+      lineNumber: 76,
+      columnNumber: 13
     }
-  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_3__["Mb"], {
+  })), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_2__["Mb"], {
     size: {
       pc: 13,
       tb: 13,
@@ -3645,33 +3637,33 @@ var RescureResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(fun
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 7
+      lineNumber: 80,
+      columnNumber: 11
     }
-  }, __jsx(_components_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_4__["ResultBalloon"], {
+  }, __jsx(_molecules_ResultBalloon_ResultBalloon__WEBPACK_IMPORTED_MODULE_3__["ResultBalloon"], {
     condition: false,
-    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    text: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
       ruby: "\u304D\u3085\u3046\u3058\u3087\u3057\u3063\u3071\u3044",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 53
+        lineNumber: 87,
+        columnNumber: 57
       }
     }, "\u6551\u52A9\u5931\u6557"), "\u2026"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 9
+      lineNumber: 87,
+      columnNumber: 13
     }
-  }, __jsx(_components_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_6__["DoyaPenguin"], {
+  }, __jsx(_molecules_DoyaPenguin_DoyaPenguin__WEBPACK_IMPORTED_MODULE_4__["DoyaPenguin"], {
     imgPath: "chara_accuracyrate1.png",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 11
+      lineNumber: 88,
+      columnNumber: 15
     }
   }))), __jsx("div", {
     onClick: function onClick() {
@@ -3680,25 +3672,25 @@ var RescureResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(fun
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 7
+      lineNumber: 91,
+      columnNumber: 11
     }
-  }, __jsx(_components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_2__["StartButton"], {
+  }, __jsx(_components_molecules_StartButton_StartButton__WEBPACK_IMPORTED_MODULE_13__["StartButton"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 9
+      lineNumber: 92,
+      columnNumber: 13
     }
-  }, "\u3082\u3046", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "\u3082\u3046", __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
     ruby: "\u3044\u3061\u3069",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 24
+      lineNumber: 92,
+      columnNumber: 28
     }
-  }, "\u4E00\u5EA6"), "\uFF01")));
+  }, "\u4E00\u5EA6"), "\uFF01"))));
 });
 
 /***/ }),
@@ -3722,10 +3714,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
 /* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
 /* harmony import */ var _components_atoms_AudioToggleButton_AudioToggleButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/atoms/AudioToggleButton/AudioToggleButton */ "./components/atoms/AudioToggleButton/AudioToggleButton.tsx");
+/* harmony import */ var _constants_notations__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../constants/notations */ "./constants/notations.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\templates\\RescureStart\\RescureStart.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -3745,7 +3739,8 @@ var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
   Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_3__["default"])({
     color: "orange",
     prevHref: "/menus/menu8/main",
-    prevTransitionKey: "slideAsVerticalPrev"
+    prevTransitionKey: "slideAsVerticalPrev",
+    prevNotation: _constants_notations__WEBPACK_IMPORTED_MODULE_8__["default"].prev
   });
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_organisms_StartButtonUnit_StartButtonUnit__WEBPACK_IMPORTED_MODULE_1__["StartButtonUnit"], {
     onceClick: function onceClick() {
@@ -3758,7 +3753,7 @@ var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 37,
         columnNumber: 19
       }
     }, "\u6551\u52A9\u968A"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -3766,7 +3761,7 @@ var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 37,
         columnNumber: 51
       }
     }, "\u96FB\u8A71"), "\u305B\u3088\uFF01"),
@@ -3779,7 +3774,7 @@ var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 40,
         columnNumber: 13
       }
     }, __jsx(_components_atoms_AudioToggleButton_AudioToggleButton__WEBPACK_IMPORTED_MODULE_7__["AudioToggleButton"], {
@@ -3787,14 +3782,14 @@ var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 15
       }
     }))),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 33,
       columnNumber: 7
     }
   }, __jsx(_components_atoms_RoundImage_RoundImage__WEBPACK_IMPORTED_MODULE_2__["RoundImage"], {
@@ -3803,7 +3798,7 @@ var RescureStart = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 52,
       columnNumber: 9
     }
   })));
@@ -3859,6 +3854,46 @@ var fontFamilies = {
 
 /***/ }),
 
+/***/ "./constants/notations.tsx":
+/*!*********************************!*\
+  !*** ./constants/notations.tsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+var _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\constants\\notations.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  next: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3064\u304E",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4,
+      columnNumber: 11
+    }
+  }, "\u6B21"), "\u3078"),
+  prev: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u307E\u3048",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 11
+    }
+  }, "\u524D"), "\u3078"),
+  end: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u304A\u308F\u308A")
+});
+
+/***/ }),
+
 /***/ "./constants/size.ts":
 /*!***************************!*\
   !*** ./constants/size.ts ***!
@@ -3871,12 +3906,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   waveHeight: 42,
   waveGapFromTop: 130,
-  controlUnitTopMargin: 10,
   dangerImageRatio: 42.857,
   contentMaxWidth: 1025,
   menuMaxWidth: 864,
   headerHeight: 250,
-  headerOvrGap: 100,
+  controlUnitTopMargin: 10,
+  headerHeightS: 110,
+  headerHeightL: 148,
   readableContentTextSize: {
     pc: 18,
     tb: 18,
@@ -3897,8 +3933,24 @@ __webpack_require__.r(__webpack_exports__);
   dangerScreenSize: {
     width: 4032,
     height: 1728
-  },
-  lineHeightMainText: 2
+  }
+});
+
+/***/ }),
+
+/***/ "./constants/storageKeys.ts":
+/*!**********************************!*\
+  !*** ./constants/storageKeys.ts ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  isInOrder: "isInOrder",
+  isFromContentJacket: "isFromContentJacket",
+  isFromContentRescue: "isFromContentRescue"
 });
 
 /***/ }),
@@ -3948,7 +4000,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_useFreezeBodyTop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./containers/useFreezeBodyTop */ "./containers/useFreezeBodyTop.ts");
 /* harmony import */ var _containers_useTransitionKey__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./containers/useTransitionKey */ "./containers/useTransitionKey.ts");
 /* harmony import */ var _containers_useCountTimer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/useCountTimer */ "./containers/useCountTimer.ts");
-/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/useControlButtons */ "./containers/useControlButtons.ts");
+/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/useControlButtons */ "./containers/useControlButtons.tsx");
 /* harmony import */ var _containers_useCreateBgColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/useCreateBgColor */ "./containers/useCreateBgColor.ts");
 /* harmony import */ var _containers_useCatchTransition__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/useCatchTransition */ "./containers/useCatchTransition.ts");
 /* harmony import */ var _containers_useWaveState__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./containers/useWaveState */ "./containers/useWaveState.ts");
@@ -4002,33 +4054,41 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./containers/useControlButtons.ts":
-/*!*****************************************!*\
-  !*** ./containers/useControlButtons.ts ***!
-  \*****************************************/
-/*! exports provided: default */
+/***/ "./containers/useControlButtons.tsx":
+/*!******************************************!*\
+  !*** ./containers/useControlButtons.tsx ***!
+  \******************************************/
+/*! exports provided: controlButtonsInitValue, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "controlButtonsInitValue", function() { return controlButtonsInitValue; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
+var controlButtonsInitValue = {
+  prevHref: void 0,
+  prevTransitionKey: "init",
+  prevClick: void 0,
+  prevCallBack: void 0,
+  prevNotation: "",
+  nextHref: void 0,
+  nextTransitionKey: "init",
+  nextClick: void 0,
+  nextCallBack: void 0,
+  nextNotation: "",
+  nextHref2: void 0,
+  nextTransitionKey2: "init",
+  nextClick2: void 0,
+  nextCallBack2: void 0,
+  nextNotation2: "",
+  color: void 0,
+  isExistTower: true,
+  pageProgress: void 0
+};
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    color: void 0,
-    notation: "",
-    prevHref: void 0,
-    nextHref: void 0,
-    prevClick: void 0,
-    nextClick: void 0,
-    prevCallBack: void 0,
-    nextCallBack: void 0,
-    isExistTower: true,
-    prevTransitionKey: "init",
-    nextTransitionKey: "init",
-    pageProgress: void 0
-  }),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(controlButtonsInitValue),
       visibleControlButtons = _useState[0],
       setVisibleControlButtons = _useState[1];
 
@@ -4251,6 +4311,135 @@ __webpack_require__.r(__webpack_exports__);
     setPenguinTransitionY: setPenguinTransitionY
   };
 });
+
+/***/ }),
+
+/***/ "./contents/call1/Call.tsx":
+/*!*********************************!*\
+  !*** ./contents/call1/Call.tsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _styles_FontColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/FontColor */ "./styles/FontColor.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var _components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/templates/RescureCall/RescureCall */ "./components/templates/RescureCall/RescureCall.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Call.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      faildIndex = _ref.faildIndex;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__["RescureCall"], {
+    setPageNum: setPageNum,
+    popupMsg: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3053\u3093\u304B\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 22
+      }
+    }, "\u4ECA\u56DE"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3046\u307F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 50
+      }
+    }, "\u6D77"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u304D\u3042\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 75
+      }
+    }, "\u6C96\u5408"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 103
+      }
+    }, "\u6D41"), "\u3055\u308C\u3066\u3044\u308B\u306E\u3067\u3001", __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_2__["FontColor"], {
+      color: _constants_colors__WEBPACK_IMPORTED_MODULE_3__["default"].citrus,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 135
+      }
+    }, "118", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 173
+      }
+    }, "\u756A")), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3067\u3093\u308F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 210
+      }
+    }, "\u96FB\u8A71"), "\u3057\u307E\u3059\u3002"),
+    route: "118",
+    faildIndex: faildIndex,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3068\u3082\u3060\u3061",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3046\u307F",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 37
+    }
+  }, "\u6D77"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u306A\u304C",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 62
+    }
+  }, "\u6D41"), "\u3055\u308C\u305F\uFF01"));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Call);
 
 /***/ }),
 
@@ -4540,6 +4729,829 @@ var Description2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (
 
 /***/ }),
 
+/***/ "./contents/call1/Illust.tsx":
+/*!***********************************!*\
+  !*** ./contents/call1/Illust.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureIllust_RescureIllust__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureIllust/RescureIllust */ "./components/templates/RescureIllust/RescureIllust.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Illust.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Illust = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureIllust_RescureIllust__WEBPACK_IMPORTED_MODULE_2__["RescureIllust"], {
+    setPageNum: setPageNum,
+    image: "koudou_rescue_118.png",
+    countMax: 10,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 7
+    }
+  }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304B\u3093\u3057\u3044\u3093",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }, "\u76E3\u8996\u54E1"), "\u306E\u3044\u306A\u3044", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304B\u3044\u3059\u3044\u3088\u304F\u3058\u3087\u3046",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 42
+    }
+  }, "\u6D77\u6C34\u6D74\u5834"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u3068\u3082\u3060\u3061",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 77
+    }
+  }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u304A\u304D",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 105
+    }
+  }, "\u6C96"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ruby: "\u306A\u304C",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 130
+    }
+  }, "\u6D41"), "\u3055\u308C\u305F\uFF01"));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Illust);
+
+/***/ }),
+
+/***/ "./contents/call1/Quiz1.tsx":
+/*!**********************************!*\
+  !*** ./contents/call1/Quiz1.tsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz1.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      isMute = _ref.isMute;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/01.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u306F\u3044\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304B\u3044\u3058\u3087\u3046\u307B\u3042\u3093\u3061\u3087\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 25
+      }
+    }, "\u6D77\u4E0A\u4FDD\u5B89\u5E81"), "\uFF11\uFF11\uFF18", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 65
+      }
+    }, "\u756A"), "\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3051\u3093",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 92
+      }
+    }, "\u4E8B\u4EF6"), "\u3067\u3059\u304B\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3053",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 122
+      }
+    }, "\u4E8B\u6545"), "\u3067\u3059\u304B\uFF1F"),
+    choices: [{
+      isCorrect: true,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3058\u3053",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 23
+        }
+      }, "\u4E8B\u6545"), "\u3067\u3059")
+    }, {
+      isCorrect: false,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3058\u3051\u3093",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 23
+        }
+      }, "\u4E8B\u4EF6"), "\u3067\u3059")
+    }],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Quiz1);
+
+/***/ }),
+
+/***/ "./contents/call1/Quiz2.tsx":
+/*!**********************************!*\
+  !*** ./contents/call1/Quiz2.tsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz2.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Quiz2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      isMute = _ref.isMute;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/02.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u306B",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u4F55"), "\u304C\u3042\u308A\u307E\u3057\u305F\u304B\uFF1F"),
+    choices: [{
+      isCorrect: true,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3046\u307F",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 23
+        }
+      }, "\u6D77"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3068\u3082\u3060\u3061",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 48
+        }
+      }, "\u53CB\u9054"), "\u3068", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3042\u305D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 76
+        }
+      }, "\u904A"), "\u3073\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 102
+        }
+      }, "\u6765"), "\u3066\u3044\u307E\u3057\u305F\u304C\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3046\u307F",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 132
+        }
+      }, "\u6D77"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304A\u3088",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 157
+        }
+      }, "\u6CF3"), "\u3044\u3067\u3044\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3068\u3082\u3060\u3061",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 185
+        }
+      }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3072\u3068\u308A",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 213
+        }
+      }, "\u4E00\u4EBA"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304A\u304D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 240
+        }
+      }, "\u6C96"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u307B\u3046",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 265
+        }
+      }, "\u65B9"), "\u3078", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306A\u304C",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 290
+        }
+      }, "\u6D41"), "\u3055\u308C\u3066\u3044\u307E\u3059\u3002")
+    }, {
+      isCorrect: false,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3068\u3082\u3060\u3061",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 23
+        }
+      }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u307F",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 51
+        }
+      }, "\u898B"), "\u3048\u306A\u304F\u306A\u3063\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3055\u304C",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 80
+        }
+      }, "\u63A2"), "\u3057\u305F\u3068\u3053\u308D\u3001\u3069\u3093\u3069\u3093", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306A\u304C",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 114
+        }
+      }, "\u6D41"), "\u3055\u308C\u3066\u3044\u307E\u3059\u3002")
+    }],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Quiz2);
+
+/***/ }),
+
+/***/ "./contents/call1/Quiz3.tsx":
+/*!**********************************!*\
+  !*** ./contents/call1/Quiz3.tsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz3.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Quiz3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      isMute = _ref.isMute;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/03_2.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306F\u3063\u305B\u3044\u3058\u3053\u304F",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u767A\u751F\u6642\u523B"), "\u3001", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3070\u3057\u3087",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 55
+      }
+    }, "\u5834\u6240"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 82
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002"),
+    choices: [{
+      isCorrect: true,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25EF\u25EF", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306F\u307E",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 25
+        }
+      }, "\u6D5C"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304B\u3044\u3059\u3044\u3088\u304F\u3058\u3087\u3046",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 50
+        }
+      }, "\u6D77\u6C34\u6D74\u5834"), "\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3044\u307E",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 87
+        }
+      }, "\u4ECA"), "\u304B\u3089\uFF11\uFF10", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3077\u3093\u307E\u3048",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 115
+        }
+      }, "\u5206\u524D"), "\u3067\u3059\u3002")
+    }, {
+      isCorrect: false,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u25A1\u25A1", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3048\u304D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 25
+        }
+      }, "\u99C5"), "\u304B\u3089\u30D0\u30B9\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306E",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 54
+        }
+      }, "\u4E57"), "\u3063\u3066\uFF11\uFF10", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3058",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 81
+        }
+      }, "\u6642"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304B\u3044\u3059\u3044\u3088\u304F\u3058\u3087\u3046",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 105
+        }
+      }, "\u6D77\u6C34\u6D74\u5834"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 140
+        }
+      }, "\u6765"), "\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304A\u3088",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 164
+        }
+      }, "\u6CF3"), "\u3044\u3067\u3044\u307E\u3057\u305F\u3002")
+    }],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Quiz3);
+
+/***/ }),
+
+/***/ "./contents/call1/Quiz4.tsx":
+/*!**********************************!*\
+  !*** ./contents/call1/Quiz4.tsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureQuiz/RescureQuiz */ "./components/templates/RescureQuiz/RescureQuiz.tsx");
+/* harmony import */ var _components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/organisms/RescueImage118Ope/RescueImage118Ope */ "./components/organisms/RescueImage118Ope/RescueImage118Ope.tsx");
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\call1\\Quiz4.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+/**
+ * Functional component.
+ * @param props 
+ */
+var Quiz4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+  var setPageNum = _ref.setPageNum,
+      isMute = _ref.isMute;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureQuiz_RescureQuiz__WEBPACK_IMPORTED_MODULE_2__["RescureQuiz"], {
+    setPageNum: setPageNum,
+    isMute: isMute,
+    audioPath: "/04.mp3",
+    question: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 22
+      }
+    }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 49
+      }
+    }, "\u53CB\u9054"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304D\u3085\u3046\u3081\u3044\u3069\u3046\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 77
+      }
+    }, "\u6551\u547D\u80F4\u8863"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3061\u3083\u304F\u3088\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 111
+      }
+    }, "\u7740\u7528"), "\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F\u3069\u306E\u3088\u3046\u306A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304B\u3063\u3053\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 151
+      }
+    }, "\u683C\u597D"), "\u3092\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 186
+      }
+    }, "\u6D41"), "\u3055\u308C\u305F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 213
+      }
+    }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u307E\u3048",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 241
+      }
+    }, "\u540D\u524D"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 268
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u306A\u304C",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 299
+      }
+    }, "\u6D41"), "\u3055\u308C\u3066\u3044\u308B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3068\u3082\u3060\u3061",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 328
+      }
+    }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3052\u3093\u3056\u3044",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 356
+      }
+    }, "\u73FE\u5728"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3058\u3087\u3046\u304D\u3087\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 384
+      }
+    }, "\u72B6\u6CC1"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u304A\u3057",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 414
+      }
+    }, "\u6559"), "\u3048\u3066\u304F\u3060\u3055\u3044\u3002"),
+    choices: [{
+      isCorrect: true,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3068\u3082\u3060\u3061",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 23
+        }
+      }, "\u53CB\u9054"), "\u306E", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306A\u307E\u3048",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 51
+        }
+      }, "\u540D\u524D"), "\u306F\u3000\u3007\u3007\u3007\u3007\uFF08\u30D5\u30EB\u30CD\u30FC\u30E0\uFF09\u3055\u3093\u3000\u3067\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u307F\u305A\u304E",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 96
+        }
+      }, "\u6C34\u7740"), "\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304D\u3044\u308D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 123
+        }
+      }, "\u9EC4\u8272"), "\u306E\u30E9\u30A4\u30D5\u30B8\u30E3\u30B1\u30C3\u30C8\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 159
+        }
+      }, "\u7740"), "\u3066\u3044\u307E\u3059\u3002", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3068\u304A",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 187
+        }
+      }, "\u9060"), "\u304F\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306A\u304C",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 213
+        }
+      }, "\u6D41"), "\u3055\u308C\u3066\u3044\u3066\u3001\u304B\u306A\u308A", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u3061\u3044",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 246
+        }
+      }, "\u5C0F"), "\u3055\u304F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u307F",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 272
+        }
+      }, "\u898B"), "\u3048\u307E\u3059\u3002")
+    }, {
+      isCorrect: false,
+      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\u3007\u3007\u3061\u3083\u3093\uFF08\u3042\u3060", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u306A",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 31
+        }
+      }, "\u540D"), "\uFF09\u3067\u3059\u3002\u30E9\u30A4\u30D5\u30B8\u30E3\u30B1\u30C3\u30C8\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u304D",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 67
+        }
+      }, "\u7740"), "\u3066\u3044\u307E\u3059\u304C\u3001\u3088\u304F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u307F",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 98
+        }
+      }, "\u898B"), "\u3048\u306A\u3044\u306E\u3067", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        ruby: "\u308F",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 126
+        }
+      }, "\u5206"), "\u304B\u308A\u307E\u305B\u3093\u3002")
+    }],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx(_components_organisms_RescueImage118Ope_RescueImage118Ope__WEBPACK_IMPORTED_MODULE_3__["RescueImage118Ope"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  })));
+});
+/* harmony default export */ __webpack_exports__["default"] = (Quiz4);
+
+/***/ }),
+
 /***/ "./contents/call2/Call.tsx":
 /*!*********************************!*\
   !*** ./contents/call2/Call.tsx ***!
@@ -4570,7 +5582,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  * @param props 
  */
 var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
-  var setPageNum = _ref.setPageNum;
+  var setPageNum = _ref.setPageNum,
+      faildIndex = _ref.faildIndex;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureCall_RescureCall__WEBPACK_IMPORTED_MODULE_4__["RescureCall"], {
     setPageNum: setPageNum,
     popupMsg: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4578,7 +5591,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 22
       }
     }, "\u4ECA\u56DE"), "\u306F", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4586,7 +5599,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 50
       }
     }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4594,7 +5607,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 75
       }
     }, "\u843D"), "\u3061\u3066", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4602,7 +5615,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 100
       }
     }, "\u6551\u52A9"), "\u3092", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4610,7 +5623,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 129
       }
     }, "\u5F85"), "\u3063\u3066\u3044\u308B\u306E\u3067\u3001", __jsx(_styles_FontColor__WEBPACK_IMPORTED_MODULE_2__["FontColor"], {
@@ -4618,7 +5631,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 159
       }
     }, "119", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4626,7 +5639,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 197
       }
     }, "\u756A")), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4634,15 +5647,16 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 234
       }
     }, "\u96FB\u8A71"), "\u3057\u307E\u3059\u3002"),
     route: "119",
+    faildIndex: faildIndex,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 22,
       columnNumber: 7
     }
   }, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4650,7 +5664,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 28,
       columnNumber: 9
     }
   }, "\u53CB\u9054"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4658,7 +5672,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 28,
       columnNumber: 37
     }
   }, "\u6C60"), "\u306B", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4666,7 +5680,7 @@ var Call = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 28,
       columnNumber: 62
     }
   }, "\u843D"), "\u3061\u305F\uFF01"));
@@ -5000,37 +6014,34 @@ var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
         lineNumber: 25,
         columnNumber: 114
       }
-    }, "\u6551\u6025\u8ECA"), "\u3067\u3059\u304B\uFF1F"),
+    }, "\u6551\u6025\u8ECA"), "\u304C", __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      ruby: "\u3072\u3064\u3088\u3046",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 147
+      }
+    }, "\u5FC5\u8981"), "\u3067\u3059\u304B\uFF1F"),
     choices: [{
-      isCorrect: true,
-      choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        ruby: "\u3058\u3053",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 23
-        }
-      }, "\u4E8B\u6545"), "\u3067\u3059")
-    }, {
       isCorrect: false,
       choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304B\u3058",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 29,
           columnNumber: 23
         }
       }, "\u706B\u4E8B"), "\u3067\u3059")
     }, {
-      isCorrect: false,
+      isCorrect: true,
       choice: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_1__["default"], {
         ruby: "\u304D\u3085\u3046\u304D\u3085\u3046\u3057\u3083",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 33,
           columnNumber: 23
         }
       }, "\u6551\u6025\u8ECA"), "\u3067\u3059")
@@ -5045,7 +6056,7 @@ var Quiz1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 37,
       columnNumber: 9
     }
   })));
@@ -5521,7 +6532,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_templates_RescureResultClear_RescureResultClear__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureResultClear/RescureResultClear */ "./components/templates/RescureResultClear/RescureResultClear.tsx");
+/* harmony import */ var _components_templates_RescureResult_RescureResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/templates/RescureResult/RescureResult */ "./components/templates/RescureResult/RescureResult.tsx");
 
 
 var _this = undefined,
@@ -5538,7 +6549,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 var ResultClear = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
   Object(_babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
 
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_templates_RescureResultClear_RescureResultClear__WEBPACK_IMPORTED_MODULE_2__["RescureResultClear"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_templates_RescureResult_RescureResult__WEBPACK_IMPORTED_MODULE_2__["RescureResult"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -5562,7 +6573,7 @@ var ResultClear = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_templates_RescureResultFailed_RescureResultFailed__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/templates/RescureResultFailed/RescureResultFailed */ "./components/templates/RescureResultFailed/RescureResultFailed.tsx");
+/* harmony import */ var _components_templates_RescureResult_RescureResult__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/templates/RescureResult/RescureResult */ "./components/templates/RescureResult/RescureResult.tsx");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\contents\\callCommon\\ResultFailed.tsx";
 
@@ -5576,12 +6587,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  */
 var ResultFailed = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
   var setPageNum = _ref.setPageNum;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureResultFailed_RescureResultFailed__WEBPACK_IMPORTED_MODULE_1__["RescureResultFailed"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_templates_RescureResult_RescureResult__WEBPACK_IMPORTED_MODULE_1__["RescureResult"], {
     setPageNum: setPageNum,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 17,
       columnNumber: 7
     }
   }));
@@ -5675,6 +6686,37 @@ var useCallRescue = function useCallRescue(setPageNum, countMax) {
 
 /***/ }),
 
+/***/ "./hooks/useCatchStorage.tsx":
+/*!***********************************!*\
+  !*** ./hooks/useCatchStorage.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_SessionStorageUtil__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/SessionStorageUtil */ "./util/SessionStorageUtil.ts");
+
+
+
+var useCatchStorage = function useCatchStorage(key) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      isExist = _useState[0],
+      setIsExist = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    var isEnable = _util_SessionStorageUtil__WEBPACK_IMPORTED_MODULE_1__["default"].isEnable(key);
+    setIsExist(isEnable);
+  }, []);
+  return isExist;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useCatchStorage);
+
+/***/ }),
+
 /***/ "./hooks/useCheckIsTouchDevice.tsx":
 /*!*****************************************!*\
   !*** ./hooks/useCheckIsTouchDevice.tsx ***!
@@ -5704,6 +6746,31 @@ var useCheckIsTouchDevice = function useCheckIsTouchDevice() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (useCheckIsTouchDevice);
+
+/***/ }),
+
+/***/ "./hooks/useHeaderHeight.tsx":
+/*!***********************************!*\
+  !*** ./hooks/useHeaderHeight.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants/size */ "./constants/size.ts");
+/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../containers */ "./containers.ts");
+
+
+
+var useHeaderHeight = function useHeaderHeight() {
+  var _ControlButtons$useCo = _containers__WEBPACK_IMPORTED_MODULE_1__["ControlButtons"].useContainer(),
+      visibleControlButtons = _ControlButtons$useCo.visibleControlButtons;
+
+  return !!visibleControlButtons.nextNotation2 ? _constants_size__WEBPACK_IMPORTED_MODULE_0__["default"].headerHeightL : _constants_size__WEBPACK_IMPORTED_MODULE_0__["default"].headerHeightS;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useHeaderHeight);
 
 /***/ }),
 
@@ -5885,11 +6952,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../containers */ "./containers.ts");
+/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/useControlButtons */ "./containers/useControlButtons.tsx");
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -5900,25 +6969,13 @@ var useSetHeader = function useSetHeader(props, trigger) {
       setVisibleControlButtons = _ControlButtons$useCo.setVisibleControlButtons;
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    var init = {
-      color: void 0,
-      notation: "",
-      prevHref: void 0,
-      nextHref: void 0,
-      prevClick: void 0,
-      nextClick: void 0,
-      prevCallBack: void 0,
-      nextCallBack: void 0,
-      isExistTower: true,
-      prevTransitionKey: "init",
-      nextTransitionKey: "init",
-      pageProgress: void 0
-    }; // Set props.
-
-    if (props) {
-      setVisibleControlButtons(_objectSpread({}, init, {}, props));
-    } else {
-      setVisibleControlButtons(_objectSpread({}, visibleControlButtons, {}, init));
+    // Set props.
+    if (trigger !== null) {
+      if (props) {
+        setVisibleControlButtons(_objectSpread({}, _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__["controlButtonsInitValue"], {}, props));
+      } else {
+        setVisibleControlButtons(_objectSpread({}, visibleControlButtons, {}, _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__["controlButtonsInitValue"]));
+      }
     }
   }, [trigger]);
 };
@@ -5965,6 +7022,37 @@ var useSetTransTime = function useSetTransTime(callBack, delay) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (useSetTransTime);
+
+/***/ }),
+
+/***/ "./hooks/useSkip.ts":
+/*!**************************!*\
+  !*** ./hooks/useSkip.ts ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useSkip; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function useSkip(effect, deps) {
+  var times = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _times = _useState[0],
+      setTimes = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (_times >= times) {
+      return effect();
+    } else {
+      setTimes(_times + 1);
+    }
+  }, deps);
+}
 
 /***/ }),
 
@@ -19215,26 +20303,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contents_call1_Description1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../contents/call1/Description1 */ "./contents/call1/Description1.tsx");
-/* harmony import */ var _contents_call1_Description2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../contents/call1/Description2 */ "./contents/call1/Description2.tsx");
-/* harmony import */ var _contents_call2_Illust__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../contents/call2/Illust */ "./contents/call2/Illust.tsx");
-/* harmony import */ var _contents_call2_Call__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../contents/call2/Call */ "./contents/call2/Call.tsx");
-/* harmony import */ var _contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../contents/call2/Quiz1 */ "./contents/call2/Quiz1.tsx");
-/* harmony import */ var _contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../contents/call2/Quiz2 */ "./contents/call2/Quiz2.tsx");
-/* harmony import */ var _contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../contents/call2/Quiz3 */ "./contents/call2/Quiz3.tsx");
-/* harmony import */ var _contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../contents/call2/Quiz4 */ "./contents/call2/Quiz4.tsx");
-/* harmony import */ var _contents_call2_Description1__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../contents/call2/Description1 */ "./contents/call2/Description1.tsx");
-/* harmony import */ var _hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../hooks/useSwitchPage */ "./hooks/useSwitchPage.tsx");
-/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
-/* harmony import */ var _components_templates_Content_Content__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../components/templates/Content/Content */ "./components/templates/Content/Content.tsx");
-/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! underscore */ "./node_modules/underscore/modules/index-all.js");
-/* harmony import */ var _contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../contents/callCommon/Start */ "./contents/callCommon/Start.tsx");
-/* harmony import */ var _contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../contents/callCommon/ResultClear */ "./contents/callCommon/ResultClear.tsx");
-/* harmony import */ var _contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../contents/callCommon/ResultFailed */ "./contents/callCommon/ResultFailed.tsx");
+/* harmony import */ var _contents_call1_Illust__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../contents/call1/Illust */ "./contents/call1/Illust.tsx");
+/* harmony import */ var _contents_call1_Call__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../contents/call1/Call */ "./contents/call1/Call.tsx");
+/* harmony import */ var _contents_call1_Quiz1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../contents/call1/Quiz1 */ "./contents/call1/Quiz1.tsx");
+/* harmony import */ var _contents_call1_Quiz2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../contents/call1/Quiz2 */ "./contents/call1/Quiz2.tsx");
+/* harmony import */ var _contents_call1_Quiz3__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../contents/call1/Quiz3 */ "./contents/call1/Quiz3.tsx");
+/* harmony import */ var _contents_call1_Quiz4__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../contents/call1/Quiz4 */ "./contents/call1/Quiz4.tsx");
+/* harmony import */ var _contents_call1_Description1__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../contents/call1/Description1 */ "./contents/call1/Description1.tsx");
+/* harmony import */ var _contents_call1_Description2__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../contents/call1/Description2 */ "./contents/call1/Description2.tsx");
+/* harmony import */ var _contents_call2_Illust__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../contents/call2/Illust */ "./contents/call2/Illust.tsx");
+/* harmony import */ var _contents_call2_Call__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../contents/call2/Call */ "./contents/call2/Call.tsx");
+/* harmony import */ var _contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../contents/call2/Quiz1 */ "./contents/call2/Quiz1.tsx");
+/* harmony import */ var _contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../contents/call2/Quiz2 */ "./contents/call2/Quiz2.tsx");
+/* harmony import */ var _contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../contents/call2/Quiz3 */ "./contents/call2/Quiz3.tsx");
+/* harmony import */ var _contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../contents/call2/Quiz4 */ "./contents/call2/Quiz4.tsx");
+/* harmony import */ var _contents_call2_Description1__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../contents/call2/Description1 */ "./contents/call2/Description1.tsx");
+/* harmony import */ var _hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../hooks/useSwitchPage */ "./hooks/useSwitchPage.tsx");
+/* harmony import */ var _hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../hooks/useSetHeader */ "./hooks/useSetHeader.tsx");
+/* harmony import */ var _components_templates_Content_Content__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../../components/templates/Content/Content */ "./components/templates/Content/Content.tsx");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../../constants/colors */ "./constants/colors.ts");
+/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! underscore */ "./node_modules/underscore/modules/index-all.js");
+/* harmony import */ var _contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../../../contents/callCommon/Start */ "./contents/callCommon/Start.tsx");
+/* harmony import */ var _contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../../../contents/callCommon/ResultClear */ "./contents/callCommon/ResultClear.tsx");
+/* harmony import */ var _contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../../../contents/callCommon/ResultFailed */ "./contents/callCommon/ResultFailed.tsx");
 
 var _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\pages\\menus\\menu8\\call\\index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+
 
 
 
@@ -19260,54 +20360,19 @@ function Page(_ref) {
 
   Object(_babel_runtime_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
 
-  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_13__["default"])();
+  Object(_hooks_useSetHeader__WEBPACK_IMPORTED_MODULE_19__["default"])();
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
       isVoiceMute = _useState[0],
       setIsVoiceMute = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(underscore__WEBPACK_IMPORTED_MODULE_16__["default"].shuffle([0, 1, 1, 1])[0]),
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(underscore__WEBPACK_IMPORTED_MODULE_22__["default"].shuffle([0, 1, 1, 1])[0]),
       shuffle = _useState2[0]; // 118 route...1/4, 119 route...3/4
 
 
-  var page = Object(_hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_12__["default"])(function (setPageNum) {
+  var page = Object(_hooks_useSwitchPage__WEBPACK_IMPORTED_MODULE_18__["default"])(function (setPageNum) {
     // 0
-    var route118 = [__jsx(_contents_call1_Description1__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_call1_Description2__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_19__["default"], {
-      setPageNum: setPageNum,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 7
-      }
-    })]; // 1
-
-    var route119 = [__jsx(_contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    var route118 = [__jsx(_contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_23__["default"], {
       setPageNum: setPageNum,
       audioToggleButtonClick: function audioToggleButtonClick(isMute) {
         return setIsVoiceMute(isMute);
@@ -19315,10 +20380,88 @@ function Page(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Illust__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Call__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      faildIndex: 10,
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz1__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz2__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz3__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Quiz4__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Description1__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call1_Description2__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_24__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
         lineNumber: 49,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Illust__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), __jsx(_contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_25__["default"], {
       setPageNum: setPageNum,
       __self: _this,
       __source: {
@@ -19326,97 +20469,119 @@ function Page(_ref) {
         lineNumber: 50,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Call__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    })]; // 1
+
+    var route119 = [__jsx(_contents_callCommon_Start__WEBPACK_IMPORTED_MODULE_23__["default"], {
       setPageNum: setPageNum,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_8__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 7
-      }
-    }), __jsx(_contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      setPageNum: setPageNum,
-      isMute: isVoiceMute,
+      audioToggleButtonClick: function audioToggleButtonClick(isMute) {
+        return setIsVoiceMute(isMute);
+      },
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 55,
         columnNumber: 7
       }
-    }), __jsx(_contents_call2_Description1__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    }), __jsx(_contents_call2_Illust__WEBPACK_IMPORTED_MODULE_11__["default"], {
       setPageNum: setPageNum,
-      isMute: isVoiceMute,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 56,
         columnNumber: 7
       }
-    }), __jsx(_contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    }), __jsx(_contents_call2_Call__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      faildIndex: 9,
+      setPageNum: setPageNum,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57,
         columnNumber: 7
       }
-    }), __jsx(_contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_19__["default"], {
+    }), __jsx(_contents_call2_Quiz1__WEBPACK_IMPORTED_MODULE_13__["default"], {
       setPageNum: setPageNum,
+      isMute: isVoiceMute,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 58,
         columnNumber: 7
       }
+    }), __jsx(_contents_call2_Quiz2__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call2_Quiz3__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call2_Quiz4__WEBPACK_IMPORTED_MODULE_16__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_call2_Description1__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      setPageNum: setPageNum,
+      isMute: isVoiceMute,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_callCommon_ResultClear__WEBPACK_IMPORTED_MODULE_24__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63,
+        columnNumber: 7
+      }
+    }), __jsx(_contents_callCommon_ResultFailed__WEBPACK_IMPORTED_MODULE_25__["default"], {
+      setPageNum: setPageNum,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64,
+        columnNumber: 7
+      }
     })];
-    return shuffle ? route118 : route118;
+    return shuffle ? route119 : route118;
   });
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 72,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 73,
       columnNumber: 9
     }
-  }, "\u6551\u52A9\u968A\u306B\u96FB\u8A71\u305B\u3088\uFF01")), __jsx(_components_templates_Content_Content__WEBPACK_IMPORTED_MODULE_14__["Content"], {
-    color: _constants_colors__WEBPACK_IMPORTED_MODULE_15__["default"].blue,
+  }, "\u6551\u52A9\u968A\u306B\u96FB\u8A71\u305B\u3088\uFF01")), __jsx(_components_templates_Content_Content__WEBPACK_IMPORTED_MODULE_20__["Content"], {
+    color: _constants_colors__WEBPACK_IMPORTED_MODULE_21__["default"].blue,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 75,
       columnNumber: 7
     }
   }, page));
@@ -19445,96 +20610,22 @@ var FontColor = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].span.w
 
 /***/ }),
 
-/***/ "./styles/MainTextHeiseiMaruGothic.tsx":
-/*!*********************************************!*\
-  !*** ./styles/MainTextHeiseiMaruGothic.tsx ***!
-  \*********************************************/
-/*! exports provided: MainTextHeiseiMaruGothic */
+/***/ "./styles/MainText.tsx":
+/*!*****************************!*\
+  !*** ./styles/MainText.tsx ***!
+  \*****************************/
+/*! exports provided: MainTextHeiseiMaruGothic, MainTextSourceHanSansJp */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainTextHeiseiMaruGothic", function() { return MainTextHeiseiMaruGothic; });
-/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts */ "./styles/fonts.tsx");
-/* harmony import */ var _customMedia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./customMedia */ "./styles/customMedia.ts");
-/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants/size */ "./constants/size.ts");
-
-
-function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-
-
-
-
-
-/**
- * Styled component.
- */
-var MainTextHeiseiMaruGothic = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "MainTextHeiseiMaruGothic",
-  componentId: "sc-1lvxy0m-0"
-})(["color:", ";", " line-height:", ";text-align:", ";word-break:break-all;", ";", ";", ";"], function (props) {
-  return props.color ? props.color : _constants_colors__WEBPACK_IMPORTED_MODULE_4__["default"].navy;
-}, _fonts__WEBPACK_IMPORTED_MODULE_2__["heiseiMaruGothicStdW8"], _constants_size__WEBPACK_IMPORTED_MODULE_5__["default"].lineHeightMainText, function (props) {
-  return props.textAlign;
-}, _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].greaterThan("tb")(_templateObject(), function (props) {
-  return props.fontSize.pc;
-}), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("tb")(_templateObject2(), function (props) {
-  return props.fontSize.tb;
-}), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("sp")(_templateObject3(), function (props) {
-  return props.fontSize.sp;
-}));
-
-/***/ }),
-
-/***/ "./styles/MainTextSourceHanSansJp.tsx":
-/*!********************************************!*\
-  !*** ./styles/MainTextSourceHanSansJp.tsx ***!
-  \********************************************/
-/*! exports provided: MainTextSourceHanSansJp */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainTextSourceHanSansJp", function() { return MainTextSourceHanSansJp; });
 /* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts */ "./styles/fonts.tsx");
 /* harmony import */ var _customMedia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./customMedia */ "./styles/customMedia.ts");
 /* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var _constants_size__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants/size */ "./constants/size.ts");
 
 
 function _templateObject3() {
@@ -19572,16 +20663,14 @@ function _templateObject() {
 
 
 
-
 /**
  * Styled component.
  */
-var MainTextSourceHanSansJp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "MainTextSourceHanSansJp",
-  componentId: "sc-1ga8fed-0"
-})(["color:", ";", " line-height:", ";text-align:", ";word-break:break-all;", ";", ";", ";"], function (props) {
+var common = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(["color:", ";line-height:", ";text-align:", ";word-break:break-all;", ";", ";", ";"], function (props) {
   return props.color ? props.color : _constants_colors__WEBPACK_IMPORTED_MODULE_4__["default"].navy;
-}, _fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"], _constants_size__WEBPACK_IMPORTED_MODULE_5__["default"].lineHeightMainText, function (props) {
+}, function (props) {
+  return props.lineHeight ? props.lineHeight : 2;
+}, function (props) {
   return props.textAlign;
 }, _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].greaterThan("tb")(_templateObject(), function (props) {
   return props.fontSize.pc;
@@ -19590,6 +20679,14 @@ var MainTextSourceHanSansJp = styled_components__WEBPACK_IMPORTED_MODULE_1__["de
 }), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("sp")(_templateObject3(), function (props) {
   return props.fontSize.sp;
 }));
+var MainTextHeiseiMaruGothic = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "MainText__MainTextHeiseiMaruGothic",
+  componentId: "sc-1p1yhgv-0"
+})(["", " ", ""], common, _fonts__WEBPACK_IMPORTED_MODULE_2__["heiseiMaruGothicStdW8"]);
+var MainTextSourceHanSansJp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "MainText__MainTextSourceHanSansJp",
+  componentId: "sc-1p1yhgv-1"
+})(["", " ", ""], common, _fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"]);
 
 /***/ }),
 
@@ -19836,7 +20933,58 @@ var CustomEvent = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ 5:
+/***/ "./util/SessionStorageUtil.ts":
+/*!************************************!*\
+  !*** ./util/SessionStorageUtil.ts ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SessionStorageUtil; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+
+
+
+
+var SessionStorageUtil = /*#__PURE__*/function () {
+  function SessionStorageUtil() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, SessionStorageUtil);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(SessionStorageUtil, null, [{
+    key: "enable",
+    value: function enable(key) {
+      sessionStorage.setItem(key, this["true"]);
+    }
+  }, {
+    key: "disable",
+    value: function disable(key) {
+      sessionStorage.setItem(key, this["false"]);
+    }
+  }, {
+    key: "isEnable",
+    value: function isEnable(key) {
+      var val = sessionStorage.getItem(key);
+      return val === this["true"];
+    }
+  }]);
+
+  return SessionStorageUtil;
+}();
+
+Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(SessionStorageUtil, "true", "true");
+
+Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(SessionStorageUtil, "false", "false");
+
+
+
+/***/ }),
+
+/***/ 10:
 /*!*******************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmenus%2Fmenu8%2Fcall&absolutePagePath=C%3A%5CUsers%5Cworker%5CDesktop%5Cbng-wap-front%5Cpages%5Cmenus%5Cmenu8%5Ccall%5Cindex.tsx ***!
   \*******************************************************************************************************************************************************************************/
@@ -19859,5 +21007,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[10,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=call.js.map

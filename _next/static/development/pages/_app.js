@@ -179,21 +179,58 @@ var AppWrapper = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_r
 /*!******************************************************!*\
   !*** ./components/atoms/ArrowButton/ArrowButton.tsx ***!
   \******************************************************/
-/*! exports provided: ArrowButton */
+/*! exports provided: arrowButtonWidth, ArrowButton */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arrowButtonWidth", function() { return arrowButtonWidth; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowButton", function() { return ArrowButton; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_hovers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/hovers */ "./styles/hovers.tsx");
+/* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
+/* harmony import */ var _styles_MainText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/MainText */ "./styles/MainText.tsx");
+
+
 var _this = undefined,
     _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\ArrowButton\\ArrowButton.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: block;\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: none;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 72px;\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
 
 
 
@@ -202,44 +239,96 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /**
  * Styled component.
  */
-var h = 54;
-var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+var arrowButtonWidth = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["css"])(["width:162.51px;", ";"], _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("sp")(_templateObject()));
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ArrowButton__Main",
   componentId: "bb3o4p-0"
-})(["", " background-color:#176D8E;color:#fff;line-height:1;user-select:none;cursor:pointer;font-size:18px;height:", "px;display:flex;justify-content:center;align-items:center;position:relative;", " &.prev{border-radius:0 10px 10px 0;margin-left:", "px;& > .squere{z-index:1;left:", "px;&:before{border-radius:0 0 0 10px;}}}&.next{border-radius:10px 0 0 10px;margin-right:", "px;& > .squere{z-index:1;right:", "px;&:before{border-radius:0 10px 0 0;}}}& > span{z-index:1;}& > .squere{position:absolute;top:0;margin:auto;bottom:0;display:flex;align-items:center;z-index:-1;&:before{content:\"\";display:block;width:", "px;padding-top:", "px;transform:rotate(45deg);background-color:#176D8E;}}"], _styles_fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"], h, _styles_hovers__WEBPACK_IMPORTED_MODULE_3__["brightness"], h / 2, h / 2.85 * -1, h / 2, h / 2.85 * -1, h / 1.42, h / 1.42);
+})(["position:relative;cursor:pointer;", " ", ""], _styles_hovers__WEBPACK_IMPORTED_MODULE_3__["brightness"], arrowButtonWidth);
+var svgStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["css"])(["& > svg{display:block;transform:", ";}"], function (props) {
+  return props.direction === "prev" ? "none" : "scale(-1, 1)";
+});
+var SvgWrapperPc = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ArrowButton__SvgWrapperPc",
+  componentId: "bb3o4p-1"
+})(["", " ", ";"], svgStyle, _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("sp")(_templateObject2()));
+var SvgWrapperSp = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ArrowButton__SvgWrapperSp",
+  componentId: "bb3o4p-2"
+})(["", " display:none;", ";"], svgStyle, _styles_customMedia__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("sp")(_templateObject3()));
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ArrowButton__Text",
+  componentId: "bb3o4p-3"
+})(["position:absolute;top:0;left:0;margin:0;bottom:0;display:flex;align-items:center;justify-content:center;width:100%;"]);
+var TextChild = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_styles_MainText__WEBPACK_IMPORTED_MODULE_5__["MainTextSourceHanSansJp"]).withConfig({
+  displayName: "ArrowButton__TextChild",
+  componentId: "bb3o4p-4"
+})(["padding:", ";height:auto;user-select:none;"], function (props) {
+  return props.direction === "prev" ? "0 0 0 10px" : "0 10px 0 0";
+});
 /**
  * Functional component.
  * @param props 
  */
 
-var ArrowButton = Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(function (_ref) {
+var ArrowButton = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
   var direction = _ref.direction,
+      onClick = _ref.onClick,
       children = _ref.children;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Main, {
-    className: direction,
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
     role: "button",
+    onClick: onClick,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 7
     }
-  }, __jsx("div", {
-    className: "squere",
+  }, __jsx(SvgWrapperPc, {
+    direction: direction,
+    dangerouslySetInnerHTML: {
+      __html: "\n              <svg id=\"arrowButton\" data-name=\"arrowButton\" xmlns=\"http://www.w3.org/2000/svg\"\n              viewBox=\"0 0 324.61 108\"><defs><style>.cls-1{fill:#176d8e}</style></defs><path\n              class=\"cls-1\" d=\"M49.61 0h255a20 20 0 0120 20v68a20 20 0 01-20 20h-255V0z\"/><path\n              class=\"cls-1\" d=\"M11.42 15.82h76.37v76.36H22a10.61 10.61 0 01-10.58-10.6V15.82z\"\n              transform=\"rotate(45 49.604 53.997)\"/></svg> \n            "
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 84,
       columnNumber: 9
     }
-  }), __jsx("span", {
+  }), __jsx(SvgWrapperSp, {
+    direction: direction,
+    dangerouslySetInnerHTML: {
+      __html: "\n              <svg id=\"arrowButton\" data-name=\"arrowButton\" xmlns=\"http://www.w3.org/2000/svg\"\n              viewBox=\"0 0 143.61 108\"><defs><style>.cls-1{fill:#176d8e}</style></defs>\n              <path class=\"cls-1\" d=\"M21.95 0h101.68a20 20 0 0120 20v68a20 20 0 01-20 20H21.95V0z\"/>\n              <path class=\"cls-1\" d=\"M22 108L1.37 61.5a21.18 21.18 0 010-15L22 0l23.84 54z\"/></svg>\n            "
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 96,
       columnNumber: 9
     }
-  }, children)));
+  }), __jsx(Text, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107,
+      columnNumber: 9
+    }
+  }, __jsx(TextChild, {
+    lineHeight: 1.7,
+    textAlign: "left",
+    color: "#fff",
+    direction: direction,
+    fontSize: {
+      pc: 18,
+      tb: 18,
+      sp: 14
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 11
+    }
+  }, children))));
 });
 
 /***/ }),
@@ -623,162 +712,6 @@ var Penguin = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function () {
 
 /***/ }),
 
-/***/ "./components/atoms/Ruby/Ruby.tsx":
-/*!****************************************!*\
-  !*** ./components/atoms/Ruby/Ruby.tsx ***!
-  \****************************************/
-/*! exports provided: Ruby, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ruby", function() { return Ruby; });
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var next_useragent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-useragent */ "./node_modules/next-useragent/dist/next-useragent.js");
-/* harmony import */ var next_useragent__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_useragent__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _constants_fontFamilies__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/fontFamilies */ "./constants/fontFamilies.ts");
-
-
-var _this = undefined,
-    _jsxFileName = "C:\\Users\\worker\\Desktop\\bng-wap-front\\components\\atoms\\Ruby\\Ruby.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-
-
-
-
-
-/**
- * Styled component.
- */
-var fz = 0.5;
-var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.withConfig({
-  displayName: "Ruby__Main",
-  componentId: "q8zuoj-0"
-})(["position:relative;white-space:nowrap;&:before{content:attr(data-ruby);position:absolute;bottom:", ";left:", ";right:0;margin:auto;font-size:", "em;text-align:center;line-height:1;}"], function (props) {
-  return props.verticalPosition ? "".concat(props.verticalPosition, "em") : 0;
-}, function (props) {
-  return props.holizonalPosition ? "-".concat(props.holizonalPosition, "px") : 0;
-}, fz); // It's need for adobe font bug.
-// If without this, the ruby's font is not load correctly.
-
-var Hide = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.withConfig({
-  displayName: "Ruby__Hide",
-  componentId: "q8zuoj-1"
-})(["font-size:0;position:absolute;"]);
-/**
- * Functional component.
- * @param props 
- */
-
-var Ruby = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (_ref) {
-  var ruby = _ref.ruby,
-      children = _ref.children,
-      ua = _ref.ua;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    horizonal: 0,
-    vertical: 0
-  }),
-      correction = _useState[0],
-      setCorrection = _useState[1];
-
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    // Adjust ruby horizonal position.
-    var el = ref.current;
-    var childLen = children.length;
-    var rubyLen = ruby.length;
-    var childWidth = el.offsetWidth;
-    var rubyWidth = rubyLen * (childWidth / childLen * fz);
-
-    if (childWidth < rubyWidth) {
-      setCorrection(function (state) {
-        return _objectSpread({}, state, {
-          horizonal: (rubyWidth - childWidth) / 2
-        });
-      });
-    } // Adjust ruby vertical position depends on each OS.
-
-
-    switch (window.getComputedStyle(el).fontFamily) {
-      case _constants_fontFamilies__WEBPACK_IMPORTED_MODULE_4__["default"].heiseiMaruGothicStd:
-        switch (true) {
-          case ua.isAndroid:
-          case ua.isWindows:
-            setCorrection(function (state) {
-              return _objectSpread({}, state, {
-                vertical: 2.1
-              });
-            });
-            break;
-
-          default:
-            setCorrection(function (state) {
-              return _objectSpread({}, state, {
-                vertical: 2.6
-              });
-            });
-            break;
-        }
-
-        break;
-
-      case _constants_fontFamilies__WEBPACK_IMPORTED_MODULE_4__["default"].sourceHanSansJp:
-        switch (true) {
-          case ua.isAndroid:
-          case ua.isWindows:
-            setCorrection(function (state) {
-              return _objectSpread({}, state, {
-                vertical: 2.3
-              });
-            });
-            break;
-
-          default:
-            setCorrection(function (state) {
-              return _objectSpread({}, state, {
-                vertical: 2.5
-              });
-            });
-            break;
-        }
-
-        break;
-    }
-  }, []);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
-    ref: ref,
-    "data-ruby": ruby,
-    holizonalPosition: correction.horizonal,
-    verticalPosition: correction.vertical,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 7
-    }
-  }, children), __jsx(Hide, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 108,
-      columnNumber: 7
-    }
-  }, ruby));
-});
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_useragent__WEBPACK_IMPORTED_MODULE_3__["withUserAgent"])(Ruby));
-
-/***/ }),
-
 /***/ "./components/atoms/Trans.tsx":
 /*!************************************!*\
   !*** ./components/atoms/Trans.tsx ***!
@@ -950,8 +883,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../atoms/OpacityEffect */ "./components/atoms/OpacityEffect.tsx");
 /* harmony import */ var _atoms_PageProgress_PageProgress__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../atoms/PageProgress/PageProgress */ "./components/atoms/PageProgress/PageProgress.tsx");
 /* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../constants/colors */ "./constants/colors.ts");
-/* harmony import */ var _atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../atoms/Ruby/Ruby */ "./components/atoms/Ruby/Ruby.tsx");
+/* harmony import */ var _constants_time__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../constants/time */ "./constants/time.ts");
 /* harmony import */ var _styles_customMedia__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../styles/customMedia */ "./styles/customMedia.ts");
+/* harmony import */ var _styles_Mb__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../styles/Mb */ "./styles/Mb.tsx");
+/* harmony import */ var _hooks_useSkip__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../hooks/useSkip */ "./hooks/useSkip.ts");
 
 
 var _this = undefined,
@@ -981,6 +916,8 @@ function _templateObject() {
 
 
 
+
+
 ;
 /**
  * Styled component.
@@ -994,10 +931,10 @@ var Button = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withC
   displayName: "ControlUnit__Button",
   componentId: "sc-1dijmwg-1"
 })(["transition:opacity ease .2s;width:162px;", ";"], _styles_customMedia__WEBPACK_IMPORTED_MODULE_11__["default"].lessThan("sp")(_templateObject()));
-var PageProgressWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ControlUnit__PageProgressWrapper",
+var Center = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ControlUnit__Center",
   componentId: "sc-1dijmwg-2"
-})(["text-align:center;margin-top:20px;"]);
+})(["text-align:center;"]);
 /**
  * Functional component.
  * @param props 
@@ -1005,7 +942,8 @@ var PageProgressWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["defaul
 
 var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function () {
   var _ControlButtons$useCo = _containers__WEBPACK_IMPORTED_MODULE_6__["ControlButtons"].useContainer(),
-      visibleControlButtons = _ControlButtons$useCo.visibleControlButtons;
+      visibleControlButtons = _ControlButtons$useCo.visibleControlButtons; // Set pager.
+
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
       currentPage = _useState[0],
@@ -1022,72 +960,71 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
       var _pageAmount = visibleControlButtons.pageProgress.pageAmount;
       if (_pageAmount) setPageAmount(_pageAmount);
     }
-  }, [visibleControlButtons.pageProgress]);
+  }, [visibleControlButtons.pageProgress]); // Set notation using delay.
+
+  var setNotation = function setNotation(notation, stateAction) {
+    Object(_hooks_useSkip__WEBPACK_IMPORTED_MODULE_13__["default"])(function () {
+      var timer;
+
+      if (!notation) {
+        timer = setTimeout(function () {
+          return stateAction(notation);
+        }, _constants_time__WEBPACK_IMPORTED_MODULE_10__["default"].transitionAnimation);
+      } else {
+        stateAction(notation);
+      }
+
+      return function () {
+        if (timer) clearTimeout(timer);
+      };
+    }, [notation]);
+  };
+
+  var prevNotation = visibleControlButtons.prevNotation,
+      nextNotation = visibleControlButtons.nextNotation,
+      nextNotation2 = visibleControlButtons.nextNotation2;
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      prevText = _useState3[0],
+      setPrevText = _useState3[1];
+
+  setNotation(prevNotation, setPrevText);
+
+  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      nextText = _useState4[0],
+      setNextText = _useState4[1];
+
+  setNotation(nextNotation, setNextText);
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      nextText2 = _useState5[0],
+      setNextText2 = _useState5[1];
+
+  setNotation(nextNotation2, setNextText2);
 
   var _CreateBgColor$useCon = _containers__WEBPACK_IMPORTED_MODULE_6__["CreateBgColor"].useContainer(),
-      setBgColor = _CreateBgColor$useCon.setBgColor; // Buttons.
-
-
-  var PrevButton = function PrevButton() {
-    return __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
-      direction: "prev",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 12
-      }
-    }, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      ruby: "\u307E\u3048",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 42
-      }
-    }, "\u524D"), "\u3078");
-  };
-
-  var NextButton = function NextButton() {
-    return __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
-      direction: "next",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 7
-      }
-    }, visibleControlButtons.notation ? visibleControlButtons.notation : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_atoms_Ruby_Ruby__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      ruby: "\u3064\u304E",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 73,
-        columnNumber: 79
-      }
-    }, "\u6B21"), "\u3078"));
-  };
+      setBgColor = _CreateBgColor$useCon.setBgColor;
 
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(Main, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 86,
       columnNumber: 7
     }
   }, __jsx(Button, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 87,
       columnNumber: 9
     }
   }, __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
-    visible: visibleControlButtons.prevHref || visibleControlButtons.prevClick ? true : false,
+    visible: !!(visibleControlButtons.prevHref || visibleControlButtons.prevClick),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 88,
       columnNumber: 11
     }
   }, visibleControlButtons.prevHref && __jsx(_atoms_Trans__WEBPACK_IMPORTED_MODULE_5__["Trans"], {
@@ -1096,10 +1033,18 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 95,
       columnNumber: 15
     }
   }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 17
+    }
+  }, __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
+    direction: "prev",
     onClick: function onClick() {
       if (visibleControlButtons.prevCallBack) {
         visibleControlButtons.prevCallBack();
@@ -1108,17 +1053,11 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 17
-    }
-  }, __jsx(PrevButton, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 100,
       columnNumber: 19
     }
-  }))), !visibleControlButtons.prevHref && __jsx("div", {
+  }, prevText))), !visibleControlButtons.prevHref && __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
+    direction: "prev",
     onClick: function onClick() {
       visibleControlButtons.prevClick();
 
@@ -1129,24 +1068,25 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 115,
       columnNumber: 15
     }
-  }, __jsx(PrevButton, {
+  }, prevText))), __jsx(Center, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114,
-      columnNumber: 17
+      lineNumber: 129,
+      columnNumber: 9
     }
-  })))), visibleControlButtons.isExistTower && __jsx(_atoms_Trans__WEBPACK_IMPORTED_MODULE_5__["Trans"], {
+  }, visibleControlButtons.isExistTower && __jsx(_atoms_Trans__WEBPACK_IMPORTED_MODULE_5__["Trans"], {
+    display: "inline-block",
     href: "/",
     transitionKey: "slideAsVerticalPrev",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
-      columnNumber: 11
+      lineNumber: 132,
+      columnNumber: 13
     }
   }, __jsx("a", {
     onClick: function onClick() {
@@ -1155,38 +1095,67 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 13
+      lineNumber: 133,
+      columnNumber: 15
     }
   }, __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
-    visible: visibleControlButtons.color ? true : false,
+    visible: !!visibleControlButtons.color,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
-      columnNumber: 15
+      lineNumber: 134,
+      columnNumber: 17
     }
   }, __jsx(_atoms_LightHouseButton_LightHouseButton__WEBPACK_IMPORTED_MODULE_3__["LightHouseButton"], {
     color: visibleControlButtons.color,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 17
+      lineNumber: 135,
+      columnNumber: 19
     }
-  })))), __jsx(Button, {
+  })))), __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_12__["Mb"], {
+    size: {
+      pc: 10,
+      tb: 10,
+      sp: 10
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131,
+      lineNumber: 142,
+      columnNumber: 11
+    }
+  }), __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
+    visible: !!visibleControlButtons.pageProgress,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143,
+      columnNumber: 11
+    }
+  }, __jsx(_atoms_PageProgress_PageProgress__WEBPACK_IMPORTED_MODULE_8__["PageProgress"], {
+    pageAmount: pageAmount,
+    currentPage: currentPage,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 13
+    }
+  }))), __jsx(Button, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147,
       columnNumber: 9
     }
   }, __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
-    visible: visibleControlButtons.nextHref || visibleControlButtons.nextClick ? true : false,
+    visible: !!(visibleControlButtons.nextHref || visibleControlButtons.nextClick),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 148,
       columnNumber: 11
     }
   }, visibleControlButtons.nextHref && __jsx(_atoms_Trans__WEBPACK_IMPORTED_MODULE_5__["Trans"], {
@@ -1195,10 +1164,18 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 155,
       columnNumber: 15
     }
   }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159,
+      columnNumber: 17
+    }
+  }, __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
+    direction: "next",
     onClick: function onClick() {
       if (visibleControlButtons.nextCallBack) {
         visibleControlButtons.nextCallBack();
@@ -1207,17 +1184,11 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 17
-    }
-  }, __jsx(NextButton, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 150,
+      lineNumber: 160,
       columnNumber: 19
     }
-  }))), !visibleControlButtons.nextHref && __jsx("div", {
+  }, nextText))), !visibleControlButtons.nextHref && __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
+    direction: "next",
     onClick: function onClick() {
       visibleControlButtons.nextClick();
 
@@ -1228,41 +1199,82 @@ var ControlUnit = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function ()
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156,
+      lineNumber: 175,
       columnNumber: 15
     }
-  }, __jsx(NextButton, {
+  }, nextText)), __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
+    visible: !!(visibleControlButtons.nextHref2 || visibleControlButtons.nextClick2),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164,
-      columnNumber: 17
-    }
-  }))))), __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
-    visible: visibleControlButtons.pageProgress ? true : false,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 7
-    }
-  }, __jsx(PageProgressWrapper, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 171,
-      columnNumber: 9
-    }
-  }, __jsx(_atoms_PageProgress_PageProgress__WEBPACK_IMPORTED_MODULE_8__["PageProgress"], {
-    pageAmount: pageAmount,
-    currentPage: currentPage,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 172,
+      lineNumber: 188,
       columnNumber: 11
     }
-  }))));
+  }, __jsx(_styles_Mb__WEBPACK_IMPORTED_MODULE_12__["Mb"], {
+    size: {
+      pc: 14,
+      tb: 14,
+      sp: 14
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 193,
+      columnNumber: 13
+    }
+  })), __jsx(_atoms_OpacityEffect__WEBPACK_IMPORTED_MODULE_7__["OpacityEffect"], {
+    visible: !!(visibleControlButtons.nextHref2 || visibleControlButtons.nextClick2),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 195,
+      columnNumber: 11
+    }
+  }, visibleControlButtons.nextHref2 && __jsx(_atoms_Trans__WEBPACK_IMPORTED_MODULE_5__["Trans"], {
+    href: visibleControlButtons.nextHref2,
+    transitionKey: visibleControlButtons.nextTransitionKey2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 206,
+      columnNumber: 17
+    }
+  }, __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
+    direction: "next",
+    onClick: function onClick() {
+      if (visibleControlButtons.nextCallBack2) {
+        visibleControlButtons.nextCallBack2();
+      }
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 207,
+      columnNumber: 19
+    }
+  }, nextText2))), !visibleControlButtons.nextHref2 && __jsx(_atoms_ArrowButton_ArrowButton__WEBPACK_IMPORTED_MODULE_4__["ArrowButton"], {
+    direction: "next",
+    onClick: function onClick() {
+      visibleControlButtons.nextClick2();
+
+      if (visibleControlButtons.nextCallBack2) {
+        visibleControlButtons.nextCallBack2();
+      }
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 222,
+      columnNumber: 15
+    }
+  }, nextText2)))));
 });
 
 /***/ }),
@@ -1664,12 +1676,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   waveHeight: 42,
   waveGapFromTop: 130,
-  controlUnitTopMargin: 10,
   dangerImageRatio: 42.857,
   contentMaxWidth: 1025,
   menuMaxWidth: 864,
   headerHeight: 250,
-  headerOvrGap: 100,
+  controlUnitTopMargin: 10,
+  headerHeightS: 110,
+  headerHeightL: 148,
   readableContentTextSize: {
     pc: 18,
     tb: 18,
@@ -1690,8 +1703,7 @@ __webpack_require__.r(__webpack_exports__);
   dangerScreenSize: {
     width: 4032,
     height: 1728
-  },
-  lineHeightMainText: 2
+  }
 });
 
 /***/ }),
@@ -1779,7 +1791,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_useFreezeBodyTop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./containers/useFreezeBodyTop */ "./containers/useFreezeBodyTop.ts");
 /* harmony import */ var _containers_useTransitionKey__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./containers/useTransitionKey */ "./containers/useTransitionKey.ts");
 /* harmony import */ var _containers_useCountTimer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/useCountTimer */ "./containers/useCountTimer.ts");
-/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/useControlButtons */ "./containers/useControlButtons.ts");
+/* harmony import */ var _containers_useControlButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/useControlButtons */ "./containers/useControlButtons.tsx");
 /* harmony import */ var _containers_useCreateBgColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/useCreateBgColor */ "./containers/useCreateBgColor.ts");
 /* harmony import */ var _containers_useCatchTransition__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/useCatchTransition */ "./containers/useCatchTransition.ts");
 /* harmony import */ var _containers_useWaveState__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./containers/useWaveState */ "./containers/useWaveState.ts");
@@ -1833,33 +1845,41 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./containers/useControlButtons.ts":
-/*!*****************************************!*\
-  !*** ./containers/useControlButtons.ts ***!
-  \*****************************************/
-/*! exports provided: default */
+/***/ "./containers/useControlButtons.tsx":
+/*!******************************************!*\
+  !*** ./containers/useControlButtons.tsx ***!
+  \******************************************/
+/*! exports provided: controlButtonsInitValue, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "controlButtonsInitValue", function() { return controlButtonsInitValue; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
+var controlButtonsInitValue = {
+  prevHref: void 0,
+  prevTransitionKey: "init",
+  prevClick: void 0,
+  prevCallBack: void 0,
+  prevNotation: "",
+  nextHref: void 0,
+  nextTransitionKey: "init",
+  nextClick: void 0,
+  nextCallBack: void 0,
+  nextNotation: "",
+  nextHref2: void 0,
+  nextTransitionKey2: "init",
+  nextClick2: void 0,
+  nextCallBack2: void 0,
+  nextNotation2: "",
+  color: void 0,
+  isExistTower: true,
+  pageProgress: void 0
+};
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    color: void 0,
-    notation: "",
-    prevHref: void 0,
-    nextHref: void 0,
-    prevClick: void 0,
-    nextClick: void 0,
-    prevCallBack: void 0,
-    nextCallBack: void 0,
-    isExistTower: true,
-    prevTransitionKey: "init",
-    nextTransitionKey: "init",
-    pageProgress: void 0
-  }),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(controlButtonsInitValue),
       visibleControlButtons = _useState[0],
       setVisibleControlButtons = _useState[1];
 
@@ -2208,6 +2228,37 @@ var useSetTransTime = function useSetTransTime(callBack, delay) {
 
 /***/ }),
 
+/***/ "./hooks/useSkip.ts":
+/*!**************************!*\
+  !*** ./hooks/useSkip.ts ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useSkip; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function useSkip(effect, deps) {
+  var times = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _times = _useState[0],
+      setTimes = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (_times >= times) {
+      return effect();
+    } else {
+      setTimes(_times + 1);
+    }
+  }, deps);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
@@ -2326,33 +2377,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
 
 /***/ }),
 
@@ -3455,6 +3479,121 @@ var unitlessKeys = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/simplebar/dist/simplebar.min.css":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/simplebar/dist/simplebar.min.css ***!
+  \**********************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "[data-simplebar]{position:relative;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;align-content:flex-start;align-items:flex-start}.simplebar-wrapper{overflow:hidden;width:inherit;height:inherit;max-width:inherit;max-height:inherit}.simplebar-mask{direction:inherit;position:absolute;overflow:hidden;padding:0;margin:0;left:0;top:0;bottom:0;right:0;width:auto!important;height:auto!important;z-index:0}.simplebar-offset{direction:inherit!important;box-sizing:inherit!important;resize:none!important;position:absolute;top:0;left:0;bottom:0;right:0;padding:0;margin:0;-webkit-overflow-scrolling:touch}.simplebar-content-wrapper{direction:inherit;box-sizing:border-box!important;position:relative;display:block;height:100%;width:auto;max-width:100%;max-height:100%;scrollbar-width:none;-ms-overflow-style:none}.simplebar-content-wrapper::-webkit-scrollbar,.simplebar-hide-scrollbar::-webkit-scrollbar{width:0;height:0}.simplebar-content:after,.simplebar-content:before{content:' ';display:table}.simplebar-placeholder{max-height:100%;max-width:100%;width:100%;pointer-events:none}.simplebar-height-auto-observer-wrapper{box-sizing:inherit!important;height:100%;width:100%;max-width:1px;position:relative;float:left;max-height:1px;overflow:hidden;z-index:-1;padding:0;margin:0;pointer-events:none;flex-grow:inherit;flex-shrink:0;flex-basis:0}.simplebar-height-auto-observer{box-sizing:inherit;display:block;opacity:0;position:absolute;top:0;left:0;height:1000%;width:1000%;min-height:1px;min-width:1px;overflow:hidden;pointer-events:none;z-index:-1}.simplebar-track{z-index:1;position:absolute;right:0;bottom:0;pointer-events:none;overflow:hidden}[data-simplebar].simplebar-dragging .simplebar-content{pointer-events:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}[data-simplebar].simplebar-dragging .simplebar-track{pointer-events:all}.simplebar-scrollbar{position:absolute;left:0;right:0;min-height:10px}.simplebar-scrollbar:before{position:absolute;content:'';background:#000;border-radius:7px;left:2px;right:2px;opacity:0;transition:opacity .2s linear}.simplebar-scrollbar.simplebar-visible:before{opacity:.5;transition:opacity 0s linear}.simplebar-track.simplebar-vertical{top:0;width:11px}.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{top:2px;bottom:2px}.simplebar-track.simplebar-horizontal{left:0;height:11px}.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before{height:100%;left:2px;right:2px}.simplebar-track.simplebar-horizontal .simplebar-scrollbar{right:auto;left:0;top:2px;height:7px;min-height:0;min-width:10px;width:auto}[data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical{right:auto;left:0}.hs-dummy-scrollbar-size{direction:rtl;position:fixed;opacity:0;visibility:hidden;height:500px;width:500px;overflow-y:hidden;overflow-x:scroll}.simplebar-hide-scrollbar{position:fixed;left:0;visibility:hidden;overflow-y:scroll;scrollbar-width:none;-ms-overflow-style:none}\n", "",{"version":3,"sources":["C:/Users/worker/Desktop/bng-wap-front/node_modules/simplebar/dist/simplebar.min.css"],"names":[],"mappings":"AAAA,iBAAiB,iBAAiB,CAAC,qBAAqB,CAAC,cAAc,CAAC,0BAA0B,CAAC,wBAAwB,CAAC,sBAAsB,CAAC,mBAAmB,eAAe,CAAC,aAAa,CAAC,cAAc,CAAC,iBAAiB,CAAC,kBAAkB,CAAC,gBAAgB,iBAAiB,CAAC,iBAAiB,CAAC,eAAe,CAAC,SAAS,CAAC,QAAQ,CAAC,MAAM,CAAC,KAAK,CAAC,QAAQ,CAAC,OAAO,CAAC,oBAAoB,CAAC,qBAAqB,CAAC,SAAS,CAAC,kBAAkB,2BAA2B,CAAC,4BAA4B,CAAC,qBAAqB,CAAC,iBAAiB,CAAC,KAAK,CAAC,MAAM,CAAC,QAAQ,CAAC,OAAO,CAAC,SAAS,CAAC,QAAQ,CAAC,gCAAgC,CAAC,2BAA2B,iBAAiB,CAAC,+BAA+B,CAAC,iBAAiB,CAAC,aAAa,CAAC,WAAW,CAAC,UAAU,CAAC,cAAc,CAAC,eAAe,CAAC,oBAAoB,CAAC,uBAAuB,CAAC,2FAA2F,OAAO,CAAC,QAAQ,CAAC,mDAAmD,WAAW,CAAC,aAAa,CAAC,uBAAuB,eAAe,CAAC,cAAc,CAAC,UAAU,CAAC,mBAAmB,CAAC,wCAAwC,4BAA4B,CAAC,WAAW,CAAC,UAAU,CAAC,aAAa,CAAC,iBAAiB,CAAC,UAAU,CAAC,cAAc,CAAC,eAAe,CAAC,UAAU,CAAC,SAAS,CAAC,QAAQ,CAAC,mBAAmB,CAAC,iBAAiB,CAAC,aAAa,CAAC,YAAY,CAAC,gCAAgC,kBAAkB,CAAC,aAAa,CAAC,SAAS,CAAC,iBAAiB,CAAC,KAAK,CAAC,MAAM,CAAC,YAAY,CAAC,WAAW,CAAC,cAAc,CAAC,aAAa,CAAC,eAAe,CAAC,mBAAmB,CAAC,UAAU,CAAC,iBAAiB,SAAS,CAAC,iBAAiB,CAAC,OAAO,CAAC,QAAQ,CAAC,mBAAmB,CAAC,eAAe,CAAC,uDAAuD,mBAAmB,CAAC,qBAAgB,CAAhB,oBAAgB,CAAhB,gBAAgB,CAAC,wBAAwB,CAAC,qDAAqD,kBAAkB,CAAC,qBAAqB,iBAAiB,CAAC,MAAM,CAAC,OAAO,CAAC,eAAe,CAAC,4BAA4B,iBAAiB,CAAC,UAAU,CAAC,eAAe,CAAC,iBAAiB,CAAC,QAAQ,CAAC,SAAS,CAAC,SAAS,CAAC,6BAA6B,CAAC,8CAA8C,UAAU,CAAC,4BAA4B,CAAC,oCAAoC,KAAK,CAAC,UAAU,CAAC,gEAAgE,OAAO,CAAC,UAAU,CAAC,sCAAsC,MAAM,CAAC,WAAW,CAAC,kEAAkE,WAAW,CAAC,QAAQ,CAAC,SAAS,CAAC,2DAA2D,UAAU,CAAC,MAAM,CAAC,OAAO,CAAC,UAAU,CAAC,YAAY,CAAC,cAAc,CAAC,UAAU,CAAC,mEAAmE,UAAU,CAAC,MAAM,CAAC,yBAAyB,aAAa,CAAC,cAAc,CAAC,SAAS,CAAC,iBAAiB,CAAC,YAAY,CAAC,WAAW,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,0BAA0B,cAAc,CAAC,MAAM,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,oBAAoB,CAAC,uBAAuB","file":"simplebar.min.css","sourcesContent":["[data-simplebar]{position:relative;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;align-content:flex-start;align-items:flex-start}.simplebar-wrapper{overflow:hidden;width:inherit;height:inherit;max-width:inherit;max-height:inherit}.simplebar-mask{direction:inherit;position:absolute;overflow:hidden;padding:0;margin:0;left:0;top:0;bottom:0;right:0;width:auto!important;height:auto!important;z-index:0}.simplebar-offset{direction:inherit!important;box-sizing:inherit!important;resize:none!important;position:absolute;top:0;left:0;bottom:0;right:0;padding:0;margin:0;-webkit-overflow-scrolling:touch}.simplebar-content-wrapper{direction:inherit;box-sizing:border-box!important;position:relative;display:block;height:100%;width:auto;max-width:100%;max-height:100%;scrollbar-width:none;-ms-overflow-style:none}.simplebar-content-wrapper::-webkit-scrollbar,.simplebar-hide-scrollbar::-webkit-scrollbar{width:0;height:0}.simplebar-content:after,.simplebar-content:before{content:' ';display:table}.simplebar-placeholder{max-height:100%;max-width:100%;width:100%;pointer-events:none}.simplebar-height-auto-observer-wrapper{box-sizing:inherit!important;height:100%;width:100%;max-width:1px;position:relative;float:left;max-height:1px;overflow:hidden;z-index:-1;padding:0;margin:0;pointer-events:none;flex-grow:inherit;flex-shrink:0;flex-basis:0}.simplebar-height-auto-observer{box-sizing:inherit;display:block;opacity:0;position:absolute;top:0;left:0;height:1000%;width:1000%;min-height:1px;min-width:1px;overflow:hidden;pointer-events:none;z-index:-1}.simplebar-track{z-index:1;position:absolute;right:0;bottom:0;pointer-events:none;overflow:hidden}[data-simplebar].simplebar-dragging .simplebar-content{pointer-events:none;user-select:none;-webkit-user-select:none}[data-simplebar].simplebar-dragging .simplebar-track{pointer-events:all}.simplebar-scrollbar{position:absolute;left:0;right:0;min-height:10px}.simplebar-scrollbar:before{position:absolute;content:'';background:#000;border-radius:7px;left:2px;right:2px;opacity:0;transition:opacity .2s linear}.simplebar-scrollbar.simplebar-visible:before{opacity:.5;transition:opacity 0s linear}.simplebar-track.simplebar-vertical{top:0;width:11px}.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{top:2px;bottom:2px}.simplebar-track.simplebar-horizontal{left:0;height:11px}.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before{height:100%;left:2px;right:2px}.simplebar-track.simplebar-horizontal .simplebar-scrollbar{right:auto;left:0;top:2px;height:7px;min-height:0;min-width:10px;width:auto}[data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical{right:auto;left:0}.hs-dummy-scrollbar-size{direction:rtl;position:fixed;opacity:0;visibility:hidden;height:500px;width:500px;overflow-y:hidden;overflow-x:scroll}.simplebar-hide-scrollbar{position:fixed;left:0;visibility:hidden;overflow-y:scroll;scrollbar-width:none;-ms-overflow-style:none}\n"]}]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], "{").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      // eslint-disable-next-line prefer-destructuring
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = modules[_i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = "(".concat(item[2], ") and (").concat(mediaQuery, ")");
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
+
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot).concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
+
+/***/ }),
+
 /***/ "./node_modules/dom-helpers/class/addClass.js":
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/class/addClass.js ***!
@@ -4206,223 +4345,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = {
   PageTransition: _PageTransition.default
 };
-
-/***/ }),
-
-/***/ "./node_modules/next-useragent/dist/next-useragent.js":
-/*!************************************************************!*\
-  !*** ./node_modules/next-useragent/dist/next-useragent.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var uaParserJs = __webpack_require__(/*! ua-parser-js */ "./node_modules/ua-parser-js/src/ua-parser.js");
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var BOT_UA = [
-    '\\+https:\\/\\/developers.google.com\\/\\+\\/web\\/snippet\\/',
-    'googlebot',
-    'baiduspider',
-    'gurujibot',
-    'yandexbot',
-    'slurp',
-    'msnbot',
-    'bingbot',
-    'facebookexternalhit',
-    'linkedinbot',
-    'twitterbot',
-    'slackbot',
-    'telegrambot',
-    'applebot',
-    'pingdom',
-    'tumblr',
-];
-
-/**
- * Get the information of an useragent string.
- *
- * @param phase user agent strings.
- * @returns parsed information.
- */
-function parse(phase) {
-    var result = new uaParserJs.UAParser(phase).getResult();
-    var regex = new RegExp("(" + BOT_UA.join('|') + ")", 'ig');
-    var isBot = phase ? regex.test(phase.toLowerCase()) : false;
-    var browser = result.browser.name;
-    var deviceType = result.device.type || null;
-    var os = result.os.name;
-    var engine = result.engine.name;
-    var isMobile = deviceType === 'mobile';
-    var isTablet = deviceType === 'tablet';
-    var isIos = os === 'iOS';
-    var ua = Object.freeze({
-        browser: browser,
-        deviceType: deviceType,
-        os: os,
-        engine: engine,
-        isMobile: isMobile,
-        isTablet: isTablet,
-        isIos: isIos,
-        source: phase,
-        deviceVendor: result.device.vendor || null,
-        osVersion: parseInt(result.os.version, 10),
-        browserVersion: parseFloat(result.browser.version),
-        engineVersion: parseFloat(result.engine.version),
-        isIphone: isMobile && isIos,
-        isIpad: isTablet && isIos,
-        isDesktop: !isMobile && !isTablet,
-        isChrome: browser === 'Chrome',
-        isFirefox: browser === 'Firefox',
-        isSafari: browser === 'Safari',
-        isIE: browser === 'IE',
-        isMac: os === 'Mac OS',
-        isChromeOS: os === 'Chromium OS',
-        isWindows: os === 'Windows',
-        isAndroid: os === 'Android',
-        isBot: isBot,
-    });
-    return ua;
-}
-
-function useUserAgent(phase) {
-    return parse(phase);
-}
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-/* tslint:disable: variable-name */
-function withUserAgent(ComposedComponent) {
-    var _this = this;
-    var name = ComposedComponent.displayName || ComposedComponent.name;
-    var ua;
-    var WithUserAgentWrapper = /** @class */ (function (_super) {
-        __extends(WithUserAgentWrapper, _super);
-        function WithUserAgentWrapper() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        WithUserAgentWrapper.prototype.render = function () {
-            if (!ua && typeof window !== 'undefined') {
-                ua = parse(window.navigator.userAgent);
-            }
-            return (React.createElement(ComposedComponent, __assign({ ua: ua }, this.props)));
-        };
-        WithUserAgentWrapper.displayName = "withUserAgent(" + name + ")";
-        return WithUserAgentWrapper;
-    }(React.Component));
-    if (ComposedComponent.getInitialProps) {
-        WithUserAgentWrapper.getInitialProps = function (context) { return __awaiter(_this, void 0, void 0, function () {
-            var initialProps, uaString;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        initialProps = {};
-                        uaString = '';
-                        if (typeof context.req !== 'undefined') {
-                            uaString = context.req.headers['user-agent'];
-                        }
-                        else if (typeof window !== 'undefined') {
-                            uaString = window.navigator.userAgent;
-                        }
-                        ua = parse(uaString);
-                        context.ua = Object.assign({}, ua);
-                        return [4 /*yield*/, ComposedComponent.getInitialProps(context)];
-                    case 1:
-                        initialProps = _a.sent();
-                        if (context.ua) {
-                            delete context.ua;
-                        }
-                        return [2 /*return*/, initialProps];
-                }
-            });
-        }); };
-    }
-    return WithUserAgentWrapper;
-}
-
-exports.useUserAgent = useUserAgent;
-exports.withUserAgent = withUserAgent;
-
 
 /***/ }),
 
@@ -9884,6 +9806,360 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 /***/ }),
 
+/***/ "./node_modules/simplebar/dist/simplebar.min.css":
+/*!*******************************************************!*\
+  !*** ./node_modules/simplebar/dist/simplebar.min.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../css-loader/dist/cjs.js??ref--5-oneOf-5-1!../../next/dist/compiled/postcss-loader??__nextjs_postcss!./simplebar.min.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/simplebar/dist/simplebar.min.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../css-loader/dist/cjs.js??ref--5-oneOf-5-1!../../next/dist/compiled/postcss-loader??__nextjs_postcss!./simplebar.min.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/simplebar/dist/simplebar.min.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../css-loader/dist/cjs.js??ref--5-oneOf-5-1!../../next/dist/compiled/postcss-loader??__nextjs_postcss!./simplebar.min.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/simplebar/dist/simplebar.min.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var stylesInDom = {};
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+function listToStyles(list, options) {
+  var styles = [];
+  var newStyles = {};
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var css = item[1];
+    var media = item[2];
+    var sourceMap = item[3];
+    var part = {
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    };
+
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = {
+        id: id,
+        parts: [part]
+      });
+    } else {
+      newStyles[id].parts.push(part);
+    }
+  }
+
+  return styles;
+}
+
+function addStylesToDom(styles, options) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i];
+    var domStyle = stylesInDom[item.id];
+    var j = 0;
+
+    if (domStyle) {
+      domStyle.refs++;
+
+      for (; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j]);
+      }
+
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j], options));
+      }
+    } else {
+      var parts = [];
+
+      for (; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j], options));
+      }
+
+      stylesInDom[item.id] = {
+        id: item.id,
+        refs: 1,
+        parts: parts
+      };
+    }
+  }
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+
+  if (typeof options.attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : undefined;
+
+    if (nonce) {
+      options.attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(options.attributes).forEach(function (key) {
+    style.setAttribute(key, options.attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  }
+
+  if (sourceMap && btoa) {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {};
+  options.attributes = typeof options.attributes === 'object' ? options.attributes : {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  var styles = listToStyles(list, options);
+  addStylesToDom(styles, options);
+  return function update(newList) {
+    var mayRemove = [];
+
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i];
+      var domStyle = stylesInDom[item.id];
+
+      if (domStyle) {
+        domStyle.refs--;
+        mayRemove.push(domStyle);
+      }
+    }
+
+    if (newList) {
+      var newStyles = listToStyles(newList, options);
+      addStylesToDom(newStyles, options);
+    }
+
+    for (var _i = 0; _i < mayRemove.length; _i++) {
+      var _domStyle = mayRemove[_i];
+
+      if (_domStyle.refs === 0) {
+        for (var j = 0; j < _domStyle.parts.length; j++) {
+          _domStyle.parts[j]();
+        }
+
+        delete stylesInDom[_domStyle.id];
+      }
+    }
+  };
+};
+
+/***/ }),
+
 /***/ "./node_modules/styled-components/dist/styled-components.browser.esm.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/styled-components/dist/styled-components.browser.esm.js ***!
@@ -12061,943 +12337,6 @@ var index = generateMedia();
 
 /***/ }),
 
-/***/ "./node_modules/ua-parser-js/src/ua-parser.js":
-/*!****************************************************!*\
-  !*** ./node_modules/ua-parser-js/src/ua-parser.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * UAParser.js v0.7.23
- * Lightweight JavaScript-based User-Agent string parser
- * https://github.com/faisalman/ua-parser-js
- *
- * Copyright © 2012-2019 Faisal Salman <f@faisalman.com>
- * Licensed under MIT License
- */
-
-(function (window, undefined) {
-
-    'use strict';
-
-    //////////////
-    // Constants
-    /////////////
-
-
-    var LIBVERSION  = '0.7.23',
-        EMPTY       = '',
-        UNKNOWN     = '?',
-        FUNC_TYPE   = 'function',
-        UNDEF_TYPE  = 'undefined',
-        OBJ_TYPE    = 'object',
-        STR_TYPE    = 'string',
-        MAJOR       = 'major', // deprecated
-        MODEL       = 'model',
-        NAME        = 'name',
-        TYPE        = 'type',
-        VENDOR      = 'vendor',
-        VERSION     = 'version',
-        ARCHITECTURE= 'architecture',
-        CONSOLE     = 'console',
-        MOBILE      = 'mobile',
-        TABLET      = 'tablet',
-        SMARTTV     = 'smarttv',
-        WEARABLE    = 'wearable',
-        EMBEDDED    = 'embedded';
-
-
-    ///////////
-    // Helper
-    //////////
-
-
-    var util = {
-        extend : function (regexes, extensions) {
-            var mergedRegexes = {};
-            for (var i in regexes) {
-                if (extensions[i] && extensions[i].length % 2 === 0) {
-                    mergedRegexes[i] = extensions[i].concat(regexes[i]);
-                } else {
-                    mergedRegexes[i] = regexes[i];
-                }
-            }
-            return mergedRegexes;
-        },
-        has : function (str1, str2) {
-          if (typeof str1 === "string") {
-            return str2.toLowerCase().indexOf(str1.toLowerCase()) !== -1;
-          } else {
-            return false;
-          }
-        },
-        lowerize : function (str) {
-            return str.toLowerCase();
-        },
-        major : function (version) {
-            return typeof(version) === STR_TYPE ? version.replace(/[^\d\.]/g,'').split(".")[0] : undefined;
-        },
-        trim : function (str) {
-          return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
-        }
-    };
-
-
-    ///////////////
-    // Map helper
-    //////////////
-
-
-    var mapper = {
-
-        rgx : function (ua, arrays) {
-
-            var i = 0, j, k, p, q, matches, match;
-
-            // loop through all regexes maps
-            while (i < arrays.length && !matches) {
-
-                var regex = arrays[i],       // even sequence (0,2,4,..)
-                    props = arrays[i + 1];   // odd sequence (1,3,5,..)
-                j = k = 0;
-
-                // try matching uastring with regexes
-                while (j < regex.length && !matches) {
-
-                    matches = regex[j++].exec(ua);
-
-                    if (!!matches) {
-                        for (p = 0; p < props.length; p++) {
-                            match = matches[++k];
-                            q = props[p];
-                            // check if given property is actually array
-                            if (typeof q === OBJ_TYPE && q.length > 0) {
-                                if (q.length == 2) {
-                                    if (typeof q[1] == FUNC_TYPE) {
-                                        // assign modified match
-                                        this[q[0]] = q[1].call(this, match);
-                                    } else {
-                                        // assign given value, ignore regex match
-                                        this[q[0]] = q[1];
-                                    }
-                                } else if (q.length == 3) {
-                                    // check whether function or regex
-                                    if (typeof q[1] === FUNC_TYPE && !(q[1].exec && q[1].test)) {
-                                        // call function (usually string mapper)
-                                        this[q[0]] = match ? q[1].call(this, match, q[2]) : undefined;
-                                    } else {
-                                        // sanitize match using given regex
-                                        this[q[0]] = match ? match.replace(q[1], q[2]) : undefined;
-                                    }
-                                } else if (q.length == 4) {
-                                        this[q[0]] = match ? q[3].call(this, match.replace(q[1], q[2])) : undefined;
-                                }
-                            } else {
-                                this[q] = match ? match : undefined;
-                            }
-                        }
-                    }
-                }
-                i += 2;
-            }
-        },
-
-        str : function (str, map) {
-
-            for (var i in map) {
-                // check if array
-                if (typeof map[i] === OBJ_TYPE && map[i].length > 0) {
-                    for (var j = 0; j < map[i].length; j++) {
-                        if (util.has(map[i][j], str)) {
-                            return (i === UNKNOWN) ? undefined : i;
-                        }
-                    }
-                } else if (util.has(map[i], str)) {
-                    return (i === UNKNOWN) ? undefined : i;
-                }
-            }
-            return str;
-        }
-    };
-
-
-    ///////////////
-    // String map
-    //////////////
-
-
-    var maps = {
-
-        browser : {
-            oldsafari : {
-                version : {
-                    '1.0'   : '/8',
-                    '1.2'   : '/1',
-                    '1.3'   : '/3',
-                    '2.0'   : '/412',
-                    '2.0.2' : '/416',
-                    '2.0.3' : '/417',
-                    '2.0.4' : '/419',
-                    '?'     : '/'
-                }
-            }
-        },
-
-        device : {
-            amazon : {
-                model : {
-                    'Fire Phone' : ['SD', 'KF']
-                }
-            },
-            sprint : {
-                model : {
-                    'Evo Shift 4G' : '7373KT'
-                },
-                vendor : {
-                    'HTC'       : 'APA',
-                    'Sprint'    : 'Sprint'
-                }
-            }
-        },
-
-        os : {
-            windows : {
-                version : {
-                    'ME'        : '4.90',
-                    'NT 3.11'   : 'NT3.51',
-                    'NT 4.0'    : 'NT4.0',
-                    '2000'      : 'NT 5.0',
-                    'XP'        : ['NT 5.1', 'NT 5.2'],
-                    'Vista'     : 'NT 6.0',
-                    '7'         : 'NT 6.1',
-                    '8'         : 'NT 6.2',
-                    '8.1'       : 'NT 6.3',
-                    '10'        : ['NT 6.4', 'NT 10.0'],
-                    'RT'        : 'ARM'
-                }
-            }
-        }
-    };
-
-
-    //////////////
-    // Regex map
-    /////////////
-
-
-    var regexes = {
-
-        browser : [[
-
-            // Presto based
-            /(opera\smini)\/([\w\.-]+)/i,                                       // Opera Mini
-            /(opera\s[mobiletab]{3,6}).+version\/([\w\.-]+)/i,                  // Opera Mobi/Tablet
-            /(opera).+version\/([\w\.]+)/i,                                     // Opera > 9.80
-            /(opera)[\/\s]+([\w\.]+)/i                                          // Opera < 9.80
-            ], [NAME, VERSION], [
-
-            /(opios)[\/\s]+([\w\.]+)/i                                          // Opera mini on iphone >= 8.0
-            ], [[NAME, 'Opera Mini'], VERSION], [
-
-            /\s(opr)\/([\w\.]+)/i                                               // Opera Webkit
-            ], [[NAME, 'Opera'], VERSION], [
-
-            // Mixed
-            /(kindle)\/([\w\.]+)/i,                                             // Kindle
-            /(lunascape|maxthon|netfront|jasmine|blazer)[\/\s]?([\w\.]*)/i,
-                                                                                // Lunascape/Maxthon/Netfront/Jasmine/Blazer
-            // Trident based
-            /(avant\s|iemobile|slim)(?:browser)?[\/\s]?([\w\.]*)/i,
-                                                                                // Avant/IEMobile/SlimBrowser
-            /(bidubrowser|baidubrowser)[\/\s]?([\w\.]+)/i,                      // Baidu Browser
-            /(?:ms|\()(ie)\s([\w\.]+)/i,                                        // Internet Explorer
-
-            // Webkit/KHTML based
-            /(rekonq)\/([\w\.]*)/i,                                             // Rekonq
-            /(chromium|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|quark|qupzilla|falkon)\/([\w\.-]+)/i
-                                                                                // Chromium/Flock/RockMelt/Midori/Epiphany/Silk/Skyfire/Bolt/Iron/Iridium/PhantomJS/Bowser/QupZilla/Falkon
-            ], [NAME, VERSION], [
-
-            /(konqueror)\/([\w\.]+)/i                                           // Konqueror
-            ], [[NAME, 'Konqueror'], VERSION], [
-
-            /(trident).+rv[:\s]([\w\.]{1,9}).+like\sgecko/i                     // IE11
-            ], [[NAME, 'IE'], VERSION], [
-
-            /(edge|edgios|edga|edg)\/((\d+)?[\w\.]+)/i                          // Microsoft Edge
-            ], [[NAME, 'Edge'], VERSION], [
-
-            /(yabrowser)\/([\w\.]+)/i                                           // Yandex
-            ], [[NAME, 'Yandex'], VERSION], [
-
-            /(Avast)\/([\w\.]+)/i                                               // Avast Secure Browser
-            ], [[NAME, 'Avast Secure Browser'], VERSION], [
-
-            /(AVG)\/([\w\.]+)/i                                                 // AVG Secure Browser
-            ], [[NAME, 'AVG Secure Browser'], VERSION], [
-
-            /(puffin)\/([\w\.]+)/i                                              // Puffin
-            ], [[NAME, 'Puffin'], VERSION], [
-
-            /(focus)\/([\w\.]+)/i                                               // Firefox Focus
-            ], [[NAME, 'Firefox Focus'], VERSION], [
-
-            /(opt)\/([\w\.]+)/i                                                 // Opera Touch
-            ], [[NAME, 'Opera Touch'], VERSION], [
-
-            /((?:[\s\/])uc?\s?browser|(?:juc.+)ucweb)[\/\s]?([\w\.]+)/i         // UCBrowser
-            ], [[NAME, 'UCBrowser'], VERSION], [
-
-            /(comodo_dragon)\/([\w\.]+)/i                                       // Comodo Dragon
-            ], [[NAME, /_/g, ' '], VERSION], [
-
-            /(windowswechat qbcore)\/([\w\.]+)/i                                // WeChat Desktop for Windows Built-in Browser
-            ], [[NAME, 'WeChat(Win) Desktop'], VERSION], [
-
-            /(micromessenger)\/([\w\.]+)/i                                      // WeChat
-            ], [[NAME, 'WeChat'], VERSION], [
-
-            /(brave)\/([\w\.]+)/i                                               // Brave browser
-            ], [[NAME, 'Brave'], VERSION], [
-
-            /(whale)\/([\w\.]+)/i                                               // Whale browser
-            ], [[NAME, 'Whale'], VERSION], [
-
-            /(qqbrowserlite)\/([\w\.]+)/i                                       // QQBrowserLite
-            ], [NAME, VERSION], [
-
-            /(QQ)\/([\d\.]+)/i                                                  // QQ, aka ShouQ
-            ], [NAME, VERSION], [
-
-            /m?(qqbrowser)[\/\s]?([\w\.]+)/i                                    // QQBrowser
-            ], [NAME, VERSION], [
-
-            /(baiduboxapp)[\/\s]?([\w\.]+)/i                                    // Baidu App
-            ], [NAME, VERSION], [
-
-            /(2345Explorer)[\/\s]?([\w\.]+)/i                                   // 2345 Browser
-            ], [NAME, VERSION], [
-
-            /(MetaSr)[\/\s]?([\w\.]+)/i                                         // SouGouBrowser
-            ], [NAME], [
-
-            /(LBBROWSER)/i                                                      // LieBao Browser
-            ], [NAME], [
-
-            /xiaomi\/miuibrowser\/([\w\.]+)/i                                   // MIUI Browser
-            ], [VERSION, [NAME, 'MIUI Browser']], [
-
-            /;fbav\/([\w\.]+);/i                                                // Facebook App for iOS & Android with version
-            ], [VERSION, [NAME, 'Facebook']], [
-            
-            /FBAN\/FBIOS|FB_IAB\/FB4A/i                                         // Facebook App for iOS & Android without version
-            ], [[NAME, 'Facebook']], [
-
-            /safari\s(line)\/([\w\.]+)/i,                                       // Line App for iOS
-            /android.+(line)\/([\w\.]+)\/iab/i                                  // Line App for Android
-            ], [NAME, VERSION], [
-
-            /headlesschrome(?:\/([\w\.]+)|\s)/i                                 // Chrome Headless
-            ], [VERSION, [NAME, 'Chrome Headless']], [
-
-            /\swv\).+(chrome)\/([\w\.]+)/i                                      // Chrome WebView
-            ], [[NAME, /(.+)/, '$1 WebView'], VERSION], [
-
-            /((?:oculus|samsung)browser)\/([\w\.]+)/i
-            ], [[NAME, /(.+(?:g|us))(.+)/, '$1 $2'], VERSION], [                // Oculus / Samsung Browser
-
-            /android.+version\/([\w\.]+)\s+(?:mobile\s?safari|safari)*/i        // Android Browser
-            ], [VERSION, [NAME, 'Android Browser']], [
-
-            /(sailfishbrowser)\/([\w\.]+)/i                                     // Sailfish Browser
-            ], [[NAME, 'Sailfish Browser'], VERSION], [
-
-            /(chrome|omniweb|arora|[tizenoka]{5}\s?browser)\/v?([\w\.]+)/i
-                                                                                // Chrome/OmniWeb/Arora/Tizen/Nokia
-            ], [NAME, VERSION], [
-
-            /(dolfin)\/([\w\.]+)/i                                              // Dolphin
-            ], [[NAME, 'Dolphin'], VERSION], [
-
-            /(qihu|qhbrowser|qihoobrowser|360browser)/i                         // 360
-            ], [[NAME, '360 Browser']], [
-
-            /((?:android.+)crmo|crios)\/([\w\.]+)/i                             // Chrome for Android/iOS
-            ], [[NAME, 'Chrome'], VERSION], [
-
-            /(coast)\/([\w\.]+)/i                                               // Opera Coast
-            ], [[NAME, 'Opera Coast'], VERSION], [
-
-            /fxios\/([\w\.-]+)/i                                                // Firefox for iOS
-            ], [VERSION, [NAME, 'Firefox']], [
-
-            /version\/([\w\.]+)\s.*mobile\/\w+\s(safari)/i                      // Mobile Safari
-            ], [VERSION, [NAME, 'Mobile Safari']], [
-
-            /version\/([\w\.]+)\s.*(mobile\s?safari|safari)/i                   // Safari & Safari Mobile
-            ], [VERSION, NAME], [
-
-            /webkit.+?(gsa)\/([\w\.]+)\s.*(mobile\s?safari|safari)(\/[\w\.]+)/i // Google Search Appliance on iOS
-            ], [[NAME, 'GSA'], VERSION], [
-
-            /webkit.+?(mobile\s?safari|safari)(\/[\w\.]+)/i                     // Safari < 3.0
-            ], [NAME, [VERSION, mapper.str, maps.browser.oldsafari.version]], [
-
-            /(webkit|khtml)\/([\w\.]+)/i
-            ], [NAME, VERSION], [
-
-            // Gecko based
-            /(navigator|netscape)\/([\w\.-]+)/i                                 // Netscape
-            ], [[NAME, 'Netscape'], VERSION], [
-            /(swiftfox)/i,                                                      // Swiftfox
-            /(icedragon|iceweasel|camino|chimera|fennec|maemo\sbrowser|minimo|conkeror)[\/\s]?([\w\.\+]+)/i,
-                                                                                // IceDragon/Iceweasel/Camino/Chimera/Fennec/Maemo/Minimo/Conkeror
-            /(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix|palemoon|basilisk|waterfox)\/([\w\.-]+)$/i,
-
-                                                                                // Firefox/SeaMonkey/K-Meleon/IceCat/IceApe/Firebird/Phoenix
-            /(firefox)\/([\w\.]+)\s[\w\s\-]+\/[\w\.]+$/i,                       // Other Firefox-based
-            /(mozilla)\/([\w\.]+)\s.+rv\:.+gecko\/\d+/i,                        // Mozilla
-
-            // Other
-            /(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|sleipnir)[\/\s]?([\w\.]+)/i,
-                                                                                // Polaris/Lynx/Dillo/iCab/Doris/Amaya/w3m/NetSurf/Sleipnir
-            /(links)\s\(([\w\.]+)/i,                                            // Links
-            /(gobrowser)\/?([\w\.]*)/i,                                         // GoBrowser
-            /(ice\s?browser)\/v?([\w\._]+)/i,                                   // ICE Browser
-            /(mosaic)[\/\s]([\w\.]+)/i                                          // Mosaic
-            ], [NAME, VERSION]
-        ],
-
-        cpu : [[
-
-            /(?:(amd|x(?:(?:86|64)[_-])?|wow|win)64)[;\)]/i                     // AMD64
-            ], [[ARCHITECTURE, 'amd64']], [
-
-            /(ia32(?=;))/i                                                      // IA32 (quicktime)
-            ], [[ARCHITECTURE, util.lowerize]], [
-
-            /((?:i[346]|x)86)[;\)]/i                                            // IA32
-            ], [[ARCHITECTURE, 'ia32']], [
-
-            // PocketPC mistakenly identified as PowerPC
-            /windows\s(ce|mobile);\sppc;/i
-            ], [[ARCHITECTURE, 'arm']], [
-
-            /((?:ppc|powerpc)(?:64)?)(?:\smac|;|\))/i                           // PowerPC
-            ], [[ARCHITECTURE, /ower/, '', util.lowerize]], [
-
-            /(sun4\w)[;\)]/i                                                    // SPARC
-            ], [[ARCHITECTURE, 'sparc']], [
-
-            /((?:avr32|ia64(?=;))|68k(?=\))|arm(?:64|(?=v\d+[;l]))|(?=atmel\s)avr|(?:irix|mips|sparc)(?:64)?(?=;)|pa-risc)/i
-                                                                                // IA64, 68K, ARM/64, AVR/32, IRIX/64, MIPS/64, SPARC/64, PA-RISC
-            ], [[ARCHITECTURE, util.lowerize]]
-        ],
-
-        device : [[
-
-            /\((ipad|playbook);[\w\s\),;-]+(rim|apple)/i                        // iPad/PlayBook
-            ], [MODEL, VENDOR, [TYPE, TABLET]], [
-
-            /applecoremedia\/[\w\.]+ \((ipad)/                                  // iPad
-            ], [MODEL, [VENDOR, 'Apple'], [TYPE, TABLET]], [
-
-            /(apple\s{0,1}tv)/i                                                 // Apple TV
-            ], [[MODEL, 'Apple TV'], [VENDOR, 'Apple'], [TYPE, SMARTTV]], [
-
-            /(archos)\s(gamepad2?)/i,                                           // Archos
-            /(hp).+(touchpad)/i,                                                // HP TouchPad
-            /(hp).+(tablet)/i,                                                  // HP Tablet
-            /(kindle)\/([\w\.]+)/i,                                             // Kindle
-            /\s(nook)[\w\s]+build\/(\w+)/i,                                     // Nook
-            /(dell)\s(strea[kpr\s\d]*[\dko])/i                                  // Dell Streak
-            ], [VENDOR, MODEL, [TYPE, TABLET]], [
-
-            /(kf[A-z]+)(\sbuild\/|\)).+silk\//i                                 // Kindle Fire HD
-            ], [MODEL, [VENDOR, 'Amazon'], [TYPE, TABLET]], [
-            /(sd|kf)[0349hijorstuw]+(\sbuild\/|\)).+silk\//i                    // Fire Phone
-            ], [[MODEL, mapper.str, maps.device.amazon.model], [VENDOR, 'Amazon'], [TYPE, MOBILE]], [
-            /android.+aft([bms])\sbuild/i                                       // Fire TV
-            ], [MODEL, [VENDOR, 'Amazon'], [TYPE, SMARTTV]], [
-
-            /\((ip[honed|\s\w*]+);.+(apple)/i                                   // iPod/iPhone
-            ], [MODEL, VENDOR, [TYPE, MOBILE]], [
-            /\((ip[honed|\s\w*]+);/i                                            // iPod/iPhone
-            ], [MODEL, [VENDOR, 'Apple'], [TYPE, MOBILE]], [
-
-            /(blackberry)[\s-]?(\w+)/i,                                         // BlackBerry
-            /(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus|dell|meizu|motorola|polytron)[\s_-]?([\w-]*)/i,
-                                                                                // BenQ/Palm/Sony-Ericsson/Acer/Asus/Dell/Meizu/Motorola/Polytron
-            /(hp)\s([\w\s]+\w)/i,                                               // HP iPAQ
-            /(asus)-?(\w+)/i                                                    // Asus
-            ], [VENDOR, MODEL, [TYPE, MOBILE]], [
-            /\(bb10;\s(\w+)/i                                                   // BlackBerry 10
-            ], [MODEL, [VENDOR, 'BlackBerry'], [TYPE, MOBILE]], [
-                                                                                // Asus Tablets
-            /android.+(transfo[prime\s]{4,10}\s\w+|eeepc|slider\s\w+|nexus 7|padfone|p00c)/i
-            ], [MODEL, [VENDOR, 'Asus'], [TYPE, TABLET]], [
-
-            /(sony)\s(tablet\s[ps])\sbuild\//i,                                  // Sony
-            /(sony)?(?:sgp.+)\sbuild\//i
-            ], [[VENDOR, 'Sony'], [MODEL, 'Xperia Tablet'], [TYPE, TABLET]], [
-            /android.+\s([c-g]\d{4}|so[-l]\w+)(?=\sbuild\/|\).+chrome\/(?![1-6]{0,1}\d\.))/i
-            ], [MODEL, [VENDOR, 'Sony'], [TYPE, MOBILE]], [
-
-            /\s(ouya)\s/i,                                                      // Ouya
-            /(nintendo)\s([wids3u]+)/i                                          // Nintendo
-            ], [VENDOR, MODEL, [TYPE, CONSOLE]], [
-
-            /android.+;\s(shield)\sbuild/i                                      // Nvidia
-            ], [MODEL, [VENDOR, 'Nvidia'], [TYPE, CONSOLE]], [
-
-            /(playstation\s[34portablevi]+)/i                                   // Playstation
-            ], [MODEL, [VENDOR, 'Sony'], [TYPE, CONSOLE]], [
-
-            /(sprint\s(\w+))/i                                                  // Sprint Phones
-            ], [[VENDOR, mapper.str, maps.device.sprint.vendor], [MODEL, mapper.str, maps.device.sprint.model], [TYPE, MOBILE]], [
-
-            /(htc)[;_\s-]{1,2}([\w\s]+(?=\)|\sbuild)|\w+)/i,                    // HTC
-            /(zte)-(\w*)/i,                                                     // ZTE
-            /(alcatel|geeksphone|nexian|panasonic|(?=;\s)sony)[_\s-]?([\w-]*)/i
-                                                                                // Alcatel/GeeksPhone/Nexian/Panasonic/Sony
-            ], [VENDOR, [MODEL, /_/g, ' '], [TYPE, MOBILE]], [
-
-            /(nexus\s9)/i                                                       // HTC Nexus 9
-            ], [MODEL, [VENDOR, 'HTC'], [TYPE, TABLET]], [
-
-            /d\/huawei([\w\s-]+)[;\)]/i,                                        // Huawei
-            /android.+\s(nexus\s6p|vog-[at]?l\d\d|ane-[at]?l[x\d]\d|eml-a?l\d\da?|lya-[at]?l\d[\dc]|clt-a?l\d\di?)/i
-
-            ], [MODEL, [VENDOR, 'Huawei'], [TYPE, MOBILE]], [
-
-            /android.+(bah2?-a?[lw]\d{2})/i                                     // Huawei MediaPad
-            ], [MODEL, [VENDOR, 'Huawei'], [TYPE, TABLET]], [
-
-            /(microsoft);\s(lumia[\s\w]+)/i                                     // Microsoft Lumia
-            ], [VENDOR, MODEL, [TYPE, MOBILE]], [
-
-            /[\s\(;](xbox(?:\sone)?)[\s\);]/i                                   // Microsoft Xbox
-            ], [MODEL, [VENDOR, 'Microsoft'], [TYPE, CONSOLE]], [
-            /(kin\.[onetw]{3})/i                                                // Microsoft Kin
-            ], [[MODEL, /\./g, ' '], [VENDOR, 'Microsoft'], [TYPE, MOBILE]], [
-
-                                                                                // Motorola
-            /\s(milestone|droid(?:[2-4x]|\s(?:bionic|x2|pro|razr))?:?(\s4g)?)[\w\s]+build\//i,
-            /mot[\s-]?(\w*)/i,
-            /(XT\d{3,4}) build\//i,
-            /(nexus\s6)/i
-            ], [MODEL, [VENDOR, 'Motorola'], [TYPE, MOBILE]], [
-            /android.+\s(mz60\d|xoom[\s2]{0,2})\sbuild\//i
-            ], [MODEL, [VENDOR, 'Motorola'], [TYPE, TABLET]], [
-
-            /hbbtv\/\d+\.\d+\.\d+\s+\([\w\s]*;\s*(\w[^;]*);([^;]*)/i            // HbbTV devices
-            ], [[VENDOR, util.trim], [MODEL, util.trim], [TYPE, SMARTTV]], [
-
-            /hbbtv.+maple;(\d+)/i
-            ], [[MODEL, /^/, 'SmartTV'], [VENDOR, 'Samsung'], [TYPE, SMARTTV]], [
-
-            /\(dtv[\);].+(aquos)/i                                              // Sharp
-            ], [MODEL, [VENDOR, 'Sharp'], [TYPE, SMARTTV]], [
-
-            /android.+((sch-i[89]0\d|shw-m380s|SM-P605|SM-P610|gt-p\d{4}|gt-n\d+|sgh-t8[56]9|nexus 10))/i,
-            /((SM-T\w+))/i
-            ], [[VENDOR, 'Samsung'], MODEL, [TYPE, TABLET]], [                  // Samsung
-            /smart-tv.+(samsung)/i
-            ], [VENDOR, [TYPE, SMARTTV], MODEL], [
-            /((s[cgp]h-\w+|gt-\w+|galaxy\snexus|sm-\w[\w\d]+))/i,
-            /(sam[sung]*)[\s-]*(\w+-?[\w-]*)/i,
-            /sec-((sgh\w+))/i
-            ], [[VENDOR, 'Samsung'], MODEL, [TYPE, MOBILE]], [
-
-            /sie-(\w*)/i                                                        // Siemens
-            ], [MODEL, [VENDOR, 'Siemens'], [TYPE, MOBILE]], [
-
-            /(maemo|nokia).*(n900|lumia\s\d+)/i,                                // Nokia
-            /(nokia)[\s_-]?([\w-]*)/i
-            ], [[VENDOR, 'Nokia'], MODEL, [TYPE, MOBILE]], [
-
-            /android[x\d\.\s;]+\s([ab][1-7]\-?[0178a]\d\d?)/i                   // Acer
-            ], [MODEL, [VENDOR, 'Acer'], [TYPE, TABLET]], [
-
-            /android.+([vl]k\-?\d{3})\s+build/i                                 // LG Tablet
-            ], [MODEL, [VENDOR, 'LG'], [TYPE, TABLET]], [
-            /android\s3\.[\s\w;-]{10}(lg?)-([06cv9]{3,4})/i                     // LG Tablet
-            ], [[VENDOR, 'LG'], MODEL, [TYPE, TABLET]], [
-            /linux;\snetcast.+smarttv/i,                                        // LG SmartTV
-            /lg\snetcast\.tv-201\d/i
-            ], [[VENDOR, 'LG'], MODEL, [TYPE, SMARTTV]], [
-            /(nexus\s[45])/i,                                                   // LG
-            /lg[e;\s\/-]+(\w*)/i,
-            /android.+lg(\-?[\d\w]+)\s+build/i
-            ], [MODEL, [VENDOR, 'LG'], [TYPE, MOBILE]], [
-
-            /(lenovo)\s?(s(?:5000|6000)(?:[\w-]+)|tab(?:[\s\w]+))/i             // Lenovo tablets
-            ], [VENDOR, MODEL, [TYPE, TABLET]], [
-            /android.+(ideatab[a-z0-9\-\s]+)/i                                  // Lenovo
-            ], [MODEL, [VENDOR, 'Lenovo'], [TYPE, TABLET]], [
-            /(lenovo)[_\s-]?([\w-]+)/i
-            ], [VENDOR, MODEL, [TYPE, MOBILE]], [
-
-            /linux;.+((jolla));/i                                               // Jolla
-            ], [VENDOR, MODEL, [TYPE, MOBILE]], [
-
-            /((pebble))app\/[\d\.]+\s/i                                         // Pebble
-            ], [VENDOR, MODEL, [TYPE, WEARABLE]], [
-
-            /android.+;\s(oppo)\s?([\w\s]+)\sbuild/i                            // OPPO
-            ], [VENDOR, MODEL, [TYPE, MOBILE]], [
-
-            /crkey/i                                                            // Google Chromecast
-            ], [[MODEL, 'Chromecast'], [VENDOR, 'Google'], [TYPE, SMARTTV]], [
-
-            /android.+;\s(glass)\s\d/i                                          // Google Glass
-            ], [MODEL, [VENDOR, 'Google'], [TYPE, WEARABLE]], [
-
-            /android.+;\s(pixel c)[\s)]/i                                       // Google Pixel C
-            ], [MODEL, [VENDOR, 'Google'], [TYPE, TABLET]], [
-
-            /android.+;\s(pixel( [2-9]a?)?( xl)?)[\s)]/i                        // Google Pixel
-            ], [MODEL, [VENDOR, 'Google'], [TYPE, MOBILE]], [
-
-            /android.+;\s(\w+)\s+build\/hm\1/i,                                 // Xiaomi Hongmi 'numeric' models
-            /android.+(hm[\s\-_]?note?[\s_]?(?:\d\w)?)\sbuild/i,                // Xiaomi Hongmi
-            /android.+(redmi[\s\-_]?(?:note|k)?(?:[\s_]?[\w\s]+))(?:\sbuild|\))/i,      
-                                                                                // Xiaomi Redmi
-            /android.+(mi[\s\-_]?(?:a\d|one|one[\s_]plus|note lte)?[\s_]?(?:\d?\w?)[\s_]?(?:plus)?)\sbuild/i    
-                                                                                // Xiaomi Mi
-            ], [[MODEL, /_/g, ' '], [VENDOR, 'Xiaomi'], [TYPE, MOBILE]], [
-            /android.+(mi[\s\-_]?(?:pad)(?:[\s_]?[\w\s]+))(?:\sbuild|\))/i     // Mi Pad tablets
-            ],[[MODEL, /_/g, ' '], [VENDOR, 'Xiaomi'], [TYPE, TABLET]], [
-            /android.+;\s(m[1-5]\snote)\sbuild/i                                // Meizu
-            ], [MODEL, [VENDOR, 'Meizu'], [TYPE, MOBILE]], [
-            /(mz)-([\w-]{2,})/i
-            ], [[VENDOR, 'Meizu'], MODEL, [TYPE, MOBILE]], [
-
-            /android.+a000(1)\s+build/i,                                        // OnePlus
-            /android.+oneplus\s(a\d{4})[\s)]/i
-            ], [MODEL, [VENDOR, 'OnePlus'], [TYPE, MOBILE]], [
-
-            /android.+[;\/]\s*(RCT[\d\w]+)\s+build/i                            // RCA Tablets
-            ], [MODEL, [VENDOR, 'RCA'], [TYPE, TABLET]], [
-
-            /android.+[;\/\s](Venue[\d\s]{2,7})\s+build/i                       // Dell Venue Tablets
-            ], [MODEL, [VENDOR, 'Dell'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(Q[T|M][\d\w]+)\s+build/i                         // Verizon Tablet
-            ], [MODEL, [VENDOR, 'Verizon'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s+(Barnes[&\s]+Noble\s+|BN[RT])(V?.*)\s+build/i     // Barnes & Noble Tablet
-            ], [[VENDOR, 'Barnes & Noble'], MODEL, [TYPE, TABLET]], [
-
-            /android.+[;\/]\s+(TM\d{3}.*\b)\s+build/i                           // Barnes & Noble Tablet
-            ], [MODEL, [VENDOR, 'NuVision'], [TYPE, TABLET]], [
-
-            /android.+;\s(k88)\sbuild/i                                         // ZTE K Series Tablet
-            ], [MODEL, [VENDOR, 'ZTE'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(gen\d{3})\s+build.*49h/i                         // Swiss GEN Mobile
-            ], [MODEL, [VENDOR, 'Swiss'], [TYPE, MOBILE]], [
-
-            /android.+[;\/]\s*(zur\d{3})\s+build/i                              // Swiss ZUR Tablet
-            ], [MODEL, [VENDOR, 'Swiss'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*((Zeki)?TB.*\b)\s+build/i                         // Zeki Tablets
-            ], [MODEL, [VENDOR, 'Zeki'], [TYPE, TABLET]], [
-
-            /(android).+[;\/]\s+([YR]\d{2})\s+build/i,
-            /android.+[;\/]\s+(Dragon[\-\s]+Touch\s+|DT)(\w{5})\sbuild/i        // Dragon Touch Tablet
-            ], [[VENDOR, 'Dragon Touch'], MODEL, [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(NS-?\w{0,9})\sbuild/i                            // Insignia Tablets
-            ], [MODEL, [VENDOR, 'Insignia'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*((NX|Next)-?\w{0,9})\s+build/i                    // NextBook Tablets
-            ], [MODEL, [VENDOR, 'NextBook'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(Xtreme\_)?(V(1[045]|2[015]|30|40|60|7[05]|90))\s+build/i
-            ], [[VENDOR, 'Voice'], MODEL, [TYPE, MOBILE]], [                    // Voice Xtreme Phones
-
-            /android.+[;\/]\s*(LVTEL\-)?(V1[12])\s+build/i                     // LvTel Phones
-            ], [[VENDOR, 'LvTel'], MODEL, [TYPE, MOBILE]], [
-
-            /android.+;\s(PH-1)\s/i
-            ], [MODEL, [VENDOR, 'Essential'], [TYPE, MOBILE]], [                // Essential PH-1
-
-            /android.+[;\/]\s*(V(100MD|700NA|7011|917G).*\b)\s+build/i          // Envizen Tablets
-            ], [MODEL, [VENDOR, 'Envizen'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(Le[\s\-]+Pan)[\s\-]+(\w{1,9})\s+build/i          // Le Pan Tablets
-            ], [VENDOR, MODEL, [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(Trio[\s\w\-\.]+)\s+build/i                       // MachSpeed Tablets
-            ], [MODEL, [VENDOR, 'MachSpeed'], [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*(Trinity)[\-\s]*(T\d{3})\s+build/i                // Trinity Tablets
-            ], [VENDOR, MODEL, [TYPE, TABLET]], [
-
-            /android.+[;\/]\s*TU_(1491)\s+build/i                               // Rotor Tablets
-            ], [MODEL, [VENDOR, 'Rotor'], [TYPE, TABLET]], [
-
-            //android.+(KS(.+))\s+build/i                                        // Amazon Kindle Tablets
-            //], [MODEL, [VENDOR, 'Amazon'], [TYPE, TABLET]], [
-
-            /android.+(Gigaset)[\s\-]+(Q\w{1,9})\s+build/i                      // Gigaset Tablets
-            ], [VENDOR, MODEL, [TYPE, TABLET]], [
-                                                                                // Android Phones from Unidentified Vendors
-            /android .+?; ([^;]+?)(?: build|\) applewebkit).+? mobile safari/i
-            ], [MODEL, [TYPE, MOBILE]], [
-                                                                                // Android Tablets from Unidentified Vendors
-            /android .+?;\s([^;]+?)(?: build|\) applewebkit).+?(?! mobile) safari/i
-            ], [MODEL, [TYPE, TABLET]], [
-
-            /\s(tablet|tab)[;\/]/i,                                             // Unidentifiable Tablet
-            /\s(mobile)(?:[;\/]|\ssafari)/i                                     // Unidentifiable Mobile
-            ], [[TYPE, util.lowerize], VENDOR, MODEL], [
-
-            /[\s\/\(](smart-?tv)[;\)]/i                                         // SmartTV
-            ], [[TYPE, SMARTTV]], [
-
-            /(android[\w\.\s\-]{0,9});.+build/i                                 // Generic Android Device
-            ], [MODEL, [VENDOR, 'Generic']]
-        ],
-
-        engine : [[
-
-            /windows.+\sedge\/([\w\.]+)/i                                       // EdgeHTML
-            ], [VERSION, [NAME, 'EdgeHTML']], [
-
-            /webkit\/537\.36.+chrome\/(?!27)([\w\.]+)/i                         // Blink
-            ], [VERSION, [NAME, 'Blink']], [
-
-            /(presto)\/([\w\.]+)/i,                                             // Presto
-            /(webkit|trident|netfront|netsurf|amaya|lynx|w3m|goanna)\/([\w\.]+)/i,
-                                                                                // WebKit/Trident/NetFront/NetSurf/Amaya/Lynx/w3m/Goanna
-            /(khtml|tasman|links)[\/\s]\(?([\w\.]+)/i,                          // KHTML/Tasman/Links
-            /(icab)[\/\s]([23]\.[\d\.]+)/i                                      // iCab
-            ], [NAME, VERSION], [
-
-            /rv\:([\w\.]{1,9}).+(gecko)/i                                       // Gecko
-            ], [VERSION, NAME]
-        ],
-
-        os : [[
-
-            // Windows based
-            /microsoft\s(windows)\s(vista|xp)/i                                 // Windows (iTunes)
-            ], [NAME, VERSION], [
-            /(windows)\snt\s6\.2;\s(arm)/i,                                     // Windows RT
-            /(windows\sphone(?:\sos)*)[\s\/]?([\d\.\s\w]*)/i,                   // Windows Phone
-            /(windows\smobile|windows)[\s\/]?([ntce\d\.\s]+\w)/i
-            ], [NAME, [VERSION, mapper.str, maps.os.windows.version]], [
-            /(win(?=3|9|n)|win\s9x\s)([nt\d\.]+)/i
-            ], [[NAME, 'Windows'], [VERSION, mapper.str, maps.os.windows.version]], [
-
-            // Mobile/Embedded OS
-            /\((bb)(10);/i                                                      // BlackBerry 10
-            ], [[NAME, 'BlackBerry'], VERSION], [
-            /(blackberry)\w*\/?([\w\.]*)/i,                                     // Blackberry
-            /(tizen|kaios)[\/\s]([\w\.]+)/i,                                    // Tizen/KaiOS
-            /(android|webos|palm\sos|qnx|bada|rim\stablet\sos|meego|sailfish|contiki)[\/\s-]?([\w\.]*)/i
-                                                                                // Android/WebOS/Palm/QNX/Bada/RIM/MeeGo/Contiki/Sailfish OS
-            ], [NAME, VERSION], [
-            /(symbian\s?os|symbos|s60(?=;))[\/\s-]?([\w\.]*)/i                  // Symbian
-            ], [[NAME, 'Symbian'], VERSION], [
-            /\((series40);/i                                                    // Series 40
-            ], [NAME], [
-            /mozilla.+\(mobile;.+gecko.+firefox/i                               // Firefox OS
-            ], [[NAME, 'Firefox OS'], VERSION], [
-
-            // Google Chromecast
-            /crkey\/([\d\.]+)/i                                                 // Google Chromecast
-            ], [VERSION, [NAME, 'Chromecast']], [
-
-            // Console
-            /(nintendo|playstation)\s([wids34portablevu]+)/i,                   // Nintendo/Playstation
-
-            // GNU/Linux based
-            /(mint)[\/\s\(]?(\w*)/i,                                            // Mint
-            /(mageia|vectorlinux)[;\s]/i,                                       // Mageia/VectorLinux
-            /(joli|[kxln]?ubuntu|debian|suse|opensuse|gentoo|(?=\s)arch|slackware|fedora|mandriva|centos|pclinuxos|redhat|zenwalk|linpus)[\/\s-]?(?!chrom)([\w\.-]*)/i,
-                                                                                // Joli/Ubuntu/Debian/SUSE/Gentoo/Arch/Slackware
-                                                                                // Fedora/Mandriva/CentOS/PCLinuxOS/RedHat/Zenwalk/Linpus
-            /(hurd|linux)\s?([\w\.]*)/i,                                        // Hurd/Linux
-            /(gnu)\s?([\w\.]*)/i                                                // GNU
-            ], [NAME, VERSION], [
-
-            /(cros)\s[\w]+\s([\w\.]+\w)/i                                       // Chromium OS
-            ], [[NAME, 'Chromium OS'], VERSION],[
-
-            // Solaris
-            /(sunos)\s?([\w\.\d]*)/i                                            // Solaris
-            ], [[NAME, 'Solaris'], VERSION], [
-
-            // BSD based
-            /\s([frentopc-]{0,4}bsd|dragonfly)\s?([\w\.]*)/i                    // FreeBSD/NetBSD/OpenBSD/PC-BSD/DragonFly
-            ], [NAME, VERSION],[
-
-            /(haiku)\s(\w+)/i                                                   // Haiku
-            ], [NAME, VERSION],[
-
-            /cfnetwork\/.+darwin/i,
-            /ip[honead]{2,4}(?:.*os\s([\w]+)\slike\smac|;\sopera)/i             // iOS
-            ], [[VERSION, /_/g, '.'], [NAME, 'iOS']], [
-
-            /(mac\sos\sx)\s?([\w\s\.]*)/i,
-            /(macintosh|mac(?=_powerpc)\s)/i                                    // Mac OS
-            ], [[NAME, 'Mac OS'], [VERSION, /_/g, '.']], [
-
-            // Other
-            /((?:open)?solaris)[\/\s-]?([\w\.]*)/i,                             // Solaris
-            /(aix)\s((\d)(?=\.|\)|\s)[\w\.])*/i,                                // AIX
-            /(plan\s9|minix|beos|os\/2|amigaos|morphos|risc\sos|openvms|fuchsia)/i,
-                                                                                // Plan9/Minix/BeOS/OS2/AmigaOS/MorphOS/RISCOS/OpenVMS/Fuchsia
-            /(unix)\s?([\w\.]*)/i                                               // UNIX
-            ], [NAME, VERSION]
-        ]
-    };
-
-
-    /////////////////
-    // Constructor
-    ////////////////
-    var UAParser = function (uastring, extensions) {
-
-        if (typeof uastring === 'object') {
-            extensions = uastring;
-            uastring = undefined;
-        }
-
-        if (!(this instanceof UAParser)) {
-            return new UAParser(uastring, extensions).getResult();
-        }
-
-        var ua = uastring || ((window && window.navigator && window.navigator.userAgent) ? window.navigator.userAgent : EMPTY);
-        var rgxmap = extensions ? util.extend(regexes, extensions) : regexes;
-
-        this.getBrowser = function () {
-            var browser = { name: undefined, version: undefined };
-            mapper.rgx.call(browser, ua, rgxmap.browser);
-            browser.major = util.major(browser.version); // deprecated
-            return browser;
-        };
-        this.getCPU = function () {
-            var cpu = { architecture: undefined };
-            mapper.rgx.call(cpu, ua, rgxmap.cpu);
-            return cpu;
-        };
-        this.getDevice = function () {
-            var device = { vendor: undefined, model: undefined, type: undefined };
-            mapper.rgx.call(device, ua, rgxmap.device);
-            return device;
-        };
-        this.getEngine = function () {
-            var engine = { name: undefined, version: undefined };
-            mapper.rgx.call(engine, ua, rgxmap.engine);
-            return engine;
-        };
-        this.getOS = function () {
-            var os = { name: undefined, version: undefined };
-            mapper.rgx.call(os, ua, rgxmap.os);
-            return os;
-        };
-        this.getResult = function () {
-            return {
-                ua      : this.getUA(),
-                browser : this.getBrowser(),
-                engine  : this.getEngine(),
-                os      : this.getOS(),
-                device  : this.getDevice(),
-                cpu     : this.getCPU()
-            };
-        };
-        this.getUA = function () {
-            return ua;
-        };
-        this.setUA = function (uastring) {
-            ua = uastring;
-            return this;
-        };
-        return this;
-    };
-
-    UAParser.VERSION = LIBVERSION;
-    UAParser.BROWSER = {
-        NAME    : NAME,
-        MAJOR   : MAJOR, // deprecated
-        VERSION : VERSION
-    };
-    UAParser.CPU = {
-        ARCHITECTURE : ARCHITECTURE
-    };
-    UAParser.DEVICE = {
-        MODEL   : MODEL,
-        VENDOR  : VENDOR,
-        TYPE    : TYPE,
-        CONSOLE : CONSOLE,
-        MOBILE  : MOBILE,
-        SMARTTV : SMARTTV,
-        TABLET  : TABLET,
-        WEARABLE: WEARABLE,
-        EMBEDDED: EMBEDDED
-    };
-    UAParser.ENGINE = {
-        NAME    : NAME,
-        VERSION : VERSION
-    };
-    UAParser.OS = {
-        NAME    : NAME,
-        VERSION : VERSION
-    };
-
-    ///////////
-    // Export
-    //////////
-
-
-    // check js environment
-    if (typeof(exports) !== UNDEF_TYPE) {
-        // nodejs env
-        if (typeof module !== UNDEF_TYPE && module.exports) {
-            exports = module.exports = UAParser;
-        }
-        exports.UAParser = UAParser;
-    } else {
-        // requirejs env (optional)
-        if (true) {
-            !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-                return UAParser;
-            }).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-        } else {}
-    }
-
-    // jQuery/Zepto specific (optional)
-    // Note:
-    //   In AMD env the global scope should be kept clean, but jQuery is an exception.
-    //   jQuery always exports to global scope, unless jQuery.noConflict(true) is used,
-    //   and we should catch that.
-    var $ = window && (window.jQuery || window.Zepto);
-    if ($ && !$.ua) {
-        var parser = new UAParser();
-        $.ua = parser.getResult();
-        $.ua.get = function () {
-            return parser.getUA();
-        };
-        $.ua.set = function (uastring) {
-            parser.setUA(uastring);
-            var result = parser.getResult();
-            for (var prop in result) {
-                $.ua[prop] = result[prop];
-            }
-        };
-    }
-
-})(typeof window === 'object' ? window : this);
-
-
-/***/ }),
-
 /***/ "./node_modules/unstated-next/dist/unstated-next.mjs":
 /*!***********************************************************!*\
   !*** ./node_modules/unstated-next/dist/unstated-next.mjs ***!
@@ -13334,6 +12673,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_organisms_WaveUnitX_WaveUnitX__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/organisms/WaveUnitX/WaveUnitX */ "./components/organisms/WaveUnitX/WaveUnitX.tsx");
 /* harmony import */ var _components_AppWrapper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/AppWrapper */ "./components/AppWrapper.tsx");
 /* harmony import */ var _components_molecules_FishiesX_FishiesX__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/molecules/FishiesX/FishiesX */ "./components/molecules/FishiesX/FishiesX.tsx");
+/* harmony import */ var simplebar_dist_simplebar_min_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! simplebar/dist/simplebar.min.css */ "./node_modules/simplebar/dist/simplebar.min.css");
+/* harmony import */ var simplebar_dist_simplebar_min_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(simplebar_dist_simplebar_min_css__WEBPACK_IMPORTED_MODULE_13__);
 
 
 var _this = undefined,
@@ -13341,6 +12682,7 @@ var _this = undefined,
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -13377,70 +12719,70 @@ var App = function App(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 46,
       columnNumber: 7
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["TransitionKeyContainer"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 47,
       columnNumber: 9
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["CountTimerContainer"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 48,
       columnNumber: 11
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["ControlButtons"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 49,
       columnNumber: 13
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["CreateBgColor"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 50,
       columnNumber: 15
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["WaveContainer"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 51,
       columnNumber: 17
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["SeContainer"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 52,
       columnNumber: 19
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["CatchTransition"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 53,
       columnNumber: 21
     }
   }, __jsx(_containers__WEBPACK_IMPORTED_MODULE_5__["ScrollTop"].Provider, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 54,
       columnNumber: 23
     }
   }, __jsx(_components_molecules_FishiesX_FishiesX__WEBPACK_IMPORTED_MODULE_12__["FishiesX"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 55,
       columnNumber: 25
     }
   }), __jsx(_components_AppWrapper__WEBPACK_IMPORTED_MODULE_11__["AppWrapper"], {
@@ -13448,7 +12790,7 @@ var App = function App(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 56,
       columnNumber: 25
     }
   }, __jsx("div", {
@@ -13456,7 +12798,7 @@ var App = function App(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 57,
       columnNumber: 27
     }
   }, __jsx(next_page_transitions__WEBPACK_IMPORTED_MODULE_3__["PageTransition"], {
@@ -13468,7 +12810,7 @@ var App = function App(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 58,
       columnNumber: 29
     }
   }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
@@ -13476,42 +12818,42 @@ var App = function App(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 65,
       columnNumber: 31
     }
   }))))), __jsx(_components_organisms_WaveUnitX_WaveUnitX__WEBPACK_IMPORTED_MODULE_10__["WaveUnitX"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 72,
       columnNumber: 25
     }
   }), __jsx(_components_organisms_HeaderUnit_HeaderUnit__WEBPACK_IMPORTED_MODULE_9__["HeaderUnit"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 25
     }
   }), __jsx(_styles_BgColor__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 74,
       columnNumber: 25
     }
   }), __jsx(_styles_FreezeBodyStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 75,
       columnNumber: 25
     }
   })))))))))), __jsx(_styles_ResetCss__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 7
     }
   }));
@@ -13642,6 +12984,140 @@ var FreezeBodyStyle = function FreezeBodyStyle() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FreezeBodyStyle);
+
+/***/ }),
+
+/***/ "./styles/MainText.tsx":
+/*!*****************************!*\
+  !*** ./styles/MainText.tsx ***!
+  \*****************************/
+/*! exports provided: MainTextHeiseiMaruGothic, MainTextSourceHanSansJp */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainTextHeiseiMaruGothic", function() { return MainTextHeiseiMaruGothic; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainTextSourceHanSansJp", function() { return MainTextSourceHanSansJp; });
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts */ "./styles/fonts.tsx");
+/* harmony import */ var _customMedia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./customMedia */ "./styles/customMedia.ts");
+/* harmony import */ var _constants_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants/colors */ "./constants/colors.ts");
+
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: ", "px;\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+/**
+ * Styled component.
+ */
+var common = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(["color:", ";line-height:", ";text-align:", ";word-break:break-all;", ";", ";", ";"], function (props) {
+  return props.color ? props.color : _constants_colors__WEBPACK_IMPORTED_MODULE_4__["default"].navy;
+}, function (props) {
+  return props.lineHeight ? props.lineHeight : 2;
+}, function (props) {
+  return props.textAlign;
+}, _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].greaterThan("tb")(_templateObject(), function (props) {
+  return props.fontSize.pc;
+}), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("tb")(_templateObject2(), function (props) {
+  return props.fontSize.tb;
+}), _customMedia__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("sp")(_templateObject3(), function (props) {
+  return props.fontSize.sp;
+}));
+var MainTextHeiseiMaruGothic = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "MainText__MainTextHeiseiMaruGothic",
+  componentId: "sc-1p1yhgv-0"
+})(["", " ", ""], common, _fonts__WEBPACK_IMPORTED_MODULE_2__["heiseiMaruGothicStdW8"]);
+var MainTextSourceHanSansJp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "MainText__MainTextSourceHanSansJp",
+  componentId: "sc-1p1yhgv-1"
+})(["", " ", ""], common, _fonts__WEBPACK_IMPORTED_MODULE_2__["sourceHanSansJpBold"]);
+
+/***/ }),
+
+/***/ "./styles/Mb.tsx":
+/*!***********************!*\
+  !*** ./styles/Mb.tsx ***!
+  \***********************/
+/*! exports provided: Mb */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Mb", function() { return Mb; });
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _customMedia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customMedia */ "./styles/customMedia.ts");
+
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-bottom: ", "px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-bottom: ", "px;\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+/**
+ * Styled component.
+ */
+var Mb = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Mb",
+  componentId: "sc-4yvs6y-0"
+})(["margin-bottom:", "px;", ";", ";"], function (props) {
+  return props.size.pc ? props.size.pc : 0;
+}, _customMedia__WEBPACK_IMPORTED_MODULE_2__["default"].lessThan("tb")(_templateObject(), function (props) {
+  return props.size.tb ? props.size.tb : 0;
+}), _customMedia__WEBPACK_IMPORTED_MODULE_2__["default"].lessThan("sp")(_templateObject2(), function (props) {
+  return props.size.sp ? props.size.sp : 0;
+}));
 
 /***/ }),
 
